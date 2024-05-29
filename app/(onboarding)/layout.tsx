@@ -1,6 +1,7 @@
 "use client";
 import { initFlowbite } from "flowbite";
 import AppIcon from "@/components/shared/AppIcon";
+import Footer from "@/components/layout/Footer";
 
 export default function RootLayout({
   children,
@@ -86,7 +87,7 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
-        {/* <app-footer-links /> */}
+        <Footer />
       </div>
     </div>
   );
