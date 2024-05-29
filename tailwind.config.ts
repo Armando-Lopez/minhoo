@@ -5,16 +5,49 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite-react/lib/**/*.js",
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+        "3xl": "1840px",
+      },
+      padding: {
+        DEFAULT: "1rem",
+        lg: "2rem",
+        xl: "4rem",
+        "2xl": "4rem",
+      },
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: {
+          1: "#FBB03B",
+        },
+        black: {
+          1: "#1B161C",
+          2: "#1B161C80",
+        },
+        green: {
+          1: "#00CE78",
+        },
+        red: {
+          1: "#FD494A",
+        },
+        gray: {
+          1: "#8D8B8E",
+          150: "#F0F0F0",
+          170: "#FDFDFF",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 export default config;
