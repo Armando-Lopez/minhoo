@@ -11,7 +11,7 @@ export default function Footer() {
       <a href="/community">Community</a>
       <a href="/subscription">Subscription</a>
       <a href="/advertising-with-us">Advertising with us</a>
-      <a href="/">Be part of our team</a>
+      <a href="/be-part-of-our-team">Be part of our team</a>
       <a href="/contact">Contact us</a>
       <a href="/">API</a>
       <a href="/">Privacy, terms and conditions</a>

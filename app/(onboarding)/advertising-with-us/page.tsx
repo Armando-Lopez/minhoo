@@ -6,18 +6,17 @@ export default function AdvertisingWithUs() {
   return (
     <div className="mb-16">
       <section className="grid grid-cols-12 gap-5 mb-16">
-        <div className="col-span-12 md:col-span-8 lg:col-span-9 relative">
+        <div className="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-8 relative">
           <img
             src="/advertising-with-us/advertising-with-us.png"
-            alt=""
-            className="w"
+            alt="Advertising with us"
           />
-          <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-3 py-5 px-10 rounded-full bg-white text-primary-1 font-semibold">
+          <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold">
             <AppIcon icon="play" width={20} />
-            Visualize project
+            Visualize
           </button>
         </div>
-        <div className="col-span-12 md:col-span-4 lg:col-span-3">
+        <div className="col-span-12 md:col-span-4 lg:col-span-3 2xl:col-span-4">
           <h3 className="mb-6 text-3xl lg:text-4xl text-center md:text-left text-primary-1 font-bold">
             <span className="lg:block text-black-1">Advertise</span> your brand
           </h3>

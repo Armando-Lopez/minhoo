@@ -3,7 +3,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="flex-grow container-secondary mb-16">
+    <section className="flex-grow container-secondary mb-16">
+      <div className="max-w-4xl mx-auto">
       <h1 className="text-primary-1 text-center">Contact us</h1>
       <p className="text-center mt-8 mb-11">
         Thank you for your interest in Minhoo. Do you want to know more about
@@ -30,6 +31,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }
