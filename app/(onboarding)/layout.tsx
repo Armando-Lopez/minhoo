@@ -7,7 +7,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  initFlowbite();
+  if (typeof window !== "undefined") {
+    document.addEventListener("load", () => {
+      initFlowbite();
+    });
+  }
+
   return (
     <div className="bg-gray-150 min-h-svh">
       <div className="container min-h-svh mx-auto flex flex-col justify-between">
