@@ -42,6 +42,8 @@ export default function AppIcon({
     "share-box": "fluent:share-16-regular",
     "star-outline": "solar:star-outline",
     "vertical-dots": "tabler:dots-vertical",
+    play: "solar:play-bold",
+    "grater-than": "fa6-solid:greater-than",
   }[icon] as string;
 
   return (
