@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, createContext, useContext, useEffect } from "react";
 
-interface TabWrapperProps {
+type TabWrapperProps = {
   children: React.ReactNode;
   value?: string;
   tabClass?: string;
@@ -9,17 +9,17 @@ interface TabWrapperProps {
   activeTabClass?: string;
   onChange?: (tab: string) => void;
 }
-interface TabLabelProps {
+type TabLabelProps = {
   children: React.ReactNode;
   name: string;
   onSelected?: () => void;
 }
-interface TabContentProps {
+type TabContentProps = {
   children: React.ReactNode;
   className?: string;
   name: string;
 }
-interface TabsContextInterface {
+type TabsContextInterface = {
   activeTab: string;
   tabClass: string;
   inactiveTabClass: string;

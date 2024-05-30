@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AdvertisingWithUs() {
   return (
-    <div className="mb-16">
+    <div className="mb-24 md:mb-36">
       <section className="grid grid-cols-12 gap-5 mb-16">
         <div className="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-8 relative">
           <img

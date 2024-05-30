@@ -1,19 +1,23 @@
+import AppVideoViewer from "@/components/shared/AppVideoViewer";
 import Image from "next/image";
 import React from "react";
 
 export default function Api() {
   return (
-    <div className="grid grid-cols-12">
-      <div className="col-span-12">
-        <Image
-          src="/api/app-mobile-ui.png"
-          alt="Minhoo mobile app"
-          className="mx-auto  mb-5"
-          width={229}
-          height={328}
-        />
+    <div className="grid grid-cols-12 gap-5 mb-24 md:mb-36">
+      <div className="order-1 lg:order-2 col-span-12 lg:col-span-5 mb-10">
+        <div className="relative w-60 h-80 md:w-[25rem] md:h-[35rem] mx-auto lg:ml-auto lg:mr-0">
+          <Image
+            src="/api/app-mobile-ui.png"
+            alt="Minhoo mobile app"
+            className="mx-auto  mb-5"
+            fill
+            sizes="100%"
+            priority
+          />
+        </div>
       </div>
-      <section className="col-span-12">
+      <section className="order-2 lg:order-1 col-span-12 lg:col-span-7">
         <h3 className="mb-6 text-3xl md:text-4xl text-primary-1">
           <span className="block md:inline text-black-1">The Minhoo </span>
           platform
@@ -58,38 +62,38 @@ export default function Api() {
           </p>
         </div>
       </section>
-      <div className="col-span-12 flex flex-wrap gap-4 justify-center">
-        <div className="flex flex-col items-center">
-          <Image
-            src="/api/what-is-minhoo.png"
-            alt="Minhoo mobile app"
-            className="mx-auto  mb-3"
-            width={229}
-            height={328}
-          />
-          <strong>What is Minhoo</strong>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            src="/api/what-is-minhoo.png"
-            alt="Minhoo mobile app"
-            className="mx-auto  mb-3"
-            width={229}
-            height={328}
-          />
-          <strong>Request services</strong>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            src="/api/what-is-minhoo.png"
-            alt="Minhoo mobile app"
-            className="mx-auto  mb-3"
-            width={229}
-            height={328}
-          />
-          <strong>Offering services</strong>
-        </div>
-      </div>
+
+      <section className="order-3 col-span-12 lg:mt-20">
+        <ul className="flex flex-wrap justify-center md:justify-start gap-y-14 gap-x-5 w-full">
+          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
+            <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
+              <AppVideoViewer
+                url="https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87"
+                title="What is Minhoo"
+              />
+            </div>
+            <strong className="md:text-xl">What is Minhoo</strong>
+          </li>
+          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
+            <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
+              <AppVideoViewer
+                url="https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87"
+                title="What is Minhoo"
+              />
+            </div>
+            <strong className="md:text-xl">Request services</strong>
+          </li>
+          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
+            <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
+              <AppVideoViewer
+                url="https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87"
+                title="What is Minhoo"
+              />
+            </div>
+            <strong className="md:text-xl">Offering services</strong>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }

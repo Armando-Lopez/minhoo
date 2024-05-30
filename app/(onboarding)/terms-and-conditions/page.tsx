@@ -54,61 +54,66 @@ export default function PrivacyTermsAndConditions() {
           <TabContent name="legal-terms">
             <h3 className="text-3xl md:text-4xl">Legal terms</h3>
             <strong className="block my-1">Minhoo.app</strong>
-            <p className="mb-6">APP LEGAL TERMS</p>
-            <p className="mb-4">
-              Eder Antonio Oquendo Calderon. Company, identified with ABN
-              87951520527, communicates to the users of Minhoo.app , the privacy
-              rights, conditions and contract that protect them during the
-              access of our electronic services. This regulates the relationship
-              between Minhoo.app App and its users, who must be natural persons
-              of legal age or legal persons duly constituted in the Australia or
-              in any country in which they benefit from the application, so they
-              fully accept our policies and conditions of use as an essential
-              requirement to offer or receive our services.
-            </p>
-            <p className="mb-4">
-              The user declares and guarantees that he has sufficient powers to
-              accept our policies, by himself or any of his agents,
-              representatives, or factors acting on his behalf, and that by
-              accepting them he is bound by this policy. Where appropriate, the
-              userguarantees that he is the owner and responsible for the
-              physical or virtual documentation forwared, sent and registered in
-              Minhoo.app App about the personal and professional identity, the
-              constitution of his company and any other commercial documentation
-              that he may provide to validate his registration within or outside
-              of the Minhoo.app App; Likewise, the user accepts that this
-              information will be available so that any user who is duly
-              registered and wishes to offer or receive a service, can verify
-              the veracity of the same, with the aim of offering greater
-              security and confidence. This policy is oriented to the use and
-              management that Minhoo.app App gives to the information provided
-              by users when subscribing to our electronic service. This policy
-              does not apply for any reason to people, professionals, companies,
-              product or service providers that are external to Minhoo.app App,
-              or that are not duly registered in our technological platform.
-            </p>
-            <p className="mb-4">
-              The voluntary use of Minhoo.app App automatically establishes the
-              condition of user within the website and implies full and
-              unreserved acceptance of each and every one of the provisions
-              included in this policy, in each version published by
-              Minhoo.appApp or at the same time in which the user accesses the
-              registry. Consequently, the user must read the entire policy, as
-              it may be modified at any time to improve the service, so we ask
-              all users to periodically review our policies.If you have any
-              questions, please feel free to contact our team at info@minhoo.app
-              (business hours subject to office hours, Monday through Thursday
-              from 1:30 p.m. to 5:30 p.m.). The company Minhoo.app., recommends
-              again reading the entire policy, if you have questions, contact us
-              as soon as possible and if you disagree with any of the
-              established points, we respectfully ask you not to register.
-            </p>
+            <section>
+              <p className="mb-6">APP LEGAL TERMS</p>
+              <p className="mb-4">
+                Eder Antonio Oquendo Calderon. Company, identified with ABN
+                87951520527, communicates to the users of Minhoo.app , the
+                privacy rights, conditions and contract that protect them during
+                the access of our electronic services. This regulates the
+                relationship between Minhoo.app App and its users, who must be
+                natural persons of legal age or legal persons duly constituted
+                in the Australia or in any country in which they benefit from
+                the application, so they fully accept our policies and
+                conditions of use as an essential requirement to offer or
+                receive our services.
+              </p>
+              <p className="mb-4">
+                The user declares and guarantees that he has sufficient powers
+                to accept our policies, by himself or any of his agents,
+                representatives, or factors acting on his behalf, and that by
+                accepting them he is bound by this policy. Where appropriate,
+                the userguarantees that he is the owner and responsible for the
+                physical or virtual documentation forwared, sent and registered
+                in Minhoo.app App about the personal and professional identity,
+                the constitution of his company and any other commercial
+                documentation that he may provide to validate his registration
+                within or outside of the Minhoo.app App; Likewise, the user
+                accepts that this information will be available so that any user
+                who is duly registered and wishes to offer or receive a service,
+                can verify the veracity of the same, with the aim of offering
+                greater security and confidence. This policy is oriented to the
+                use and management that Minhoo.app App gives to the information
+                provided by users when subscribing to our electronic service.
+                This policy does not apply for any reason to people,
+                professionals, companies, product or service providers that are
+                external to Minhoo.app App, or that are not duly registered in
+                our technological platform.
+              </p>
+              <p className="mb-4">
+                The voluntary use of Minhoo.app App automatically establishes
+                the condition of user within the website and implies full and
+                unreserved acceptance of each and every one of the provisions
+                included in this policy, in each version published by
+                Minhoo.appApp or at the same time in which the user accesses the
+                registry. Consequently, the user must read the entire policy, as
+                it may be modified at any time to improve the service, so we ask
+                all users to periodically review our policies.If you have any
+                questions, please feel free to contact our team at
+                info@minhoo.app (business hours subject to office hours, Monday
+                through Thursday from 1:30 p.m. to 5:30 p.m.). The company
+                Minhoo.app., recommends again reading the entire policy, if you
+                have questions, contact us as soon as possible and if you
+                disagree with any of the established points, we respectfully ask
+                you not to register.
+              </p>
+            </section>
           </TabContent>
           <TabContent name="privacy-and-data">
             <h3 className="text-3xl md:text-4xl">
               Privacy and Data Protection Policy
             </h3>
-            <div className="mt-5">
+            <section className="mt-5">
               <p className="mb-4">
                 In accordance with the provisions of the Personal Data
                 Protection Law, Minhoo.app undertakes to adopt the necessary
@@ -590,7 +595,7 @@ export default function PrivacyTermsAndConditions() {
                 (business hours subject to office hours, Monday through Thursday
                 from 1:30 pm to 5:30 pm).
               </p>
-            </div>
+            </section>
           </TabContent>
         </div>
       </TabWrapper>

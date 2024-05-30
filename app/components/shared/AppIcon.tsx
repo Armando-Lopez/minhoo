@@ -2,7 +2,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-interface AppIconProps {
+type AppIconProps = {
   icon: string;
   height?: string | number;
   width?: string | number;
