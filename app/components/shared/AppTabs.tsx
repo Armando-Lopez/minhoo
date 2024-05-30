@@ -7,6 +7,7 @@ type TabWrapperProps = {
   tabClass?: string;
   inactiveTabClass?: string;
   activeTabClass?: string;
+  // eslint-disable-next-line no-unused-vars
   onChange?: (tab: string) => void;
 }
 type TabLabelProps = {
@@ -24,7 +25,9 @@ type TabsContextInterface = {
   tabClass: string;
   inactiveTabClass: string;
   activeTabClass: string;
+  // eslint-disable-next-line no-unused-vars
   setActiveTab: (tab: string) => void;
+  // eslint-disable-next-line no-unused-vars
   addTab: (tab: string) => void;
 }
 
@@ -33,8 +36,8 @@ const TabsContext = createContext<TabsContextInterface>({
   tabClass: "",
   inactiveTabClass: "",
   activeTabClass: "",
-  setActiveTab: (tab: string) => ({}),
-  addTab: (tab: string) => ({}),
+  setActiveTab: () => ({}),
+  addTab: () => ({}),
 });
 
 export const TabWrapper = ({

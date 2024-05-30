@@ -2,6 +2,7 @@
 import React from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import { initFlowbite } from "flowbite";
+import Link from "next/link";
 
 export default function OnboardingNav() {
   if (typeof document !== "undefined") {
@@ -29,16 +30,16 @@ export default function OnboardingNav() {
       <div className="pt-14 pb-14 overflow-y-auto">
         <ul className="space-y-2 font-medium">
           <li className="py-1.5">
-            <a href="/home">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="py-1.5">
-            <a href="/we">We</a>
+            <Link href="/we">We</Link>
           </li>
           <li className="py-1.5">
-            <a href="/team">Team</a>
+            <Link href="/team">Team</Link>
           </li>
           <li className="py-1.5">
-            <a href="/community">Community</a>
+            <Link href="/community">Community</Link>
           </li>
           <li className="py-1.5">
             <a>Pre-Sell</a>
@@ -50,7 +51,7 @@ export default function OnboardingNav() {
             <a>Be part of our team</a>
           </li>
           <li className="py-1.5">
-            <a href="/contact">Contact us</a>
+            <Link href="/contact">Contact us</Link>
           </li>
           <li className="py-1.5">
             <a>API</a>
