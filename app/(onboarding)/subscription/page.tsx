@@ -38,7 +38,7 @@ export default function Subscription() {
             </ul>
             <button className="flex items-center gap-2 mr-auto ml-2 font-bold">
               See all
-              <AppIcon icon="grater-than" width={10} />
+              <AppIcon icon="greater-than" width={10} />
             </button>
           </div>
         </div>

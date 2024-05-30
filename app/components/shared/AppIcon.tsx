@@ -43,7 +43,9 @@ export default function AppIcon({
     "star-outline": "solar:star-outline",
     "vertical-dots": "tabler:dots-vertical",
     play: "solar:play-bold",
-    "grater-than": "fa6-solid:greater-than",
+    "greater-than": "hugeicons:greater-than",
+    "shield": "ic:sharp-shield",
+    lock: "mingcute:lock-fill",
   }[icon] as string;
 
   return (

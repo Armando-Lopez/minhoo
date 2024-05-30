@@ -14,7 +14,7 @@ export default function Footer() {
       <a href="/be-part-of-our-team">Be part of our team</a>
       <a href="/contact">Contact us</a>
       <a href="/">API</a>
-      <a href="/">Privacy, terms and conditions</a>
+      <a href="/terms-and-conditions">Privacy, terms and conditions</a>
       <p className="w-full text-gray-1">© 2024 Minhoo.app</p>
     </footer>
   );
