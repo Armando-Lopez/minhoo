@@ -7,7 +7,7 @@ export default function AppVideoViewer({ url, title }: { url: string, title: str
       height="100%"
       src={url}
       title={title}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
     ></iframe>

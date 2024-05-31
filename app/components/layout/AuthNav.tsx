@@ -18,25 +18,25 @@ export default function AuthNav() {
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="flex items-center gap-4">
             {/* <app-minhoo-icon /> */}
             <span className="text-gray-1"> Offer services </span>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="flex items-center gap-4">
             <AppIcon icon="chat" width="25" height="30" />
             <span className="text-gray-1"> Chat </span>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="flex items-center gap-4">
             <AppIcon icon="notification" width="25" />
             <span className="text-gray-1"> Notifications </span>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="flex items-center gap-4">
             <AppIcon icon="profile" width="25" className="translate-y-1" />
             <span className="text-gray-1"> Profile </span>
           </a>
