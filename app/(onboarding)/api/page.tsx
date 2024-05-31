@@ -5,12 +5,12 @@ import React from "react";
 export default function Api() {
   return (
     <div className="grid grid-cols-12 gap-5 mb-24 md:mb-36">
-      <div className="order-1 lg:order-2 col-span-12 lg:col-span-5 mb-10">
+      <div className="order-1 lg:order-2 col-span-12 lg:col-span-5 mb-5">
         <div className="relative w-60 h-80 md:w-[25rem] md:h-[35rem] mx-auto lg:ml-auto lg:mr-0">
           <Image
             src="/api/app-mobile-ui.png"
             alt="Minhoo mobile app"
-            className="mx-auto  mb-5"
+            className="mx-auto"
             fill
             sizes="100%"
             priority
@@ -18,12 +18,12 @@ export default function Api() {
         </div>
       </div>
       <section className="order-2 lg:order-1 col-span-12 lg:col-span-7">
-        <h3 className="mb-6 text-3xl md:text-4xl text-primary-1">
+        <h2 className="mb-8 text-primary-1">
           <span className="block md:inline text-black-1">The Minhoo </span>
           platform
-        </h3>
-        <div className="mb-6">
-          <h4 className="mb-4">Minhoo Graph API</h4>
+        </h2>
+        <div className="mb-5">
+          <h4 className="mb-8">Minhoo Graph API</h4>
           <p>
             The Minhoo Graph API allows users of your application to access data
             in their Minhoo Creator accounts. The API can be used to source and
@@ -33,8 +33,8 @@ export default function Api() {
             requests
           </p>
         </div>
-        <div className="mb-6">
-          <h4 className="mb-4">Minhoo Basic Display API</h4>
+        <div className="mb-5">
+          <h4 className="mb-5">Minhoo Basic Display API</h4>
           <p>
             The Minhoo Basic Viewing API allows users of your application to get
             basic profile information, photos in their Minhoo accounts. The API
@@ -44,8 +44,8 @@ export default function Api() {
             other Minhoo users, use the Minhoo Graph API.
           </p>
         </div>
-        <div className="mb-6">
-          <h4 className="mb-4">Minhoo Messaging</h4>
+        <div className="mb-5">
+          <h4 className="mb-5">Minhoo Messaging</h4>
           <p>
             Support for the Messenger API for Minhoo (also known as the Minhoo
             Messaging API in our Developer Policies) allows Minhoo accounts to
@@ -64,7 +64,7 @@ export default function Api() {
       </section>
 
       <section className="order-3 col-span-12 lg:mt-20">
-        <ul className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-y-14 gap-x-5 w-full">
+        <ul className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-y-12 gap-x-5 w-full">
           <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
             <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
