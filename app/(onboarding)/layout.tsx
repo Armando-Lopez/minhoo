@@ -1,4 +1,3 @@
-import AppIcon from "@/components/shared/AppIcon";
 import Footer from "@/components/layout/Footer";
 import OnboardingNav from "@/components/layout/OnboardingNav";
 import React from "react";
@@ -15,18 +14,6 @@ export default function OnboardingLayout({
           <a href="/" className="mt-[12px]">
             <img src="/minhoo-logo.svg" alt="minhoo-logo" className="w-32" />
           </a>
-          <div>
-            <button
-              className="text-black focus:outline-none p-3"
-              type="button"
-              data-drawer-target="drawer-navigation"
-              data-drawer-show="drawer-navigation"
-              aria-controls="drawer-navigation"
-              data-drawer-placement="right"
-            >
-              <AppIcon icon="menu" width="35" className="mt-1.5" />
-            </button>
-          </div>
           <OnboardingNav />
         </header>
         <main className="flex-grow">{children}</main>
