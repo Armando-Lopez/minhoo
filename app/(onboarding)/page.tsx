@@ -3,16 +3,16 @@ import React from "react";
 export default function Home() {
   return (
     <section className="flex-grow">
-      <div className="lg:grid lg:grid-cols-3 gap-3 container-secondary pb-16">
-        <div className="lg:col-span-2">
-          <video autoPlay loop muted className="xl:max-w-[700px]">
+      <div className="lg:grid lg:grid-cols-2 container-secondary lg:mx-auto pb-16 lg:pb-10">
+        <div>
+          <video autoPlay loop muted className="mx-auto xl:mr-0 xl:max-w-[530px]">
             <source src="/home/banner.mp4" type="video/mp4" />
             Tu navegador no soporta el formato de video.
           </video>
         </div>
-        <div className="lg:bg-white lg:h-full lg:grid lg:items-center border-radius-20">
+        <div className="lg:bg-white lg:ml-16 lg:h-full lg:grid lg:items-center border-radius-20">
           <div>
-            <h2 className="text-primary-1 uppercase font-bold text-center mt-16 mb-4">
+            <h2 className="text-primary-1 uppercase font-bold text-center mt-12 mb-4">
               Coming Soon
             </h2>
             <div className="grid gap-3">

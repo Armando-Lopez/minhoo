@@ -10,13 +10,13 @@ export default function Footer() {
       <Link href="/we">We</Link>
       <Link href="/team">Team</Link>
       <Link href="/community">Community</Link>
-      <Link href="/subscription">Subscription</Link>
+      <Link href="/subscription">Pre-Sell</Link>
       <Link href="/advertising-with-us">Advertising with us</Link>
       <Link href="/be-part-of-our-team">Be part of our team</Link>
       <Link href="/contact">Contact us</Link>
       <Link href="/api">API</Link>
       <Link href="/terms-and-conditions">Privacy, terms and conditions</Link>
-      <p className="w-full text-gray-1">© 2024 Minhoo.app</p>
+      <p className="w-full text-gray-1 mb-3">© 2024 Minhoo.app</p>
     </footer>
   );
 }

@@ -3,42 +3,42 @@ import React from "react";
 
 export default function Subscription() {
   return (
-    <div className="mb-16">
-      <div className="grid grid-cols-12 gap-5">
-        <div className="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-8  relative">
+    <div className="mb-24">
+      <div className="lg:flex gap-5">
+        <div className="relative">
           <img
             src="/subscription/visualize-project.png"
             alt=""
-            className="w-full"
+            className="xl:max-w-[870px] mb-24 lg:mb-0"
           />
           <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-3 py-5 px-10 rounded-full bg-white text-primary-1 font-semibold">
             <AppIcon icon="play" width={20} />
             Visualize project
           </button>
         </div>
-        <div className="col-span-12 md:col-span-4 lg:col-span-3 2xl:col-span-4">
-          <div className="flex flex-col justify-center items-center gap-5 px-3 py-3 rounded-xl bg-white">
+        <div className="w-full">
+          <div className="flex flex-col justify-center items-center gap-5 px-3 py-7 rounded-xl bg-white h-full">
             <h3 className="text-primary-1 font-bold">New subscribers</h3>
             <ul className="w-full grid gap-4">
-              <li className="py-2 px-4 rounded-md bg-gray-150">
+              <li className="py-3 px-5 rounded-md bg-gray-150">
                 Subscribers name
               </li>
-              <li className="py-2 px-4 rounded-md bg-gray-150">
+              <li className="py-3 px-5 rounded-md bg-gray-150">
                 Subscribers name
               </li>
-              <li className="py-2 px-4 rounded-md bg-gray-150">
+              <li className="py-3 px-5 rounded-md bg-gray-150">
                 Subscribers name
               </li>
-              <li className="py-2 px-4 rounded-md bg-gray-150">
+              <li className="py-3 px-5 rounded-md bg-gray-150">
                 Subscribers name
               </li>
-              <li className="py-2 px-4 rounded-md bg-gray-150">
+              <li className="py-3 px-5 rounded-md bg-gray-150">
                 Subscribers name
               </li>
             </ul>
             <button className="flex items-center gap-2 mr-auto ml-2 font-bold">
               See all
-              <AppIcon icon="greater-than" width={10} />
+              <AppIcon icon="greater-than" width={16} className="text-black-1 font-extrabold" />
             </button>
           </div>
         </div>

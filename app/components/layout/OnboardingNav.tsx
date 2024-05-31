@@ -42,22 +42,22 @@ export default function OnboardingNav() {
             <Link href="/community">Community</Link>
           </li>
           <li className="py-1.5">
-            <a>Pre-Sell</a>
+            <a href="/subscription">Pre-Sell</a>
           </li>
           <li className="py-1.5">
-            <a>Advertising with us</a>
+            <a href="/advertising-with-us">Advertising with us</a>
           </li>
           <li className="py-1.5">
-            <a>Be part of our team</a>
+            <a href="/be-part-of-our-team">Be part of our team</a>
           </li>
           <li className="py-1.5">
             <Link href="/contact">Contact us</Link>
           </li>
           <li className="py-1.5">
-            <a>API</a>
+            <a href="/api">API</a>
           </li>
           <li className="py-1.5">
-            <a>Privacy, terms and conditions</a>
+            <a href="/terms-and-conditions">Privacy, terms and conditions</a>
           </li>
         </ul>
       </div>
