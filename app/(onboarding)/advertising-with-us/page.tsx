@@ -55,6 +55,7 @@ export default function AdvertisingWithUs() {
         </h2>
         <div>
           <ul className="flex gap-3 overflow-auto w-full mx-auto hide-scroll-bar">
+            <li className="w-4"/>
             <li className="w-32 h-32 md:w-44 md:h-44 relative flex-grow flex-shrink-0">
               <Image
                 src="/advertising-with-us/our-client-urban-stove.png"
@@ -109,6 +110,7 @@ export default function AdvertisingWithUs() {
                 sizes="100%"
               />
             </li>
+            <li className="w-4"/>
           </ul>
         </div>
       </section>

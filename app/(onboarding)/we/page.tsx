@@ -8,7 +8,7 @@ export default function We() {
         <img
           src="/we/about-us.png"
           alt="About Us"
-          className="md:order-2 mb-8 xl:ml-auto xl:w-5/6"
+          className="md:order-2 mb-8 xl:ml-auto w-4/5 mx-auto xl:w-5/6"
         />
         <div>
           <h2 className="text-primary-1 mb-8">About us?</h2>

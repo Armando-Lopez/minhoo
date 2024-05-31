@@ -5,7 +5,7 @@ export default function BePartOfOurTeam() {
   return (
     <div className="mb-24">
       <section className="lg:flex gap-5 mb-16">
-        <div className="relative mb-16">
+        <div className="relative mb-10 lg:mb-16">
           <img
             src="/be-part-of-our-team/be-part-of-our-team.png"
             alt="Be part of our team"
@@ -32,7 +32,7 @@ export default function BePartOfOurTeam() {
         </div>
       </section>
       <div className="mb-24">
-        <h2 className="mb-6 text-center text-primary-1 font-bold">
+        <h2 className="mb-6 lg:text-center text-primary-1 font-bold">
           <span className="text-black-1">We&apos;re only</span> looking
           for you!
         </h2>
@@ -43,15 +43,15 @@ export default function BePartOfOurTeam() {
         />
       </div>
       <section className="max-w-xl mx-auto mb-16">
-        <h2 className="mb-8 text-center text-primary-1 font-bold">
+        <h2 className="mb-8 lg:text-center text-primary-1 font-bold">
           <span className="text-black-1">Let&apos;s talk</span>{" "}
           business
         </h2>
-        <p className="mb-8 text-black-1">
+        <p className="mb-8 text-black-1 lg:text-center">
           If you are interested leave us your contact information and we will
           contact you to arrange a meeting to discuss the details.
         </p>
-        <strong className="text-center block">Contact us at info@minhoo.com</strong>
+        <strong className="lg:text-center block">Contact us at info@minhoo.com</strong>
       </section>
     </div>
   );

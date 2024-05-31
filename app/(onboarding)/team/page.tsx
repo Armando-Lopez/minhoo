@@ -4,7 +4,7 @@ export default function Team() {
   return (
     <div className="container-secondary text-center mb-24 md:mb-36">
       <h1>Team</h1>
-      <p className="mt-8">
+      <p className="mt-5">
         To achieve 100,000 daily active users on the app within 24 months from
         its launch.
       </p>
