@@ -20,6 +20,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  @apply text-[32px] lg:text-[40px];
   line-height: 44.4px;
   font-weight: bold;
 }
