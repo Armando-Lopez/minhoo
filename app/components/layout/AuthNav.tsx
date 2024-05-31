@@ -1,7 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import AppIcon from "../shared/AppIcon";
+import AppPopover from "../shared/AppPopover";
+import AppSwitch from "../shared/form/AppSwitch";
+import { useNotifications } from "@/hooks/useNotifications";
 
 export default function AuthNav() {
+  const notifications = useNotifications();
+  const [allowNotifications, setAllowNotifications] = useState(
+    notifications.hasPermission
+  );
+
+  function activateNotifications(value: boolean) {
+    setAllowNotifications(value);
+    if (value) {
+      notifications.activateNotifications(true);
+    }
+  }
+
   return (
     <nav className="flex-grow flex flex-col pl-4 pb-5">
       <ul className="flex-grow flex flex-col gap-7 text-gray-1">
@@ -54,68 +70,66 @@ export default function AuthNav() {
         </li>
       </ul>
       <div className="mt-auto">
-        <button
-          id="main-nav-action"
-          data-dropdown-toggle="main-nav-dropdown"
-          className="app-button flex items-center gap-3 text-gray-1"
-          data-dropdown-placement="top"
-          type="button"
+        <AppPopover
+          placement="top-end"
+          content={
+            <div className="bg-gray-150 px-6 py-9">
+              <ul className="flex gap-4 flex-col">
+                <li className="flex gap-3">
+                  <AppIcon
+                    icon="notification"
+                    className="text-primary-1"
+                    width="25"
+                  />
+                  <div>
+                    <p>Minhoo notifications</p>
+                    <p className="text-xs text-gray-1">
+                      Turn {allowNotifications ? "off" : "on"} incoming order
+                      notifications
+                    </p>
+                  </div>
+                  <div className="ml-auto">
+                    <AppSwitch
+                      id="allow-notifications-check"
+                      checked={allowNotifications}
+                      onChange={(val) => activateNotifications(val)}
+                    />
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <AppIcon icon="share" className="text-primary-1" width="25" />
+                  <p>Share profile</p>
+                </li>
+                <li className="flex gap-3">
+                  <AppIcon
+                    icon="book-mark"
+                    className="text-primary-1"
+                    width="25"
+                  />
+                  <p>Saved</p>
+                </li>
+                <li className="flex gap-3">
+                  <AppIcon
+                    icon="settings"
+                    className="text-primary-1"
+                    width="25"
+                  />
+                  <div>
+                    <p>Settings</p>
+                    <p className="text-xs text-gray-1">
+                      Account, wallet, help, about, language and more
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          }
         >
-          <AppIcon icon="menu" width="32" className="translate-y-1" />
-          More
-        </button>
-
-        <div id="main-nav-dropdown" className="z-10 hidden pl-20">
-          <div className="w-96 bg-gray-150 rounded-3xl px-6 py-9 shadow-md">
-            <ul className="flex gap-4 flex-col">
-              <li className="flex gap-3">
-                <AppIcon
-                  icon="notification"
-                  className="text-primary-1"
-                  width="25"
-                />
-                <div>
-                  <p>Minhoo notifications</p>
-                  <p className="text-xs text-gray-1">
-                    {/* Turn {{ allowNotifications ? "off" : "on" }} incoming order */}
-                    notifications
-                  </p>
-                </div>
-                {/* <app-switch
-              className="ml-auto"
-              [value]="allowNotifications"
-              size="large"
-              (valueChange)="activateNotifications($event)"
-            /> */}
-              </li>
-              <li className="flex gap-3">
-                <AppIcon icon="share" className="text-primary-1" width="25" />
-                <p>Share profile</p>
-              </li>
-              <li className="flex gap-3">
-                <AppIcon
-                  icon="book-mark"
-                  className="text-primary-1"
-                  width="25"
-                />
-                <p>Saved</p>
-              </li>
-              <li className="flex gap-3">
-                <AppIcon
-                  icon="settings"
-                  className="text-primary-1"
-                  width="25"
-                />
-                <div>
-                  <p>Settings</p>
-                  <p className="text-xs text-gray-1">
-                    Account, wallet, help, about, language and more
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <button className="app-button flex items-center gap-3 text-gray-1">
+            <AppIcon icon="menu" width="32" className="translate-y-1" />
+            More
+          </button>
+        </AppPopover>
       </div>
     </nav>
   );
