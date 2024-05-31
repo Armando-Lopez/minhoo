@@ -64,7 +64,7 @@ export default function Api() {
       </section>
 
       <section className="order-3 col-span-12 lg:mt-20">
-        <ul className="flex flex-wrap justify-center md:justify-start gap-y-14 gap-x-5 w-full">
+        <ul className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-y-14 gap-x-5 w-full">
           <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
             <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
@@ -78,7 +78,7 @@ export default function Api() {
             <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
                 url="https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87"
-                title="What is Minhoo"
+                title="Request services"
               />
             </div>
             <strong className="md:text-xl">Request services</strong>
@@ -87,7 +87,7 @@ export default function Api() {
             <div className="relative w-full h-full mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
                 url="https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87"
-                title="What is Minhoo"
+                title="Offering services"
               />
             </div>
             <strong className="md:text-xl">Offering services</strong>
