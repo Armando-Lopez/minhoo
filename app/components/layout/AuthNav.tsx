@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import AppIcon from "../shared/AppIcon";
-import AppPopover from "../shared/AppPopover";
-import AppSwitch from "../shared/form/AppSwitch";
+import AppPopover from "@/components/shared/AppPopover";
+import AppSwitch from "@/components/shared/form/AppSwitch";
 import { useNotifications } from "@/hooks/useNotifications";
+import AppButton from "@/components/shared/AppButton";
 
 export default function AuthNav() {
   const notifications = useNotifications();
@@ -58,7 +59,11 @@ export default function AuthNav() {
           </a>
         </li>
         <li>
-          <button className="app-button app-button--primary flex items-center justify-center gap-2 w-48 text-black-1">
+          <AppButton
+            id="create-post"
+            name="create post"
+            className="app-button app-button--primary flex items-center justify-center gap-2 w-48 text-black-1"
+          >
             <AppIcon
               icon="plus"
               width="20"
@@ -66,14 +71,14 @@ export default function AuthNav() {
               className="translate-y-1"
             />
             Create
-          </button>
+          </AppButton>
         </li>
       </ul>
       <div className="mt-auto">
         <AppPopover
           placement="top-end"
           content={
-            <div className="bg-gray-150 px-6 py-9">
+            <div className="bg-gray-150 px-5 py-9 w-96">
               <ul className="flex gap-4 flex-col">
                 <li className="flex gap-3">
                   <AppIcon
@@ -125,10 +130,14 @@ export default function AuthNav() {
             </div>
           }
         >
-          <button className="app-button flex items-center gap-3 text-gray-1">
+          <AppButton
+            name="more options"
+            id="more-options"
+            className="app-button flex items-center gap-3 text-gray-1"
+          >
             <AppIcon icon="menu" width="32" className="translate-y-1" />
             More
-          </button>
+          </AppButton>
         </AppPopover>
       </div>
     </nav>

@@ -1,3 +1,4 @@
+import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
 
@@ -11,10 +12,14 @@ export default function Subscription() {
             alt=""
             className="xl:max-w-[870px] mb-10 lg:mb-0"
           />
-          <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-3 py-5 px-10 rounded-full bg-white text-primary-1 font-semibold">
+          <AppButton
+            id="play-video"
+            name="play video"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-3 py-5 px-10 rounded-full bg-white text-primary-1 font-semibold"
+          >
             <AppIcon icon="play" width={20} />
             Visualize project
-          </button>
+          </AppButton>
         </div>
         <div className="w-full">
           <div className="flex flex-col justify-center items-center gap-5 px-3 py-7 rounded-xl bg-white h-full">

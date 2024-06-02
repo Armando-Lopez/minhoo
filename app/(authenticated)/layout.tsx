@@ -12,7 +12,7 @@ export default function AuthenticatedLayout({
       <div className="container flex-grow grid grid-cols-12">
         <div className="col-span-3 h-full flex flex-col items-cnter">
           <header className="mb-8 pt-4">
-            <img src="/minhoo-logo.svg" alt="minhoo-logo" />
+            <img src="/minhoo-horizontal-logo.png" alt="minhoo horizontal logo" />
           </header>
           <AuthNav />
         </div>

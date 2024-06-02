@@ -12,7 +12,7 @@ export default function OnboardingLayout({
       <div className="container min-h-svh mx-auto flex flex-col justify-between">
         <header className="py-3 bg-gray-150 pb-8 flex justify-between">
           <a href="/" className="mt-[19px]">
-            <img src="/minhoo-logo.svg" alt="minhoo-logo" className="w-32" />
+            <img src="/minhoo-horizontal-logo.png" alt="minhoo horizontal logo" className="w-32" />
           </a>
           <OnboardingNav />
         </header>

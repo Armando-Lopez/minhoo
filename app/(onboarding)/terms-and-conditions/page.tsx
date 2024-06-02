@@ -1,6 +1,7 @@
 "use client";
+import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
-import { TabContent, TabLabel, TabWrapper } from "@/components/shared/AppTabs";
+import { AppTabContent, AppTabLabel, AppTabWrapper } from "@/components/shared/AppTabs";
 import { useBreakpoints } from "@/hooks/useBreakpoints";
 import React, { useEffect, useState } from "react";
 
@@ -14,7 +15,7 @@ export default function PrivacyTermsAndConditions() {
   }, [lg]);
   return (
     <div className="grid grid-cols-12 gap-4 mb-10">
-      <TabWrapper
+      <AppTabWrapper
         tabClass="flex justify-between w-full p-2 rounded-md"
         activeTabClass="bg-primary-1"
         value={tab}
@@ -23,35 +24,37 @@ export default function PrivacyTermsAndConditions() {
         <div className="col-span-12 lg:col-span-3 flex flex-col gap-4">
           {tab && !lg ? null : (
             <>
-              <TabLabel name="legal-terms">
+              <AppTabLabel name="legal-terms">
                 <span className="flex gap-3 items-center">
                   <AppIcon icon="shield" width={24} />
                   Legal terms
                 </span>
                 <AppIcon icon="greater-than" width={20} className="lg:hidden" />
-              </TabLabel>
-              <TabLabel name="privacy-and-data">
+              </AppTabLabel>
+              <AppTabLabel name="privacy-and-data">
                 <span className="flex gap-3 items-center">
                   <AppIcon icon="lock" width={24} />
                   Privacy and Data
                 </span>
                 <AppIcon icon="greater-than" width={20} className="lg:hidden" />
-              </TabLabel>
+              </AppTabLabel>
             </>
           )}
           {tab && !lg && (
             <div>
-              <button
+              <AppButton
+                id="back"
+                name="back to list"
                 className="font-semibold"
                 onClick={() => setTab(undefined)}
               >
                 Back
-              </button>
+              </AppButton>
             </div>
           )}
         </div>
         <div className="col-span-12 lg:col-span-9 mt-4">
-          <TabContent name="legal-terms">
+          <AppTabContent name="legal-terms">
             <h3 className="text-3xl md:text-4xl">Legal terms</h3>
             <strong className="block my-1">Minhoo.app</strong>
             <section>
@@ -108,8 +111,8 @@ export default function PrivacyTermsAndConditions() {
                 you not to register.
               </p>
             </section>
-          </TabContent>
-          <TabContent name="privacy-and-data">
+          </AppTabContent>
+          <AppTabContent name="privacy-and-data">
             <h3 className="text-3xl md:text-4xl">
               Privacy and Data Protection Policy
             </h3>
@@ -596,9 +599,9 @@ export default function PrivacyTermsAndConditions() {
                 from 1:30 pm to 5:30 pm).
               </p>
             </section>
-          </TabContent>
+          </AppTabContent>
         </div>
-      </TabWrapper>
+      </AppTabWrapper>
     </div>
   );
 }

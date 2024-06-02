@@ -1,3 +1,12 @@
+"use client"
+
+/** 
+* Use this hook send desktop notification 
+* @returns notification object
+* @returns {object} object.hasPermission() - get if browser has notification permissions
+* @returns {object} object.activateNotifications(notifySuccess: boolean = false) - request notification permissions
+* @returns {object} object.notify() - send notification using native notification params
+*/
 export const useNotifications = () => {
   const granted = 'granted';
 

@@ -1,16 +1,19 @@
 "use client";
 import React from "react";
 
+
+/** 
+* @component **AppSwitch**: Use switch to toggle values  
+* 
+* @param {Props} props - Component props
+* @param {string} props.id - required id
+* @param {boolean} props.checked - whether checked or no
+*/
 export default function AppSwitch({
   id,
   checked,
   onChange,
-}: {
-  id: string;
-  checked: boolean;
-  // eslint-disable-next-line no-unused-vars
-  onChange: (checked: boolean) => void;
-}) {
+}: Props) {
   return (
     <label
       htmlFor={id}
@@ -32,4 +35,11 @@ export default function AppSwitch({
       ></span>
     </label>
   );
+}
+
+interface Props {
+  id: string;
+  checked: boolean;
+  // eslint-disable-next-line no-unused-vars
+  onChange: (value: boolean) => void;
 }

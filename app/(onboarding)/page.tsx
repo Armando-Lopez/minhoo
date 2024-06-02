@@ -1,3 +1,4 @@
+import AppButton from "@/components/shared/AppButton";
 import React from "react";
 
 export default function Home() {
@@ -5,7 +6,12 @@ export default function Home() {
     <section className="flex-grow">
       <div className="lg:grid lg:grid-cols-2 xl:gap-28 2xl:gap-0 container-secondary lg:mx-auto pb-16 lg:pb-5">
         <div>
-          <video autoPlay loop muted className="mx-auto xl:mr-0 xl:max-w-[580px]">
+          <video
+            autoPlay
+            loop
+            muted
+            className="mx-auto xl:mr-0 xl:max-w-[580px]"
+          >
             <source src="/home/banner.mp4" type="video/mp4" />
             Tu navegador no soporta el formato de video.
           </video>
@@ -16,7 +22,11 @@ export default function Home() {
               Coming Soon
             </h2>
             <div className="grid gap-3">
-              <button className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto">
+              <AppButton
+                id="down-load-app"
+                name="down  load app"
+                className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto"
+              >
                 <img
                   src="/home/logo-apple.png"
                   alt="Logo Apple"
@@ -26,8 +36,12 @@ export default function Home() {
                   Download on the{" "}
                   <span className="block text-sm">App Store</span>
                 </p>
-              </button>
-              <button className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto">
+              </AppButton>
+              <AppButton
+                id="get-on-gp"
+                name="get it on Google Play"
+                className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto"
+              >
                 <img
                   src="/home/logo-google-play.png"
                   alt="Logo Google Play"
@@ -36,7 +50,7 @@ export default function Home() {
                 <p className="text-[8px] text-left">
                   GET IT ON <span className="block text-sm">Google Play</span>
                 </p>
-              </button>
+              </AppButton>
             </div>
           </div>
         </div>

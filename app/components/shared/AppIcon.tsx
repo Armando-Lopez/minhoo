@@ -2,14 +2,26 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-type AppIconProps = {
-  icon: string;
-  height?: string | number;
-  width?: string | number;
-  flip?: string;
-  className?: string;
-}
-
+/** 
+* A Custom component to display icons.
+* Icons are from iconify and have a custom name locally.
+*@see https://iconify.design/
+*@param {AppIconProps} props
+*@param {string|number} [props.icon] - Icon name
+*@param {string|number} [props.width]
+*@param {string|number} [props.height]
+*@param {string|number} [props.flip]
+*@param {string|number} [props.className]
+*@example
+* ```tsx
+* <AppIcon
+    icon="notification"
+    className="text-primary-1 mb-5"
+    height="30"
+    width="25"
+  />
+* ```
+*/
 export default function AppIcon({
   icon,
   width,
@@ -44,7 +56,7 @@ export default function AppIcon({
     "vertical-dots": "tabler:dots-vertical",
     play: "solar:play-bold",
     "greater-than": "hugeicons:greater-than",
-    "shield": "ic:sharp-shield",
+    shield: "ic:sharp-shield",
     lock: "mingcute:lock-fill",
   }[icon] as string;
 
@@ -57,4 +69,12 @@ export default function AppIcon({
       className={className}
     />
   );
+}
+
+interface AppIconProps {
+  icon: string;
+  height?: string | number;
+  width?: string | number;
+  flip?: string;
+  className?: string;
 }

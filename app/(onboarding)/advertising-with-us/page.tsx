@@ -1,3 +1,4 @@
+import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import Image from "next/image";
 import React from "react";
@@ -12,10 +13,14 @@ export default function AdvertisingWithUs() {
             alt="Advertising with us"
             className="xl:max-w-[870px] mb-10 lg:mb-0 border-radius"
           />
-          <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold">
+          <AppButton
+            id="play-video"
+            name="play video"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold"
+          >
             <AppIcon icon="play" width={20} />
             Visualize
-          </button>
+          </AppButton>
         </div>
         <div className="text-black-1">
           <h2 className="mb-3 lg:mb-8 text-center md:text-left text-primary-1 font-bold">
@@ -55,7 +60,7 @@ export default function AdvertisingWithUs() {
         </h2>
         <div>
           <ul className="flex gap-3 overflow-auto w-full mx-auto hide-scroll-bar">
-            <li className="w-4"/>
+            <li className="w-4" />
             <li className="w-32 h-32 md:w-44 md:h-44 relative flex-grow flex-shrink-0">
               <Image
                 src="/advertising-with-us/our-client-urban-stove.png"
@@ -110,7 +115,7 @@ export default function AdvertisingWithUs() {
                 sizes="100%"
               />
             </li>
-            <li className="w-4"/>
+            <li className="w-4" />
           </ul>
         </div>
       </section>

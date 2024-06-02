@@ -1,15 +1,15 @@
 import React from "react";
-
-export default function AppVideoViewer({
-  url,
-  title,
-}: {
-  url: string;
-  title: string;
-}) {
+/**
+ * Display videos.
+ * @param {Props} props - Component props
+ * @param {string} props.url - video url
+ * @param {string} props.title - accessible title
+ * @param {string} props.title - CSS class
+ */
+export default function AppVideoViewer({ url, title, className }: Props) {
   return (
     <>
-      <video controls title={title} width="100%">
+      <video controls title={title} width="100%" className={className}>
         <source src={url} type="video/mp4" />
       </video>
       {/* <iframe
@@ -22,4 +22,10 @@ export default function AppVideoViewer({
       ></iframe> */}
     </>
   );
+}
+
+interface Props {
+  url: string;
+  title: string;
+  className?: string;
 }

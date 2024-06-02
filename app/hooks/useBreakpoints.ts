@@ -8,6 +8,15 @@ const screens = {
   "2xl": "1536px",
 };
 
+/** 
+* Use this hook to check screen breakpoint  
+* This uses the same tailwindcss break points for css classes
+* @see https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints
+* @example
+  const { lg } = useBreakpoints();
+  "lg is true is screen is lg size and up"
+* 
+*/
 export const useBreakpoints = () => {
   function checkAll() {
     if (typeof window === "undefined") {

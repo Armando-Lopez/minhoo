@@ -1,3 +1,4 @@
+import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
 
@@ -11,10 +12,14 @@ export default function BePartOfOurTeam() {
             alt="Be part of our team"
             className="xl:max-w-[870px] border-radius"
           />
-          <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold">
+          <AppButton
+            id="play-video"
+            name="play video"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold"
+          >
             <AppIcon icon="play" width={20} />
             Visualize
-          </button>
+          </AppButton>
         </div>
         <div className="">
           <h2 className="mb-8 text-center md:text-left text-primary-1 font-bold">
@@ -33,8 +38,7 @@ export default function BePartOfOurTeam() {
       </section>
       <div className="mb-24">
         <h2 className="mb-6 lg:text-center text-primary-1 font-bold">
-          <span className="text-black-1">We&apos;re only</span> looking
-          for you!
+          <span className="text-black-1">We&apos;re only</span> looking for you!
         </h2>
         <img
           src="be-part-of-our-team/we-are-only-looking-for-you.png"
@@ -44,14 +48,15 @@ export default function BePartOfOurTeam() {
       </div>
       <section className="max-w-xl mx-auto mb-16">
         <h2 className="mb-8 lg:text-center text-primary-1 font-bold">
-          <span className="text-black-1">Let&apos;s talk</span>{" "}
-          business
+          <span className="text-black-1">Let&apos;s talk</span> business
         </h2>
         <p className="mb-8 text-black-1 lg:text-center">
           If you are interested leave us your contact information and we will
           contact you to arrange a meeting to discuss the details.
         </p>
-        <strong className="lg:text-center block">Contact us at info@minhoo.com</strong>
+        <strong className="lg:text-center block">
+          Contact us at info@minhoo.com
+        </strong>
       </section>
     </div>
   );
