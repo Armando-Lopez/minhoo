@@ -68,6 +68,7 @@ export default function Api() {
           <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
             <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
+              className="aspect-video"
                 url="https://player.vimeo.com/progressive_redirect/playback/902643627/rendition/1080p/file.mp4?loc=external&signature=f56c9ee59933e25b58d61a13bd045e5e720732a85f8ad8e32125ee558772945e"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87",
@@ -80,6 +81,7 @@ export default function Api() {
           <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
             <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
+              className="aspect-video"
                 url="https://player.vimeo.com/progressive_redirect/playback/902643627/rendition/1080p/file.mp4?loc=external&signature=f56c9ee59933e25b58d61a13bd045e5e720732a85f8ad8e32125ee558772945e"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87",
@@ -92,6 +94,7 @@ export default function Api() {
           <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
             <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
+              className="aspect-video"
                 url="https://player.vimeo.com/progressive_redirect/playback/902643627/rendition/1080p/file.mp4?loc=external&signature=f56c9ee59933e25b58d61a13bd045e5e720732a85f8ad8e32125ee558772945e"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87",
