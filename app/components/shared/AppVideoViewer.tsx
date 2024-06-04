@@ -9,7 +9,13 @@ import React from "react";
 export default function AppVideoViewer({ url, title, className }: Props) {
   return (
     <>
-      <video controls title={title} width="100%" className={className}>
+      <video
+        controls
+        title={title}
+        width="100%"
+        className={className}
+        playsInline
+      >
         <source src={url} type="video/mp4" />
       </video>
       {/* <iframe
