@@ -10,7 +10,7 @@ export default function Api() {
           <Image
             src="/api/app-mobile-ui.png"
             alt="Minhoo mobile app"
-            className="mx-auto"
+            className="mx-auto z-0"
             fill
             sizes="100%"
             priority

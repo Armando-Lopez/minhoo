@@ -14,7 +14,7 @@ export default function OnboardingNav() {
     <div>
       <label
         htmlFor="app-drawer"
-        className="block h-fit text-black p-3 cursor-pointer"
+        className="fixed md:relative z-50 right-4 block h-fit text-black p-3 cursor-pointer bg-gray-150"
         title="open menu"
         tabIndex={0}
       >
