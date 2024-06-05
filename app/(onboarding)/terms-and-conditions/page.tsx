@@ -48,7 +48,7 @@ export default function PrivacyTermsAndConditions() {
                 className="font-semibold"
                 onClick={() => setTab(undefined)}
               >
-                Back
+                Backsss
               </AppButton>
             </div>
           )}
