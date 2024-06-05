@@ -28,7 +28,7 @@ export default function OnboardingNav() {
       />
       <label
         htmlFor="app-drawer"
-        className="hidden peer-checked:block bg-gray-900/50 fixed inset-0 z-30"
+        className="hidden peer-checked:block bg-gray-900/20 fixed inset-0 z-30"
       ></label>
       <div
         className="fixed top-0 right-0 z-40 h-screen pt-8 overflow-y-auto transition-transform translate-x-full peer-checked:translate-x-0 bg-gray-150 w-11/12 md:w-[29%] xl:w-3/12"
@@ -92,7 +92,7 @@ export default function OnboardingNav() {
                 Community
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/subscription"
                 title="Pre-Sell"
@@ -101,7 +101,7 @@ export default function OnboardingNav() {
               >
                 Pre-Sell
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/advertising-with-us"

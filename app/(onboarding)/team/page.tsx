@@ -20,6 +20,15 @@ export default function Team() {
         </div>
         <div className="lg:text-left">
           <img
+            src="/team/mila.jpg"
+            alt="Eder Oquendo"
+            className="border-radius"
+          />
+          <p className="font-bold text-xl mt-5">Camila Cassari</p>
+          <p>Marketing Lead</p>
+        </div>
+        <div className="lg:text-left">
+          <img
             src="/team/sergio-gil.jpg"
             alt="Sergio Gil"
             className="border-radius"
@@ -44,6 +53,15 @@ export default function Team() {
           />
           <p className="font-bold text-xl mt-5">Wildelmy Colina</p>
           <p>Frontend Developer</p>
+        </div>
+        <div className="lg:text-left">
+          <img
+            src="/team/mauricio.jpg"
+            alt="Mauricio Jiménez"
+            className="border-radius"
+          />
+          <p className="font-bold text-xl mt-5">Mauricio Jiménez</p>
+          <p>Creative Lead</p>
         </div>
         <div className="lg:text-left">
           <img
