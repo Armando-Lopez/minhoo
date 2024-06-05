@@ -18,7 +18,7 @@ export default function OnboardingNav() {
         title="open menu"
         tabIndex={0}
       >
-        <AppIcon icon="menu" width="35" className="mt-1.5" />
+        <AppIcon icon="menu" width="35" />
       </label>
       <input
         ref={drawerActivator}
