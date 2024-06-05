@@ -29,14 +29,14 @@ export default function PrivacyTermsAndConditions() {
                   <AppIcon icon="shield" width={24} />
                   Legal terms
                 </span>
-                <AppIcon icon="greater-than" width={20} className="lg:hidden" />
+                <AppIcon icon="greater-than" width={20} className="lg:hidden rotate-90" />
               </AppTabLabel>
               <AppTabLabel name="privacy-and-data">
                 <span className="flex gap-3 items-center">
                   <AppIcon icon="lock" width={24} />
                   Privacy and Data
                 </span>
-                <AppIcon icon="greater-than" width={20} className="lg:hidden" />
+                <AppIcon icon="greater-than" width={20} className="lg:hidden rotate-90" />
               </AppTabLabel>
             </>
           )}
@@ -48,7 +48,7 @@ export default function PrivacyTermsAndConditions() {
                 className="font-semibold"
                 onClick={() => setTab(undefined)}
               >
-                Back
+                Backsss
               </AppButton>
             </div>
           )}

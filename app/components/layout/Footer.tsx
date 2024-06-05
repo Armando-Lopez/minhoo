@@ -10,7 +10,7 @@ export default function Footer() {
       <Link href="/we">We</Link>
       <Link href="/team">Team</Link>
       <Link href="/community">Community</Link>
-      <Link href="/subscription">Pre-Sell</Link>
+      {/* <Link href="/subscription">Pre-Sell</Link> */}
       <Link href="/advertising-with-us">Advertising with us</Link>
       <Link href="/be-part-of-our-team">Be part of our team</Link>
       <Link href="/contact">Contact us</Link>
