@@ -38,6 +38,7 @@ export default function AppVideoViewer({
       <video
         controls
         title={title}
+        poster="/team/wildelmy-colina.jpg"
         width="100%"
         height="100%"
         className={className}

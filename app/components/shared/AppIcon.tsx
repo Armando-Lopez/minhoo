@@ -56,7 +56,7 @@ export default function AppIcon({
     "vertical-dots": "tabler:dots-vertical",
     play: "solar:play-bold",
     "greater-than": "oui:arrow-up",
-    shield: "ic:sharp-shield",
+    shield: "material-symbols:policy",
     lock: "mingcute:lock-fill",
   }[icon] as string;
 
