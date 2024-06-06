@@ -4,8 +4,8 @@ import React from "react";
 
 export default function Api() {
   return (
-    <div className="container grid grid-cols-12 gap-5 mb-24 md:mb-36">
-      <div className="order-1 lg:order-2 col-span-12 lg:col-span-5 mb-5">
+    <div className="grid grid-cols-12 gap-5 mb-24 md:mb-36">
+      <div className="container order-1 lg:order-2 col-span-12 lg:col-span-5 mb-5">
         <div className="relative w-60 h-80 md:w-[25rem] md:h-[35rem] mx-auto lg:ml-auto lg:mr-0">
           <Image
             src="/api/app-mobile-ui.png"
@@ -17,7 +17,7 @@ export default function Api() {
           />
         </div>
       </div>
-      <section className="order-2 lg:order-1 col-span-12 lg:col-span-7">
+      <section className="container order-2 lg:order-1 col-span-12 lg:col-span-7">
         <h2 className="mb-8 text-primary-1">
           <span className="block md:inline text-black-1">The Minhoo </span>
           platform
