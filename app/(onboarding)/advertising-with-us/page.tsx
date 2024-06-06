@@ -6,7 +6,7 @@ import React from "react";
 export default function AdvertisingWithUs() {
   return (
     <div className="mb-24 md:mb-36">
-      <section className="lg:flex gap-5">
+      <section className="container lg:flex gap-5">
         <div className="relative">
           <img
             src="/advertising-with-us/advertising-with-us.png"
@@ -37,7 +37,7 @@ export default function AdvertisingWithUs() {
           </p>
         </div>
       </section>
-      <section className="mx-auto my-24 lg:my-36 lg:text-center">
+      <section className="container mx-auto my-24 lg:my-36 lg:text-center">
         <h2 className="mb-8 font-bold text-primary-1 text-center">
           <span className="block md:inline text-black-1">Tell us about</span>{" "}
           your business

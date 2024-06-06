@@ -4,7 +4,7 @@ import React from "react";
 
 export default function BePartOfOurTeam() {
   return (
-    <div className="mb-24">
+    <div className="container mb-24">
       <section className="lg:flex gap-5 mb-16">
         <div className="relative mb-10 lg:mb-16">
           <img

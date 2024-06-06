@@ -2,7 +2,7 @@ import React from "react";
 
 export default function We() {
   return (
-    <div className="mb-24 md:mb-36  container-secondary">
+    <div className="mb-24 md:mb-36 container-secondary">
       <h1 className="text-center">We</h1>
       <div className="grid md:grid-cols-2 md:gap-10 xl:gap-16 mb-16 lg:mb-0 md:items-center">
         <img

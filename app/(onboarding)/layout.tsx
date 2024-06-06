@@ -40,7 +40,7 @@ export default function OnboardingLayout({
             <OnboardingNav />
           </div>
         </header>
-        <main className="flex-grow container">{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </div>
     </div>

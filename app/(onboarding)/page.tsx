@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <section className="flex-grow">
+    <section className="flex-grow container">
       <div className="lg:grid lg:grid-cols-2 xl:gap-28 2xl:gap-0 container-secondary lg:mx-auto pb-16 lg:pb-5">
         <div>
           <video
