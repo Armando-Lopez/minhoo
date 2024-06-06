@@ -63,25 +63,98 @@ export default function Api() {
         </div>
       </section>
 
-      <section className="order-3 col-span-12 lg:mt-20">
-        <ul className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-y-12 gap-x-5 w-full">
-          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
-            <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
+      {/* <section className="order-3 col-span-12 lg:mt-20">
+        <div>
+          <ul className="flex gap-3 overflow-auto w-full mx-auto hide-scroll-bar">
+            <li className="w-4" />
+            <li className="relative flex-grow flex-shrink-0">
               <AppVideoViewer
-              className="aspect-video"
+                className="aspect-video"
+                poster="/team/mila.jpg"
+                posterBreakpoints={{
+                  lg: "/public/team/sergio-gil.jpg",
+                }}
                 url="https://player.vimeo.com/progressive_redirect/playback/902643841/rendition/720p/file.mp4?loc=external&signature=adb305b1df217639111a14cc995b5d1313a8310a27737c989e98eba6b439e5f9"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902643841/rendition/720p/file.mp4?loc=external&signature=adb305b1df217639111a14cc995b5d1313a8310a27737c989e98eba6b439e5f9",
                 }}
                 title="What is Minhoo"
               />
+            </li>
+            <li className="relative flex-grow flex-shrink-0">
+              <Image
+                src="/advertising-with-us/our-client-the-bartlett.png"
+                alt="Our client The Bartlett logo"
+                title="The Bartlett"
+                fill
+                sizes="100%"
+              />
+            </li>
+
+            <li className="w-4" />
+          </ul>
+        </div>
+      </section> */}
+
+      <section className="order-3 col-span-12 lg:mt-20">
+        <ul className="overflow-auto mx-auto hide-scroll-bar flex items-center  gap-y-12 gap-x-5 w-full">
+          {/* <li className="w-60" /> */}
+          <li className="text-center relative flex-grow flex-shrink-0">
+            <div className="relative mb-4 rounded-2xl overflow-hidden w-[231px] h-[390px]">
+              <AppVideoViewer
+                className="h-full"
+                poster="/api/what-is-minhoo.jpg"
+                posterBreakpoints={{
+                  lg: "/public/team/sergio-gil.jpg",
+                }}
+                url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0"
+                urlBreakpoints={{
+                  sm: "https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0",
+                }}
+                title="What is Minhoo"
+              />
             </div>
             <strong className="md:text-xl">What is Minhoo</strong>
           </li>
-          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
+          <li className="text-center relative flex-grow flex-shrink-0">
+            <div className="relative mb-4 rounded-2xl overflow-hidden w-[231px] h-[390px]">
+              <AppVideoViewer
+                className="h-full"
+                poster="/api/what-is-minhoo.jpg"
+                posterBreakpoints={{
+                  lg: "/public/team/sergio-gil.jpg",
+                }}
+                url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0"
+                urlBreakpoints={{
+                  sm: "https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0",
+                }}
+                title="What is Minhoo"
+              />
+            </div>
+            <strong className="md:text-xl">What is Minhoo</strong>
+          </li>
+          <li className="text-center relative flex-grow flex-shrink-0">
+            <div className="relative mb-4 rounded-2xl overflow-hidden w-[231px] h-[390px]">
+              <AppVideoViewer
+                className="h-full"
+                poster="/api/what-is-minhoo.jpg"
+                posterBreakpoints={{
+                  lg: "/public/team/sergio-gil.jpg",
+                }}
+                url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0"
+                urlBreakpoints={{
+                  sm: "https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0",
+                }}
+                title="What is Minhoo"
+              />
+            </div>
+            <strong className="md:text-xl">What is Minhoo</strong>
+          </li>
+          {/* <li className="w-60 aspect-video text-center relative flex-grow flex-shrink-0">
             <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
-              className="aspect-video"
+                className="aspect-video"
+                poster="/team/wildelmy-colina.jpg"
                 url="https://player.vimeo.com/progressive_redirect/playback/902643627/rendition/1080p/file.mp4?loc=external&signature=f56c9ee59933e25b58d61a13bd045e5e720732a85f8ad8e32125ee558772945e"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87",
@@ -90,11 +163,12 @@ export default function Api() {
               />
             </div>
             <strong className="md:text-xl">Request services</strong>
-          </li>
-          <li className="flex-grow min-w-60 max-w-96 lg:max-w-none aspect-video text-center">
+          </li> */}
+          {/* <li className="w-60 aspect-video text-center relative flex-grow flex-shrink-0">
             <div className="relative w-fit h-fit mb-4 rounded-2xl overflow-hidden">
               <AppVideoViewer
-              className="aspect-video"
+                className="aspect-video"
+                poster="/team/wildelmy-colina.jpg"
                 url="https://player.vimeo.com/progressive_redirect/playback/902643627/rendition/1080p/file.mp4?loc=external&signature=f56c9ee59933e25b58d61a13bd045e5e720732a85f8ad8e32125ee558772945e"
                 urlBreakpoints={{
                   sm: "https://player.vimeo.com/progressive_redirect/playback/902466788/rendition/1080p/file.mp4?loc=external&signature=e23ababc35d0a32161dd7547f02c940af8d44714b637888f3b0f7771910cdc87",
@@ -103,7 +177,7 @@ export default function Api() {
               />
             </div>
             <strong className="md:text-xl">Offering services</strong>
-          </li>
+          </li> */}
         </ul>
       </section>
     </div>

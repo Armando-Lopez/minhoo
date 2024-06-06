@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-wrap gap-5 pb-7 text-gray-1 text-center justify-center text-xs leading-[8px]">
+    <footer className=" container flex flex-wrap gap-4 pb-7 text-gray-1 text-center justify-center text-xs leading-[8px]">
       <Link href="/" className="text-center">
         Home
       </Link>
