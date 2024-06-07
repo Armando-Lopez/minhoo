@@ -4,7 +4,7 @@ export default function Team() {
   return (
     <div className="container">
       <div className="container-secondary text-center mb-24 md:mb-36">
-        <h1>Teamffff</h1>
+        <h1>Team</h1>
         <p className="mt-5">
           To achieve 100,000 daily active users on the app within 24 months from
           its launch.
@@ -14,7 +14,7 @@ export default function Team() {
             <img
               src="/team/eder-oquendo.jpg"
               alt="Eder Oquendo"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Eder Oquendo</p>
             <p>CEO</p>
@@ -23,7 +23,7 @@ export default function Team() {
             <img
               src="/team/mila.jpg"
               alt="Eder Oquendo"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Camila Cassari</p>
             <p>Marketing Lead</p>
@@ -32,7 +32,7 @@ export default function Team() {
             <img
               src="/team/sergio-gil.jpg"
               alt="Sergio Gil"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Sergio Gil</p>
             <p>CTO</p>
@@ -41,7 +41,7 @@ export default function Team() {
             <img
               src="/team/miller-garcía.jpg"
               alt="Miller García"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Miller García</p>
             <p>Graphic Desiner / UI</p>
@@ -50,7 +50,7 @@ export default function Team() {
             <img
               src="/team/wildelmy-colina.jpg"
               alt="Wildelmy Colina"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Wildelmy Colina</p>
             <p>Frontend Developer</p>
@@ -59,7 +59,7 @@ export default function Team() {
             <img
               src="/team/mauricio.jpg"
               alt="Mauricio Jiménez"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Mauricio Jiménez</p>
             <p>Creative Lead</p>
@@ -68,7 +68,7 @@ export default function Team() {
             <img
               src="/team/robert-moreno.jpg"
               alt="Robert Moreno"
-              className="border-radius w-full"
+              className="border-radius"
             />
             <p className="font-bold text-xl mt-5">Robert Moreno</p>
             <p>Big Data</p>

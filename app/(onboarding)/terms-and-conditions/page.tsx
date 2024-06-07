@@ -46,8 +46,8 @@ export default function PrivacyTermsAndConditions() {
           value={tab}
           onChange={(val) => handleSetTab(val)}
         >
-          <div className="col-span-12 lg:col-span-3 flex flex-col gap-4">
-            {tab && !lg ? null : (
+          {tab && !lg ? null : (
+            <div className="col-span-12 lg:col-span-3 flex flex-col gap-4">
               <>
                 <AppTabLabel name="legal-terms">
                   <span className="flex gap-3 items-center">
@@ -72,9 +72,9 @@ export default function PrivacyTermsAndConditions() {
                   />
                 </AppTabLabel>
               </>
-            )}
-          </div>
-          <div className="col-span-12 lg:col-span-9 lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
+            </div>
+          )}
+          <div className="col-span-12 lg:col-span-9 lg:max-h-screen overflow-auto hide-scroll-bar">
             <AppTabContent name="legal-terms">
               <h3 className="text-3xl md:text-4xl">Legal terms</h3>
               <strong className="block my-1">Minhoo.app</strong>
