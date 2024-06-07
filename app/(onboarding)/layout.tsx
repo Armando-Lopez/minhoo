@@ -60,7 +60,7 @@ export default function OnboardingLayout({
                 <img
                   src="/minhoo-horizontal-logo.png"
                   alt="minhoo horizontal logo"
-                  className="w-32 -mt-1.5 lg:mt-0"
+                  className="w-32 -mt-1.5"
                 />
               </a>
             )}
