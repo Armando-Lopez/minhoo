@@ -1,46 +1,50 @@
 "use client";
-import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import {
   AppTabContent,
   AppTabLabel,
   AppTabWrapper,
 } from "@/components/shared/AppTabs";
+import eventBus from "@/eventbus";
 import { useBreakpoints } from "@/hooks/useBreakpoints";
 import React, { useEffect, useState } from "react";
 
 export default function PrivacyTermsAndConditions() {
   const { lg } = useBreakpoints();
   const [tab, setTab] = useState<string | undefined>(undefined);
+
   useEffect(() => {
     if (lg) {
       setTab("legal-terms");
     }
   }, [lg]);
+
+  useEffect(() => {
+    const unsubscribe = eventBus.subscribe("backToTermsItems", () => {
+      setTab(undefined);
+      eventBus.publish("onToggleShowTermsItem", false);
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  function handleSetTab(value: string) {
+    if (value) {
+      eventBus.publish("onToggleShowTermsItem", true);
+      setTab(value);
+    }
+  }
+
   return (
     <>
-      {!lg && tab && (
-        <div className={`w-full h-16 fixed z-10 top-0 pointer-events-none`}>
-          <div className="container">
-            <div className="bg-gray-150 w-1/2 h-20 pointer-events-auto">
-              <AppButton
-                id="back"
-                name="back to list"
-                className="absolute top-1/2 -translate-y-1/2"
-                onClick={() => setTab(undefined)}
-              >
-                <AppIcon icon="back" width={25} />
-              </AppButton>
-            </div>
-          </div>
-        </div>
-      )}
       <div className="container grid grid-cols-12 gap-4 mb-10">
         <AppTabWrapper
           tabClass="flex justify-between w-full p-2 rounded-md"
           activeTabClass="bg-primary-1"
           value={tab}
-          onChange={(val) => setTab(val)}
+          onChange={(val) => handleSetTab(val)}
         >
           <div className="col-span-12 lg:col-span-3 flex flex-col gap-4">
             {tab && !lg ? null : (
@@ -70,7 +74,7 @@ export default function PrivacyTermsAndConditions() {
               </>
             )}
           </div>
-          <div className="col-span-12 lg:col-span-9 max-h-[70dvh] lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
+          <div className="col-span-12 lg:col-span-9 max-h-[100dvh] lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
             <AppTabContent name="legal-terms">
               <h3 className="text-3xl md:text-4xl">Legal terms</h3>
               <strong className="block my-1">Minhoo.app</strong>
