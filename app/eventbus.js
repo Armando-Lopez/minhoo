@@ -8,7 +8,6 @@ class EventBus {
   }
   // publish event
   publish(eventName, ...args) {
-    console.log(eventName);
     // Get all the callback functions of the current event
     const callbackObject = this.eventObject[eventName];
 

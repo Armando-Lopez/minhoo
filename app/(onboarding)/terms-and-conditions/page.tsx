@@ -48,7 +48,7 @@ export default function PrivacyTermsAndConditions() {
         >
           {tab && !lg ? null : (
             <div className="col-span-12 lg:col-span-3 flex flex-col gap-4">
-              <>
+              <div className="sticky top-20">
                 <AppTabLabel name="legal-terms">
                   <span className="flex gap-3 items-center">
                     <AppIcon icon="shield" width={24} />
@@ -71,10 +71,10 @@ export default function PrivacyTermsAndConditions() {
                     className="lg:hidden rotate-90"
                   />
                 </AppTabLabel>
-              </>
+              </div>
             </div>
           )}
-          <div className="col-span-12 lg:col-span-9 lg:max-h-screen overflow-auto hide-scroll-bar">
+          <div className="col-span-12 lg:col-span-9">
             <AppTabContent name="legal-terms">
               <h3 className="text-3xl md:text-4xl">Legal terms</h3>
               <strong className="block my-1">Minhoo.app</strong>
