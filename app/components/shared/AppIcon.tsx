@@ -58,6 +58,7 @@ export default function AppIcon({
     "greater-than": "oui:arrow-up",
     shield: "material-symbols:policy",
     lock: "mingcute:lock-fill",
+    back: "ic:round-arrow-back-ios",
   }[icon] as string;
 
   return (
