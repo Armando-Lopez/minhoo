@@ -68,6 +68,7 @@ export default function Api() {
       <section className="order-3 col-span-12 lg:mt-20 lg:container">
         <ul className="overflow-auto lg:mx-auto hide-scroll-bar flex gap-y-12 gap-x-5 w-full">
           <li className="w-4" />
+
           <li className="text-center relative flex-grow flex-shrink-0">
             <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
               <AppVideoViewer
@@ -78,12 +79,54 @@ export default function Api() {
                 }}
                 url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/720p/file.mp4?loc=external&signature=c99abf8db7e6d4762d7fb638a2cf1c8cfc0099489a5ffd9510d90df7eec4a8d0"
                 urlBreakpoints={{
-                  lg: "https://player.vimeo.com/progressive_redirect/playback/902643841/rendition/720p/file.mp4?loc=external&signature=adb305b1df217639111a14cc995b5d1313a8310a27737c989e98eba6b439e5f9",
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/902463974/rendition/1080p/file.mp4?loc=external&signature=35a9b72d0b08beffa287fc537434b36836d03332db9eb85fcf44f6a0493a26dc",
                 }}
                 title="What is Minhoo"
               />
             </div>
-            <strong className="text-xl block w-[220px] lg:w-[378px]">What is Minhoo</strong>
+            <strong className="text-xl block w-[220px] lg:w-[378px]">
+              What is Minhoo
+            </strong>
+          </li>
+
+          <li className="text-center relative flex-grow flex-shrink-0">
+            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
+              <AppVideoViewer
+                className="w-full border-radius-20"
+                poster="/api/request-services.jpg"
+                posterBreakpoints={{
+                  lg: "/api/request-services-desktop.jpg",
+                }}
+                url="https://player.vimeo.com/progressive_redirect/playback/901389292/rendition/1080p/file.mp4?loc=external&signature=061f9dbb9c6d6c8f1e18c03a7e154a10d83db1e829821076ee21271e8efeec3b"
+                urlBreakpoints={{
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/901390196/rendition/1080p/file.mp4?loc=external&signature=f25833456794eb24d750c251384b8b6db49a8e4dcc58c46e805219c2ab0fa760",
+                }}
+                title="Request Services"
+              />
+            </div>
+            <strong className="text-xl block w-[220px] lg:w-[378px]">
+              Request Services
+            </strong>
+          </li>
+
+          <li className="text-center relative flex-grow flex-shrink-0">
+            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
+              <AppVideoViewer
+                className="w-full border-radius-20"
+                poster="/api/offerting-services.jpg"
+                posterBreakpoints={{
+                  lg: "/api/offerting-services-desktop.jpg",
+                }}
+                url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/1080p/file.mp4?loc=external&signature=de6d9af11a9c33511701dab6f4d1e1483ff752e01de78bd6331375a05279fd7a"
+                urlBreakpoints={{
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/902463974/rendition/1080p/file.mp4?loc=external&signature=35a9b72d0b08beffa287fc537434b36836d03332db9eb85fcf44f6a0493a26dc",
+                }}
+                title="Offerting Services"
+              />
+            </div>
+            <strong className="text-xl block w-[220px] lg:w-[378px]">
+              Offerting Services
+            </strong>
           </li>
           <li className="w-4" />
         </ul>
