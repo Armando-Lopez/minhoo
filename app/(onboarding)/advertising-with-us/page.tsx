@@ -1,5 +1,5 @@
-import AppButton from "@/components/shared/AppButton";
-import AppIcon from "@/components/shared/AppIcon";
+// import AppButton from "@/components/shared/AppButton";
+// import AppIcon from "@/components/shared/AppIcon";
 import Image from "next/image";
 import React from "react";
 
@@ -13,14 +13,14 @@ export default function AdvertisingWithUs() {
             alt="Advertising with us"
             className="xl:max-w-[870px] mb-10 lg:mb-0 border-radius"
           />
-          <AppButton
+          {/* <AppButton
             id="play-video"
             name="play video"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold"
           >
             <AppIcon icon="play" width={20} />
             Visualize
-          </AppButton>
+          </AppButton> */}
         </div>
         <div className="text-black-1">
           <h2 className="mb-3 lg:mb-8 text-center md:text-left text-primary-1 font-bold">
