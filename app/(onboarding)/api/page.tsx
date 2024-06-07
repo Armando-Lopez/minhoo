@@ -7,9 +7,9 @@ export default function Api() {
     <div className="mb-24 md:mb-36">
       <div className="container grid grid-cols-12 gap-5">
         <div className="order-1 lg:order-2 col-span-12 lg:col-span-5 mb-5">
-          <div className="relative w-60 h-80 md:w-[25rem] md:h-[35rem] mx-auto lg:ml-auto lg:mr-0">
+          <div className="relative w-60 h-80 md:w-[25rem] md:h-[35rem] mx-auto lg:ml-auto">
             <Image
-              src="/api/app-mobile-ui.png"
+              src="/api/img.png"
               alt="Minhoo mobile app"
               className="mx-auto z-0"
               fill
