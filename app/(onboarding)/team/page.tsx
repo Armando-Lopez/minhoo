@@ -16,7 +16,7 @@ export default function Team() {
               alt="Eder Oquendo"
               className="border-radius w-full"
             />
-            <p className="font-bold text-xl mt-5">Eder Oquendoppppppp</p>
+            <p className="font-bold text-xl mt-5">Eder Oquendo</p>
             <p>CEO</p>
           </div>
           <div className="lg:text-left md:w-[40%] lg:w-[30%]">
