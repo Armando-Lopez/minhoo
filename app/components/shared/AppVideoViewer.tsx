@@ -20,27 +20,22 @@ export default function AppVideoViewer({
   const breakpoints = useBreakpoints();
   const [videoUrl, setVideoUrl] = useState(url);
   const [videoPoster, setVideoPoster] = useState(url);
+  
   useEffect(() => {
     let newUrl = url;
     let newPoster = poster;
-    if (urlBreakpoints?.sm && breakpoints.sm) {
-      newUrl = urlBreakpoints.sm;
-    }
-    if (urlBreakpoints?.md && breakpoints.md) {
-      newUrl = urlBreakpoints.md;
-    }
+
     if (urlBreakpoints?.lg && breakpoints.lg) {
       newUrl = urlBreakpoints.lg;
     }
+
     if (posterBreakpoints?.lg && breakpoints.lg) {
       newPoster = posterBreakpoints.lg;
     }
-    if (urlBreakpoints?.xl && breakpoints.xl) {
-      newUrl = urlBreakpoints.xl;
-    }
+
     setVideoUrl(newUrl);
     setVideoPoster(newPoster);
-  }, [breakpoints.sm, breakpoints.md, breakpoints.lg, breakpoints.xl]);
+  }, [breakpoints.lg, breakpoints.xl]);
   return (
     <>
       <video
@@ -71,10 +66,7 @@ interface Props {
   poster: string;
   className?: string;
   urlBreakpoints?: {
-    sm?: string;
-    md?: string;
     lg?: string;
-    xl?: string;
   };
   posterBreakpoints?: {
     lg?: string;
