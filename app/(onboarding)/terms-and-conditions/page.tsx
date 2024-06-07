@@ -69,9 +69,8 @@ export default function PrivacyTermsAndConditions() {
                 </AppTabLabel>
               </>
             )}
-            {tab && !lg && <div></div>}
           </div>
-          <div className="col-span-12 lg:col-span-9 max-h-[70vh] lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
+          <div className="col-span-12 lg:col-span-9 max-h-[70dvh] lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
             <AppTabContent name="legal-terms">
               <h3 className="text-3xl md:text-4xl">Legal terms</h3>
               <strong className="block my-1">Minhoo.app</strong>
