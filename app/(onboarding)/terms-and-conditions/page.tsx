@@ -20,7 +20,7 @@ export default function PrivacyTermsAndConditions() {
   return (
     <>
       {!lg && tab && (
-        <div className={`w-full h-16 fixed top-0 z-10 pointer-events-none`}>
+        <div className={`w-full h-16 fixed top-0 pointer-events-none`}>
           <div className="container">
             <div className="bg-gray-150 w-1/2 h-20 pointer-events-auto">
               <AppButton
