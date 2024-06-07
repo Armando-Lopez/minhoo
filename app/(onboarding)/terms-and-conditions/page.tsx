@@ -20,9 +20,9 @@ export default function PrivacyTermsAndConditions() {
   return (
     <>
       {!lg && tab && (
-        <div className={`w-full h-16 fixed top-3 z-50 pointer-events-none`}>
+        <div className={`w-full h-16 fixed top-0 z-10 pointer-events-none`}>
           <div className="container">
-            <div className="bg-gray-150 w-1/2 h-16 pointer-events-auto">
+            <div className="bg-gray-150 w-1/2 h-20 pointer-events-auto">
               <AppButton
                 id="back"
                 name="back to list"
@@ -71,7 +71,7 @@ export default function PrivacyTermsAndConditions() {
             )}
             {tab && !lg && <div></div>}
           </div>
-          <div className="col-span-12 lg:col-span-9 max-h-screen overflow-auto hide-scroll-bar mt-4">
+          <div className="col-span-12 lg:col-span-9 max-h-[70vh] lg:max-h-screen overflow-auto hide-scroll-bar mt-4">
             <AppTabContent name="legal-terms">
               <h3 className="text-3xl md:text-4xl">Legal terms</h3>
               <strong className="block my-1">Minhoo.app</strong>
