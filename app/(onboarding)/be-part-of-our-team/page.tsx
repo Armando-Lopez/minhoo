@@ -23,7 +23,7 @@ export default function BePartOfOurTeam() {
             />
           </div>
         </div>
-        <div className="">
+        <div>
           <h2 className="mb-8 text-center md:text-left text-primary-1 font-bold">
             <span className="lg:block text-black-1">Be part of</span> our team
           </h2>

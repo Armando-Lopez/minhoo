@@ -1,5 +1,6 @@
 // import AppButton from "@/components/shared/AppButton";
 // import AppIcon from "@/components/shared/AppIcon";
+import AppVideoViewer from "@/components/shared/AppVideoViewer";
 import Image from "next/image";
 import React from "react";
 
@@ -7,20 +8,21 @@ export default function AdvertisingWithUs() {
   return (
     <div className="mb-24 md:mb-36">
       <section className="container lg:flex gap-5">
-        <div className="relative">
-          <img
-            src="/advertising-with-us/advertising-with-us.png"
-            alt="Advertising with us"
-            className="xl:max-w-[870px] mb-10 lg:mb-0 border-radius"
-          />
-          {/* <AppButton
-            id="play-video"
-            name="play video"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-max flex items-end gap-10 py-5 px-20 rounded-full bg-white text-primary-1 font-semibold"
-          >
-            <AppIcon icon="play" width={20} />
-            Visualize
-          </AppButton> */}
+      <div className="relative mb-10 lg:mb-16">
+          <div className="mx-auto mb-4 overflow-hidden w-[328px] md:w-[558px] xl:w-[870px] 2xl:w-[970px]">
+            <AppVideoViewer
+              className="mx-auto border-radius-20"
+              poster="advertising-with-us/thumb-advertise-cuadrado.jpg"
+              posterBreakpoints={{
+                md: "advertising-with-us/thumb-advertise.jpg",
+              }}
+              url="advertising-with-us/advertise-your-brand-cuadrado.mp4"
+              urlBreakpoints={{
+                md: "advertising-with-us/advertise-your-brand-youtube.mp4",
+              }}
+              title="Advertise Your Brand"
+            />
+          </div>
         </div>
         <div className="text-black-1">
           <h2 className="mb-3 lg:mb-8 text-center md:text-left text-primary-1 font-bold">
