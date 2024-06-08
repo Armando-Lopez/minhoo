@@ -28,11 +28,15 @@ export default function AppVideoViewer({
     if (urlBreakpoints?.lg && breakpoints.lg) {
       newUrl = urlBreakpoints.lg;
     }
-
+    if (urlBreakpoints?.md && breakpoints.md) {
+      newUrl = urlBreakpoints.md;
+    }
+    if (posterBreakpoints?.md && breakpoints.md) {
+      newPoster = posterBreakpoints.md;
+    }
     if (posterBreakpoints?.lg && breakpoints.lg) {
       newPoster = posterBreakpoints.lg;
     }
-
     setVideoUrl(newUrl);
     setVideoPoster(newPoster);
   }, [breakpoints.lg, breakpoints.xl]);
@@ -66,9 +70,11 @@ interface Props {
   poster?: string;
   className?: string;
   urlBreakpoints?: {
+    md?: string;
     lg?: string;
   };
   posterBreakpoints?: {
+    md?: string;
     lg?: string;
   };
 }
