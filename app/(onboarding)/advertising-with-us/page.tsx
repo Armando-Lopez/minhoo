@@ -58,7 +58,7 @@ export default function AdvertisingWithUs() {
         <h2 className="mb-6 text-3xl md:text-4xl font-bold text-primary-1">
           <span className="text-black-1">Our</span> clients
         </h2>
-        <div>
+        {/* <div>
           <ul className="flex gap-3 overflow-auto w-full mx-auto hide-scroll-bar">
             <li className="w-4" />
             <li className="w-32 h-32 md:w-44 md:h-44 relative flex-grow flex-shrink-0">
@@ -117,6 +117,28 @@ export default function AdvertisingWithUs() {
             </li>
             <li className="w-4" />
           </ul>
+        </div> */}
+        <div className="grid grid-cols-2">
+          <div className="relative w-40 lg:w-72 h-16 lg:h-28 ml-auto">
+            <Image
+              src="/advertising-with-us/our-client-agile-transport.png"
+              alt="Our client Agile Transport"
+              title="Agile Transport"
+              className="opacity-60"
+              sizes="100%"
+              fill
+            />
+          </div>
+          <div className="relative w-40 lg:w-72 h-16 lg:h-28 mr-auto">
+            <Image
+              src="/advertising-with-us/our-client-mac.png"
+              alt="Our client Mac"
+              title="Mac"
+              className="opacity-60"
+              sizes="100%"
+              fill
+            />
+          </div>
         </div>
       </section>
     </div>
