@@ -21,7 +21,7 @@ export default function Home() {
             <h2 className="text-primary-1 uppercase font-bold text-center mt-12 mb-4">
               Coming Soon
             </h2>
-            <div className="flex gap-3">
+            <div className="flex gap-4">
               <div className="ml-auto">
                 <AppButton
                   id="down-load-app"
