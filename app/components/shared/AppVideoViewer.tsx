@@ -19,8 +19,8 @@ export default function AppVideoViewer({
 }: Props) {
   const breakpoints = useBreakpoints();
   const [videoUrl, setVideoUrl] = useState(url);
-  const [videoPoster, setVideoPoster] = useState(url);
-  
+  const [videoPoster, setVideoPoster] = useState<string | undefined>(url);
+
   useEffect(() => {
     let newUrl = url;
     let newPoster = poster;
@@ -63,7 +63,7 @@ export default function AppVideoViewer({
 interface Props {
   url: string;
   title: string;
-  poster: string;
+  poster?: string;
   className?: string;
   urlBreakpoints?: {
     lg?: string;

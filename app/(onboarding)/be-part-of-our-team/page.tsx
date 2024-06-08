@@ -1,5 +1,6 @@
 // import AppButton from "@/components/shared/AppButton";
 // import AppIcon from "@/components/shared/AppIcon";
+import AppVideoViewer from "@/components/shared/AppVideoViewer";
 import React from "react";
 
 export default function BePartOfOurTeam() {
@@ -7,11 +8,22 @@ export default function BePartOfOurTeam() {
     <div className="container mb-24">
       <section className="lg:flex gap-5 mb-16">
         <div className="relative mb-10 lg:mb-16">
-          <img
+          {/* <img
             src="/be-part-of-our-team/be-part-of-our-team.png"
             alt="Be part of our team"
             className="xl:max-w-[870px] border-radius"
-          />
+          /> */}
+            <div className="mx-auto mb-4 overflow-hidden lg:w-[368px] lg:h-[235px]">
+              <AppVideoViewer
+                className="w-full border-radius-20"
+                url="https://player.vimeo.com/progressive_redirect/playback/902643841/rendition/1080p/file.mp4?loc=external&signature=db6acffd19d0976d405c109d3f3e207774a0b4baab9be5e39d545a255c5c0de4"
+                urlBreakpoints={{
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/902463974/rendition/1080p/file.mp4?loc=external&signature=35a9b72d0b08beffa287fc537434b36836d03332db9eb85fcf44f6a0493a26dc",
+                }}
+                title="What is Minhoo"
+              />
+            </div>
+            
           {/* <AppButton
             id="play-video"
             name="play video"

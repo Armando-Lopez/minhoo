@@ -9,6 +9,7 @@ export default function Home() {
           <video
             autoPlay
             loop
+            playsInline
             muted
             className="mx-auto xl:mr-0 xl:max-w-[580px]"
           >
@@ -16,6 +17,15 @@ export default function Home() {
             Tu navegador no soporta el formato de video.
           </video>
         </div>
+        {/* <AppVideoViewer
+          className="w-full border-radius-20"
+          // poster="/api/thumb.jpg"
+          // posterBreakpoints={{
+          //   lg: "/api/thumb.jpg",
+          // }}
+          url="/home/banner.mp4"
+          title="What is Minhoo"
+        /> */}
         <div className="lg:bg-white lg:ml-auto lg:w-[90%] lg:h-full lg:grid lg:items-center border-radius-20">
           <div>
             <h2 className="text-primary-1 uppercase font-bold text-center mt-5 mb-4">
