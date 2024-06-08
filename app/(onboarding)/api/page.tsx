@@ -66,11 +66,11 @@ export default function Api() {
       </div>
 
       <section className="order-3 col-span-12 lg:mt-20 lg:container">
-        <ul className="overflow-auto lg:mx-auto hide-scroll-bar flex gap-y-12 gap-x-5 w-full">
-          <li className="w-4" />
+        <ul className="overflow-auto lg:mx-auto hide-scroll-bar flex gap-y-12 gap-x-5 lg:gap-x-3 w-full">
+          <li className="w-4 lg:hidden" />
 
           <li className="text-center relative flex-grow flex-shrink-0">
-            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
+            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[368px] h-[390px] lg:h-[235px]">
               <AppVideoViewer
                 className="w-full border-radius-20"
                 poster="/api/what-is-minhoo.jpg"
@@ -90,7 +90,7 @@ export default function Api() {
           </li>
 
           <li className="text-center relative flex-grow flex-shrink-0">
-            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
+            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[368px] h-[390px] lg:h-[235px]">
               <AppVideoViewer
                 className="w-full border-radius-20"
                 poster="/api/request-services.jpg"
@@ -110,7 +110,7 @@ export default function Api() {
           </li>
 
           <li className="text-center relative flex-grow flex-shrink-0">
-            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[378px] h-[390px] lg:h-[235px]">
+            <div className="relative mb-4 overflow-hidden w-[220px] lg:w-[368px] h-[390px] lg:h-[235px]">
               <AppVideoViewer
                 className="w-full border-radius-20"
                 poster="/api/offerting-services.jpg"
@@ -128,7 +128,7 @@ export default function Api() {
               Offerting Services
             </strong>
           </li>
-          <li className="w-4" />
+          <li className="w-4 lg:hidden" />
         </ul>
       </section>
     </div>
