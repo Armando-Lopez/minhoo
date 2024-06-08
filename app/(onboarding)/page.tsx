@@ -4,7 +4,7 @@ import React from "react";
 export default function Home() {
   return (
     <section className="flex-grow container">
-      <div className="lg:grid lg:grid-cols-2 xl:gap-28 2xl:gap-0 container-secondary lg:mx-auto pb-5">
+      <div className="lg:grid lg:grid-cols-2 xl:gap-28 2xl:gap-0 container-secondary lg:mx-auto pb-10 lg:pb-5 -mt-6 lg:mt-0">
         <div>
           <video
             autoPlay
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="lg:bg-white lg:ml-auto lg:w-[90%] lg:h-full lg:grid lg:items-center border-radius-20">
           <div>
-            <h2 className="text-primary-1 uppercase font-bold text-center mt-12 mb-4">
+            <h2 className="text-primary-1 uppercase font-bold text-center mt-8 mb-4">
               Coming Soon
             </h2>
             <div className="flex gap-4">
