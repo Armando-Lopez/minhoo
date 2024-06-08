@@ -52,11 +52,13 @@ button:disabled {
   scrollbar-width: none; /* Firefox */
 }
 
-@layer components {
+@layer utilities {
   .container-secondary {
-    @apply md:max-w-[90%] md:mx-auto
+    @apply md:max-w-[90%] md:mx-auto;
   }
+}
 
+@layer components {
   /* ACTIONS */
   .app-button {
     @apply py-2.5 rounded-xl;
