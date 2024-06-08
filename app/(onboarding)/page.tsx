@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="lg:bg-white lg:ml-auto lg:w-[90%] lg:h-full lg:grid lg:items-center border-radius-20">
           <div>
-            <h2 className="text-primary-1 uppercase font-bold text-center mt-8 mb-4">
+            <h2 className="text-primary-1 uppercase font-bold text-center mt-5 mb-4">
               Coming Soon
             </h2>
             <div className="flex gap-4">
