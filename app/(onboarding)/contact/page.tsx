@@ -24,11 +24,20 @@ export default function Contact() {
             <div className="md:mr-auto mt-8 md:mt-0">
               <p className="font-bold text-center">info@minhoo.com</p>
               <div className="flex justify-center mt-3 gap-3">
-                <AppIcon icon="facebook" width="28" />
-                <AppIcon icon="instagram" width="21" className="mt-1" />
-                <AppIcon icon="twitter" width="21" className="mt-1" />
-                <AppIcon icon="tiktok" width="28" />
-                <AppIcon icon="youtube" width="28" />
+                <a href="https://www.facebook.com/minhooapp" target="_blank">
+                  <AppIcon icon="facebook" width="28" />
+                </a>
+                <a href="https://www.instagram.com/minhoo.app/" target="_blank">
+                  <AppIcon icon="instagram" width="21" className="mt-1" />
+                </a>
+                {/* <AppIcon icon="twitter" width="21" className="mt-1" /> */}
+                {/* <AppIcon icon="tiktok" width="28" /> */}
+                <a
+                  href="https://www.youtube.com/channel/UCZVYzrrkIrCT4xDMmzpMhWg"
+                  target="_blank"
+                >
+                  <AppIcon icon="youtube" width="28" />
+                </a>
               </div>
             </div>
           </div>
