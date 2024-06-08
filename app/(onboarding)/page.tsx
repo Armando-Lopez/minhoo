@@ -21,36 +21,40 @@ export default function Home() {
             <h2 className="text-primary-1 uppercase font-bold text-center mt-12 mb-4">
               Coming Soon
             </h2>
-            <div className="grid gap-3">
-              <AppButton
-                id="down-load-app"
-                name="down  load app"
-                className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto"
-              >
-                <img
-                  src="/home/logo-apple.png"
-                  alt="Logo Apple"
-                  className="pr-3 w-7"
-                />
-                <p className="text-[8px]">
-                  Download on the{" "}
-                  <span className="block text-sm">App Store</span>
-                </p>
-              </AppButton>
-              <AppButton
-                id="get-on-gp"
-                name="get it on Google Play"
-                className="flex items-center justify-center bg-black-1 text-white rounded-xl w-40 py-2 mx-auto"
-              >
-                <img
-                  src="/home/logo-google-play.png"
-                  alt="Logo Google Play"
-                  className="pl-1.5 pr-3 w-8"
-                />
-                <p className="text-[8px] text-left">
-                  GET IT ON <span className="block text-sm">Google Play</span>
-                </p>
-              </AppButton>
+            <div className="flex gap-3">
+              <div className="ml-auto">
+                <AppButton
+                  id="down-load-app"
+                  name="down  load app"
+                  className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
+                >
+                  <img
+                    src="/home/logo-apple.png"
+                    alt="Logo Apple"
+                    className="pr-3 w-7"
+                  />
+                  <p className="text-[8px]">
+                    Download on the{" "}
+                    <span className="block text-sm">App Store</span>
+                  </p>
+                </AppButton>
+              </div>
+              <div className="mr-auto">
+                <AppButton
+                  id="get-on-gp"
+                  name="get it on Google Play"
+                  className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
+                >
+                  <img
+                    src="/home/logo-google-play.png"
+                    alt="Logo Google Play"
+                    className="pl-1.5 pr-3 w-8"
+                  />
+                  <p className="text-[8px] text-left">
+                    GET IT ON <span className="block text-sm">Google Play</span>
+                  </p>
+                </AppButton>
+              </div>
             </div>
           </div>
         </div>

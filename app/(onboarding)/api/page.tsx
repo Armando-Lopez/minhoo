@@ -65,7 +65,7 @@ export default function Api() {
         </section>
       </div>
 
-      <section className="order-3 col-span-12 lg:mt-20 lg:container">
+      <section className="order-3 col-span-12 mt-20 lg:container">
         <ul className="overflow-auto lg:mx-auto hide-scroll-bar flex gap-y-12 gap-x-5 lg:gap-x-3 w-full">
           <li className="w-4 lg:hidden" />
 
