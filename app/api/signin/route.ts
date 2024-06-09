@@ -28,10 +28,18 @@ export async function POST(request: Request) {
     },
   }).then((r) => r.json());
 
-
-  response = {
-    success: successResponse
+  if (!successResponse.header.success) {
+    response = {
+      errors: {
+        password: successResponse.header.messages[0]
+      }
+    }
+  } else {
+    response = {
+      success: successResponse
+    }
   }
+
   return NextResponse.json(response, { status })
 
 }
