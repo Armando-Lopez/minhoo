@@ -17,12 +17,21 @@ export async function POST(request: Request) {
       errors
     }
     status = 400
-  } else {
-    response = {
-      success: true
-    }
+    return NextResponse.json(response, { status })
   }
 
+  const successResponse = await fetch('http://103.43.75.41:8083/api/v1/auth/login', {
+    method: 'POST',
+    body: JSON.stringify(body),
+    headers: {
+      "Content-type": "application/json",
+    },
+  }).then((r) => r.json());
+
+
+  response = {
+    success: successResponse
+  }
   return NextResponse.json(response, { status })
 
 }

@@ -5,8 +5,11 @@ import AppTextField from "@/components/shared/form/AppTextField";
 import AppButton from "@/components/shared/AppButton";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TSignInSchema, signInSchema } from "@/lib/types";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+
+  const router = useRouter()
   const {
     register,
     handleSubmit,
@@ -31,6 +34,8 @@ export default function LoginForm() {
           message: errors[error],
         });
       }
+    } else {
+      router.push('/home')
     }
   }
 
