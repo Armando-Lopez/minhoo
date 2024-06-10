@@ -5,9 +5,15 @@ import AppPopover from "@/components/shared/AppPopover";
 import AppSwitch from "@/components/shared/form/AppSwitch";
 import { useNotifications } from "@/hooks/useNotifications";
 import AppButton from "@/components/shared/AppButton";
+import { usePathname } from "next/navigation";
 
 export default function AuthNav() {
+  const pathname = usePathname();
+
+  const isHome = pathname.includes("/home");
+
   const notifications = useNotifications();
+
   const [allowNotifications, setAllowNotifications] = useState(
     notifications.hasPermission
   );
@@ -23,7 +29,12 @@ export default function AuthNav() {
     <nav className="flex-grow flex flex-col pl-4 pb-5">
       <ul className="flex-grow flex flex-col gap-7 text-gray-1">
         <li>
-          <a href="/" className="flex items-center gap-4">
+          <a
+            href="/"
+            className={`flex items-center gap-4 ${
+              isHome ? "text-primary-1" : ""
+            }`}
+          >
             <AppIcon icon="home" width="25" />
             <span className="text-gray-1"> Home </span>
           </a>

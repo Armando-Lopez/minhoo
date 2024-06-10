@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Footer() {
+export default function Footer({ className }: { className: string }) {
   return (
-    <footer className="container flex flex-wrap gap-3 pb-3 text-gray-1 text-center justify-center text-xs leading-[7px]">
+    <footer className={className}>
       <Link href="/" className="text-center">
         Home
       </Link>

@@ -8,12 +8,11 @@ import { TSignInSchema, signInSchema } from "@/lib/types";
 import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
-
-  const router = useRouter()
+  const router = useRouter();
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     setError,
   } = useForm<TSignInSchema>({
     resolver: zodResolver(signInSchema),
@@ -30,13 +29,13 @@ export default function LoginForm() {
     if (response.errors) {
       const errors = response.errors;
       for (const error in errors) {
-        setError(error, {
+        setError(error as any, {
           message: errors[error],
         });
       }
-    } else {
-      router.push('/home')
+      return;
     }
+    router.push("/home/news");
   }
 
   return (
@@ -62,6 +61,7 @@ export default function LoginForm() {
         name="login"
         className="w-full py-3 rounded-xl bg-primary-1 text-white font-bold"
         type="submit"
+        disabled={isSubmitting}
       >
         Login
       </AppButton>

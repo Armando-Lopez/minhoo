@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import ClientInit from "./ClientInit";
+import { WebVitals } from "./web-vitals";
 
 const poppins = Poppins({
   display: "swap",
@@ -20,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClientInit>
-      <html lang="en">
-        <body className={poppins.className}>{children}</body>
-      </html>
-    </ClientInit>
+    <html lang="en">
+      <body className={poppins.className}>
+        <ClientInit>{children}</ClientInit>
+        <WebVitals />
+      </body>
+    </html>
   );
 }
