@@ -42,7 +42,7 @@ export default function Home() {
               <div className="ml-auto">
                 <AppButton
                   id="down-load-app"
-                  name="down  load app"
+                  title="download app"
                   className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
                 >
                   <img
@@ -59,7 +59,7 @@ export default function Home() {
               <div className="mr-auto">
                 <AppButton
                   id="get-on-gp"
-                  name="get it on Google Play"
+                  title="get it on Google Play"
                   className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
                 >
                   <img

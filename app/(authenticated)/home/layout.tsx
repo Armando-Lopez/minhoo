@@ -18,8 +18,8 @@ export default function HomeLayout({
 
   return (
     <div className="grid grid-cols-12 h-full">
-      <div className="col-span-7 px-7 border-r border-r-gray-1/50">
-        <div className="flex justify-between items-center">
+      <div className="col-span-7 h-dvh hide-scroll-bar overflow-auto px-12 border-r border-r-gray-1/50">
+        <div className="sticky top-0 bg-white z-10 pb-1 flex justify-between items-center">
           <Link href="news" className="flex items-center gap-2">
             <div
               className={`grid place-items-center w-10 h-10 rounded-full ${

@@ -72,15 +72,10 @@ export default function AuthNav() {
         <li>
           <AppButton
             id="create-post"
-            name="create post"
-            className="app-button app-button--primary flex items-center justify-center gap-2 w-48 text-black-1"
+            title="create post"
+            className="py-2.5 rounded-xl flex items-center justify-center gap-2 w-48 bg-primary-1 text-black-1"
           >
-            <AppIcon
-              icon="plus"
-              width="20"
-              height="20"
-              className="translate-y-1"
-            />
+            <AppIcon icon="plus" width="20" height="20" />
             Create
           </AppButton>
         </li>
@@ -142,11 +137,11 @@ export default function AuthNav() {
           }
         >
           <AppButton
-            name="more options"
+            title="more options"
             id="more-options"
-            className="app-button flex items-center gap-3 text-gray-1"
+            className="py-2.5 rounded-xl flex items-center gap-3 text-gray-1"
           >
-            <AppIcon icon="menu" width="32" className="translate-y-1" />
+            <AppIcon icon="menu" width="32" />
             More
           </AppButton>
         </AppPopover>

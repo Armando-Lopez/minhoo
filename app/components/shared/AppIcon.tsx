@@ -11,6 +11,7 @@ import { Icon } from "@iconify/react";
 *@param {string|number} [props.width]
 *@param {string|number} [props.height]
 *@param {string|number} [props.flip]
+*@param {string|number} [props.rotate]
 *@param {string|number} [props.className]
 *@example
 * ```tsx
@@ -27,6 +28,7 @@ export default function AppIcon({
   width,
   height,
   flip,
+  rotate,
   className,
 }: AppIconProps) {
   const renderIcon = {
@@ -67,6 +69,7 @@ export default function AppIcon({
       width={width}
       height={height}
       flip={flip}
+      rotate={rotate}
       className={className}
     />
   );
@@ -77,5 +80,6 @@ interface AppIconProps {
   height?: string | number;
   width?: string | number;
   flip?: string;
+  rotate?: number;
   className?: string;
 }

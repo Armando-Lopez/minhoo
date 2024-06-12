@@ -8,19 +8,27 @@ A Custom button component that supports real button attrs and loading state.
 @param {boolean} loading - Indicates if the button is in a loading state
 */
 export default forwardRef<Ref | null, Props>(function AppButton(
-  { children, id, name, ...rest },
+  { children, id, name, title, ...rest },
   ref
 ) {
   const { pending } = useFormStatus();
   return (
-    <button ref={ref} id={id} name={name} disabled={pending} {...rest}>
+    <button
+      ref={ref}
+      id={id}
+      name={name}
+      disabled={pending}
+      title={title}
+      {...rest}
+    >
       {children}
     </button>
   );
 });
 
 interface Props extends ComponentPropsWithRef<"button"> {
-  id: string;
-  name: string;
+  id?: string;
+  name?: string;
+  title: string;
 }
 type Ref = HTMLButtonElement;

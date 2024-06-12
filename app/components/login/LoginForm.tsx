@@ -58,7 +58,7 @@ export default function LoginForm() {
       </div>
       <AppButton
         id="login"
-        name="login"
+        title="login"
         className="w-full py-3 rounded-xl bg-primary-1 text-white font-bold"
         type="submit"
         disabled={isSubmitting}

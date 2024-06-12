@@ -1,7 +1,10 @@
-import React from 'react'
+import NewsPostsList from "@/components/news/NewsPostsList";
+import React from "react";
 
 export default function NewsPage() {
   return (
-    <div>FeedPage</div>
-  )
+    <div className="py-6">
+      <NewsPostsList />
+    </div>
+  );
 }
