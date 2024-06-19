@@ -28,9 +28,12 @@ export default function OnboardingLayout({
   }, []);
 
   useEffect(() => {
-    const unsubscribe = eventBus.subscribe("onToggleShowTermsItem", (value: boolean) => {
-      setIsShowingTermItem(value);
-    });
+    const unsubscribe = eventBus.subscribe(
+      "onToggleShowTermsItem",
+      (value: boolean) => {
+        setIsShowingTermItem(value);
+      }
+    );
 
     return () => {
       unsubscribe();
@@ -41,8 +44,8 @@ export default function OnboardingLayout({
     <div className="bg-gray-150 min-h-svh">
       <div className="min-h-svh mx-auto flex flex-col justify-between">
         <header
-          className={`md:sticky z-10 top-0 py-3 bg-gray-150 mb-10 lg:mb-0 ${
-            isScrolled ? `md:shadow-md` : ""
+          className={`md:sticky z-10 top-0 py-3 mb-10 lg:mb-0 ${
+            isScrolled ? `header-with-blur` : "bg-gray-150"
           }`}
         >
           <div className="container flex justify-between">
@@ -51,7 +54,7 @@ export default function OnboardingLayout({
                 id="back"
                 name="back to list"
                 className="mt-4"
-                onClick={() => eventBus.publish('backToTermsItems')}
+                onClick={() => eventBus.publish("backToTermsItems")}
               >
                 <AppIcon icon="back" width={25} />
               </AppButton>
@@ -67,7 +70,7 @@ export default function OnboardingLayout({
             <OnboardingNav />
           </div>
         </header>
-        <main className="flex-grow">{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </div>

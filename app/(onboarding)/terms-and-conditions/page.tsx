@@ -39,7 +39,7 @@ export default function PrivacyTermsAndConditions() {
 
   return (
     <>
-      <div className="container grid grid-cols-12 gap-5 mb-10 lg:mb-32 lg:mt-5">
+      <div className="container min-h-screen grid grid-cols-12 gap-5 mb-10 lg:mb-32 lg:mt-5">
         <AppTabWrapper
           tabClass="flex justify-between w-full p-2 rounded-md"
           activeTabClass="bg-primary-1"
