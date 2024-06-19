@@ -57,11 +57,13 @@ button:disabled {
   background-color: rgba(240, 240, 240, 0.8);
 }
 
-@layer components {
+@layer utilities {
   .container-secondary {
-    @apply md:max-w-[90%] md:mx-auto
+    @apply md:max-w-[90%] md:mx-auto;
   }
+}
 
+@layer components {
   /* ACTIONS */
   .app-button {
     @apply py-2.5 rounded-xl;

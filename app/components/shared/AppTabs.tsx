@@ -106,14 +106,14 @@ export const AppTabWrapper = ({
   return <TabsContext.Provider value={values}>{children}</TabsContext.Provider>;
 };
 
-/** 
-* #Use tabs to switch between a list of items/components.  
-* 
-* @component **AppTabLabel**: tab button to switch content
-* @param {TabLabelProps} props - Component props
-* @param {string} props.name - tab name to sync with **AppTabContent**
-* @param {Function} props.onSelected - event emitted when specific tab is selected
-*/
+/**
+ * #Use tabs to switch between a list of items/components.
+ *
+ * @component **AppTabLabel**: tab button to switch content
+ * @param {TabLabelProps} props - Component props
+ * @param {string} props.name - tab name to sync with **AppTabContent**
+ * @param {Function} props.onSelected - event emitted when specific tab is selected
+ */
 export const AppTabLabel = ({
   children,
   name,
@@ -134,7 +134,9 @@ export const AppTabLabel = ({
   }, []);
 
   return (
-    <button
+    <div
+      role="button"
+      tabIndex={0}
       id={`tab-${name}`}
       className={`${tabClass} ${
         name === activeTab ? activeTabClass : inactiveTabClass
@@ -145,17 +147,17 @@ export const AppTabLabel = ({
       }}
     >
       {children}
-    </button>
+    </div>
   );
 };
 
-/** 
-* #Use tabs to switch between a list of items/components.  
-* @component **AppTabContent**: Show selected tab content
-* @param {TabWrapperProps} props - Component props
-* @param {string} props.className - tab content wrapper CSS class
-* @param {string} props.name - tab name to sync with **AppTabLabel**
-*/
+/**
+ * #Use tabs to switch between a list of items/components.
+ * @component **AppTabContent**: Show selected tab content
+ * @param {TabWrapperProps} props - Component props
+ * @param {string} props.className - tab content wrapper CSS class
+ * @param {string} props.name - tab name to sync with **AppTabLabel**
+ */
 export const AppTabContent = ({
   children,
   className,
