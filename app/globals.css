@@ -52,6 +52,11 @@ button:disabled {
   scrollbar-width: none; /* Firefox */
 }
 
+.header-with-blur {
+  backdrop-filter: blur(20px);
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
 @layer utilities {
   .container-secondary {
     @apply md:max-w-[90%] md:mx-auto;
