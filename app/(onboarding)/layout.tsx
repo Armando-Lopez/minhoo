@@ -73,7 +73,7 @@ export default function OnboardingLayout({
           </div>
         </header>
         <main>{children}</main>
-        <Footer />
+        <Footer className="container flex flex-wrap gap-3 pb-3 text-gray-1 text-center justify-center text-xs leading-[7px]" />
       </div>
     </div>
   );
