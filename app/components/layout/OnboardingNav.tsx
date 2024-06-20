@@ -11,11 +11,11 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
     drawerActivator.current?.click();
   }
   return (
-    <div>
+    <div className={`relative after:content-[''] after:absolute after:top-0 after:w-full after:h-full bg-gray-150`}>
       <label
         htmlFor="app-drawer"
         className={`fixed md:relative z-50 lg:z-10 right-4 block h-fit text-black p-3 cursor-pointer rounded-full md:rounded-none ${
-          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80 top-2 md:top-0` : "bg-gray-150"
+          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80` : "bg-gray-150"
         }`}
         title="open menu"
         tabIndex={0}
