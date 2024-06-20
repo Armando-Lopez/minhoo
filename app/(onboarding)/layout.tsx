@@ -53,7 +53,7 @@ export default function OnboardingLayout({
               {!lg && isShowingTermItem ? (
                 <AppButton
                   id="back"
-                  name="back to list"
+                  title="back to list"
                   className="mt-4"
                   onClick={() => eventBus.publish("backToTermsItems")}
                 >
