@@ -74,7 +74,7 @@ export default function OnboardingLayout({
             <OnboardingNav isScrolled={isScrolled} />
           </div>
         </header>
-        <main>{children}</main>
+        <main className="flex-grow flex flex-col justify-center">{children}</main>
         <Footer className="container flex flex-wrap gap-3 pb-3 text-gray-1 text-center justify-center text-xs leading-[7px]" />
       </div>
     </div>
