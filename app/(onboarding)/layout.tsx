@@ -43,10 +43,10 @@ export default function OnboardingLayout({
   return (
     <div className="bg-gray-150 min-h-svh">
       <div className="min-h-svh mx-auto flex flex-col justify-between">
-        <header className={`md:sticky z-10 top-0 mb-10 lg:mb-0`}>
+        <header className={`md:sticky z-10 top-0 mb-10`}>
           <div className="container flex justify-between">
             <div
-              className={`w-full py-3 ${
+              className={`w-full ${
                 isScrolled
                   ? `backdrop-blur-[20px] bg-gray-150/80`
                   : "bg-gray-150"
@@ -62,11 +62,11 @@ export default function OnboardingLayout({
                   <AppIcon icon="back" width={25} />
                 </AppButton>
               ) : (
-                <a href="/" className="mt-[19px]">
+                <a href="/" className="">
                   <img
                     src="/minhoo-horizontal-logo.png"
                     alt="minhoo horizontal logo"
-                    className="w-32"
+                    className="w-32 mt-5"
                   />
                 </a>
               )}
