@@ -46,7 +46,7 @@ export default function OnboardingLayout({
         <header className={`md:sticky z-10 top-0 mb-10 lg:mb-0`}>
           <div className="container flex justify-between">
             <div
-              className={`w-full py-3 pl-2 ${
+              className={`w-full py-3 ${
                 isScrolled
                   ? `backdrop-blur-[20px] bg-gray-150/80`
                   : "bg-gray-150"
