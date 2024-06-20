@@ -44,29 +44,31 @@ export default function OnboardingLayout({
     <div className="bg-gray-150 min-h-svh">
       <div className="min-h-svh mx-auto flex flex-col justify-between">
         <header
-          className={`md:sticky z-10 top-0 py-3 mb-10 lg:mb-0 ${
-            isScrolled ? `header-with-blur` : "bg-gray-150"
-          }`}
+          className={`md:sticky z-10 top-0 mb-10 lg:mb-0`}
         >
           <div className="container flex justify-between">
-            {!lg && isShowingTermItem ? (
-              <AppButton
-                id="back"
-                name="back to list"
-                className="mt-4"
-                onClick={() => eventBus.publish("backToTermsItems")}
-              >
-                <AppIcon icon="back" width={25} />
-              </AppButton>
-            ) : (
-              <a href="/" className="mt-[19px]">
-                <img
-                  src="/minhoo-horizontal-logo.png"
-                  alt="minhoo horizontal logo"
-                  className="w-32 -mt-1.5"
-                />
-              </a>
-            )}
+            <div className={`w-full py-3 ${
+            isScrolled ? `backdrop-blur-[20px] bg-gray-150/80` : "bg-gray-150"
+          }`}>
+              {!lg && isShowingTermItem ? (
+                <AppButton
+                  id="back"
+                  name="back to list"
+                  className="mt-4"
+                  onClick={() => eventBus.publish("backToTermsItems")}
+                >
+                  <AppIcon icon="back" width={25} />
+                </AppButton>
+              ) : (
+                <a href="/" className="mt-[19px]">
+                  <img
+                    src="/minhoo-horizontal-logo.png"
+                    alt="minhoo horizontal logo"
+                    className="w-32"
+                  />
+                </a>
+              )}
+            </div>
             <OnboardingNav />
           </div>
         </header>
