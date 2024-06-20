@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import Link from "next/link";
 
-export default function OnboardingNav() {
+export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
   const drawerActivator = useRef<HTMLInputElement>(null);
 
   function closeDrawer() {
@@ -14,7 +14,9 @@ export default function OnboardingNav() {
     <div>
       <label
         htmlFor="app-drawer"
-        className="fixed md:relative z-50 lg:z-10 right-4 block h-fit text-black p-3 cursor-pointer bg-gray-150 rounded-full"
+        className={`fixed md:relative z-50 lg:z-10 right-4 block h-fit text-black p-3 cursor-pointer rounded-full ${
+          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80` : "bg-gray-150"
+        }`}
         title="open menu"
         tabIndex={0}
       >

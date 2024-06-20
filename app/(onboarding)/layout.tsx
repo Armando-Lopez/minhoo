@@ -47,7 +47,7 @@ export default function OnboardingLayout({
           className={`md:sticky z-10 top-0 mb-10 lg:mb-0`}
         >
           <div className="container flex justify-between">
-            <div className={`w-full py-3 ${
+            <div className={`w-full py-3 pl-2 ${
             isScrolled ? `backdrop-blur-[20px] bg-gray-150/80` : "bg-gray-150"
           }`}>
               {!lg && isShowingTermItem ? (
@@ -69,7 +69,7 @@ export default function OnboardingLayout({
                 </a>
               )}
             </div>
-            <OnboardingNav />
+            <OnboardingNav isScrolled={isScrolled} />
           </div>
         </header>
         <main>{children}</main>
