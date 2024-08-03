@@ -6,12 +6,12 @@ export default function PostItemHeader() {
   return (
     <div className="flex items-cene gap-4 mb-6">
       <a href="/">
-        <img className="w-12 h-12 rounded-full" alt="user-name" />
+        <img src="https://placehold.co/51x51" className="w-12 h-12 rounded-full" alt="user-name" />
       </a>
       <div className="flex flex-col gap-1">
         <a href="/">
-          <h4>post.user.name </h4>
-          <span className="text-gray-1">post.user.categories</span>
+          <h4>Percept brand design </h4>
+          <span className="text-gray-1">2 hours ago</span>
         </a>
         <AppButton
           title="follow"

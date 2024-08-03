@@ -11,9 +11,6 @@ export default function PostItemFooter() {
       <AppButton title="post comments" className="flex items-center gap-2 text-gray-1">
         <AppIcon icon="comments-dots" className="text-gray-1" width="24" />5
       </AppButton>
-      <AppButton title="save post" className="flex items-center gap-2 text-gray-1">
-        <AppIcon icon="book-mark" className="text-gray-1" width="24" />5
-      </AppButton>
       <AppButton title="sharepost" className="flex items-center gap-2 text-gray-1">
         <AppIcon icon="share-box" className="text-gray-1" width="24" />
       </AppButton>

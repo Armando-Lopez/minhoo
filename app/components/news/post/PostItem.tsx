@@ -1,10 +1,7 @@
 import React from "react";
 import PostItemHeader from "./PostItemHeader";
-import AppIcon from "@/components/shared/AppIcon";
 import PostItemFooter from "./PostItemFooter";
 import AppModal from "@/components/shared/AppModal";
-import PostItemOptions from "./PostItemOptions";
-import AppButton from "@/components/shared/AppButton";
 import PostItemDetails from "./PostItemDetails";
 import Image from "next/image";
 
@@ -38,22 +35,6 @@ export default function PostItem() {
           <span className="less"> less </span>
         </label>
         <div className="relative">
-          <div className="absolute -right-3 -top-3 w-14 h-14 rounded-full bg-white">
-            <div className="absolute top-1/3 left-2">
-              <AppModal
-                className="rounded-2xl"
-                activator={
-                  <AppButton title="post options">
-                    <AppIcon icon="vertical-dots" rotate={90} width="30" />
-                  </AppButton>
-                }
-                eager
-                keepAlive
-              >
-                <PostItemOptions />
-              </AppModal>
-            </div>
-          </div>
           <AppModal
             activator={
               <Image
