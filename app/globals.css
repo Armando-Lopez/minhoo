@@ -5,7 +5,7 @@
 html,
 body {
   height: 100%;
-  @apply bg-gray-150
+  @apply bg-gray-150 text-black-1
 }
 
 body {

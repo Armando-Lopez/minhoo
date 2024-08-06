@@ -2,13 +2,6 @@
 import React from "react";
 
 
-/** 
-* @component **AppSwitch**: Use switch to toggle values  
-* 
-* @param {Props} props - Component props
-* @param {string} props.id - required id
-* @param {boolean} props.checked - whether checked or no
-*/
 export default function AppSwitch({
   id,
   checked,
@@ -27,7 +20,7 @@ export default function AppSwitch({
         name={id}
         id={id}
         checked={checked}
-        onChange={(e) => onChange(e.target.checked)}
+        onChange={(e) => onChange?.(e.target.checked)}
       />
       <span
         className={`absolute block w-1/2 aspect-square rounded-full top-1/2 -translate-y-1/2 drop-shadow bg-white transition-all
@@ -41,5 +34,5 @@ interface Props {
   id: string;
   checked: boolean;
   // eslint-disable-next-line no-unused-vars
-  onChange: (value: boolean) => void;
+  onChange?: (value: boolean) => void;
 }

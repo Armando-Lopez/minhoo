@@ -50,7 +50,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/profile" className="flex items-center gap-4">
             <AppIcon icon="profile" width="25" className="translate-y-1" />
             <span className="text-gray-1"> Profile </span>
           </Link>
