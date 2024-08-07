@@ -1,10 +1,10 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import AppTextField from "@components/shared/form/AppTextField";
-import AppButton from "@components/shared/AppButton";
+import AppTextField from "@/components/shared/form/AppTextField";
+import AppButton from "@/components/shared/AppButton";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { TSignInSchema, signInSchema } from "@modules/login/domain/login";
+import { TSignInSchema, signInSchema } from "@/modules/login/domain/login";
 import { useRouter } from "next/navigation";
 
 export default function LoginForm() {

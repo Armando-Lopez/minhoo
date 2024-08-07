@@ -1,12 +1,12 @@
 "use client";
-import AppIcon from "@components/shared/AppIcon";
+import AppIcon from "@/components/shared/AppIcon";
 import {
   AppTabContent,
   AppTabLabel,
   AppTabWrapper,
-} from "@components/shared/AppTabs";
+} from "@/components/shared/AppTabs";
 import eventBus from "@/eventbus";
-import { useBreakpoints } from "@hooks/useBreakpoints";
+import { useBreakpoints } from "@/hooks/useBreakpoints";
 import React, { useEffect, useState } from "react";
 
 export default function PrivacyTermsAndConditions() {

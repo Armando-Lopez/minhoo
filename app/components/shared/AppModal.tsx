@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useId, useRef, useState } from "react";
-import AppIcon from "@components/shared/AppIcon";
-import AppButton from "@components/shared/AppButton";
+import AppIcon from "@/components/shared/AppIcon";
+import AppButton from "@/components/shared/AppButton";
 
 export default function AppModal({
   children,

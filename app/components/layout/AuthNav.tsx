@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import AppIcon from "@components/shared/AppIcon";
-import AppButton from "@components/shared/AppButton";
+import AppIcon from "@/components/shared/AppIcon";
+import AppButton from "@/components/shared/AppButton";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { AuthNavOptions } from "@components/layout/AuthNavOptions";
+import { AuthNavOptions } from "@/components/layout/AuthNavOptions";
 
 export default function AuthNav() {
   const pathname = usePathname();

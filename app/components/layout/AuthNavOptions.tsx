@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import AppIcon from "@components/shared/AppIcon";
-import AppButton from "@components/shared/AppButton";
-import AppPopover from "@components/shared/AppPopover";
-import AppSwitch from "@components/shared/form/AppSwitch";
-import { useNotifications } from "@hooks/useNotifications";
+import AppIcon from "@/components/shared/AppIcon";
+import AppButton from "@/components/shared/AppButton";
+import AppPopover from "@/components/shared/AppPopover";
+import AppSwitch from "@/components/shared/form/AppSwitch";
+import { useNotifications } from "@/hooks/useNotifications";
 
 export const AuthNavOptions = () => {
   const notifications = useNotifications();

@@ -1,6 +1,6 @@
-import ProfileBasicInformation from "@modules/profile/components/ProfileBasicInformation";
-import ProfilePosts from "@modules/profile/components/ProfilePosts";
-import ProfileEdit from "@modules/profile/components/ProfileEdit";
+import ProfileBasicInformation from "@/modules/profile/components/ProfileBasicInformation";
+import ProfilePosts from "@/modules/profile/components/ProfilePosts";
+import ProfileEdit from "@/modules/profile/components/ProfileEdit";
 import React from "react";
 
 export default function Profile() {

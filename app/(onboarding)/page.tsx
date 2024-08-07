@@ -81,7 +81,7 @@
 // }
 
 // login  coming Soon
-import AppButton from "@components/shared/AppButton";
+import AppButton from "@/components/shared/AppButton";
 import React from "react";
 
 export default function Home() {

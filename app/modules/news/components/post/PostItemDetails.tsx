@@ -1,10 +1,10 @@
 import React from "react";
 import PostItemHeader from "./PostItemHeader";
 import PostItemFooter from "./PostItemFooter";
-import AppModal from "@components/shared/AppModal";
+import AppModal from "@/components/shared/AppModal";
 import PostItemOptions from "./PostItemOptions";
-import AppButton from "@components/shared/AppButton";
-import AppIcon from "@components/shared/AppIcon";
+import AppButton from "@/components/shared/AppButton";
+import AppIcon from "@/components/shared/AppIcon";
 import PostItemComments from "./PostItemComments";
 
 export default function PostItemDetails() {

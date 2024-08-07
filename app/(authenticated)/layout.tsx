@@ -1,4 +1,4 @@
-import AuthNav from "@components/layout/AuthNav";
+import AuthNav from "@/components/layout/AuthNav";
 import React from "react";
 import Image from "next/image";
 

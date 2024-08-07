@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Footer from "@components/layout/Footer";
-import AppIcon from "@components/shared/AppIcon";
+import Footer from "@/components/layout/Footer";
+import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 

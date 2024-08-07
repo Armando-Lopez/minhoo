@@ -1,4 +1,4 @@
-import AppButton from "@components/shared/AppButton";
+import AppButton from "@/components/shared/AppButton";
 import React from "react";
 
 export default function PostItemOptions() {

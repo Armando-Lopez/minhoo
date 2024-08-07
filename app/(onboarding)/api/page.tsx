@@ -1,4 +1,4 @@
-import AppVideoViewer from "@components/shared/AppVideoViewer";
+import AppVideoViewer from "@/components/shared/AppVideoViewer";
 import Image from "next/image";
 import React from "react";
 
