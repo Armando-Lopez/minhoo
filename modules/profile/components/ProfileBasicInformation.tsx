@@ -1,5 +1,5 @@
 import React from "react";
-import AppShowMoreToggle from "../shared/AppShowMoreToggle";
+import AppShowMoreToggle from "@components/shared/AppShowMoreToggle";
 
 export default function ProfileBasicInformation() {
   return (

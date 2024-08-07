@@ -1,6 +1,6 @@
-// import AppButton from "@/components/shared/AppButton";
-// import AppIcon from "@/components/shared/AppIcon";
-import AppVideoViewer from "@/components/shared/AppVideoViewer";
+// import AppButton from "@components/shared/AppButton";
+// import AppIcon from "@components/shared/AppIcon";
+import AppVideoViewer from "@components/shared/AppVideoViewer";
 import React from "react";
 
 export default function BePartOfOurTeam() {

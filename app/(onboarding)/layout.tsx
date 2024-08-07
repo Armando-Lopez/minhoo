@@ -1,11 +1,11 @@
 "use client";
 
-import Footer from "@/components/layout/Footer";
-import OnboardingNav from "@/components/layout/OnboardingNav";
-import AppButton from "@/components/shared/AppButton";
-import AppIcon from "@/components/shared/AppIcon";
+import Footer from "@components/layout/Footer";
+import OnboardingNav from "@components/layout/OnboardingNav";
+import AppButton from "@components/shared/AppButton";
+import AppIcon from "@components/shared/AppIcon";
 import eventBus from "@/eventbus";
-import { useBreakpoints } from "@/hooks/useBreakpoints";
+import { useBreakpoints } from "@hooks/useBreakpoints";
 import React, { useEffect, useState } from "react";
 
 export default function OnboardingLayout({

@@ -1,10 +1,10 @@
 import React from "react";
 import PostItemHeader from "./PostItemHeader";
 import PostItemFooter from "./PostItemFooter";
-import AppModal from "@/components/shared/AppModal";
+import AppModal from "@components/shared/AppModal";
 import PostItemDetails from "./PostItemDetails";
 import Image from "next/image";
-import AppShowMoreToggle from "@/components/shared/AppShowMoreToggle";
+import AppShowMoreToggle from "@components/shared/AppShowMoreToggle";
 
 export default function PostItem() {
   return (

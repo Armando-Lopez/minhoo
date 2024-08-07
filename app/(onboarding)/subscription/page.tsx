@@ -1,5 +1,5 @@
-// import AppButton from "@/components/shared/AppButton";
-// import AppIcon from "@/components/shared/AppIcon";
+// import AppButton from "@components/shared/AppButton";
+// import AppIcon from "@components/shared/AppIcon";
 import React from "react";
 
 export default function Subscription() {

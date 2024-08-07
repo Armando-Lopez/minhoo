@@ -1,5 +1,5 @@
-// import LoginForm from "@/components/login/LoginForm";
-// import AppButton from "@/components/shared/AppButton";
+// import LoginForm from "@components/login/LoginForm";
+// import AppButton from "@components/shared/AppButton";
 // import Link from "next/link";
 // import React from "react";
 
@@ -81,7 +81,7 @@
 // }
 
 // login  coming Soon
-import AppButton from "@/components/shared/AppButton";
+import AppButton from "@components/shared/AppButton";
 import React from "react";
 
 export default function Home() {

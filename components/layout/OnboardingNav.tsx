@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import AppIcon from "@/components/shared/AppIcon";
+import AppIcon from "@components/shared/AppIcon";
 import Link from "next/link";
 
 export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {

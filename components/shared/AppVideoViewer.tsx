@@ -1,5 +1,5 @@
 "use client";
-import { useBreakpoints } from "@/hooks/useBreakpoints";
+import { useBreakpoints } from "@hooks/useBreakpoints";
 import React, { useEffect, useState } from "react";
 
 /**

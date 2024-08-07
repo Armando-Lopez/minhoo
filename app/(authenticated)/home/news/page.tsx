@@ -1,4 +1,4 @@
-import NewsPostsList from "@/components/news/NewsPostsList";
+import NewsPostsList from "@modules/news/components/NewsPostsList";
 import React from "react";
 
 export default function NewsPage() {

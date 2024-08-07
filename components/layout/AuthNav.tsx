@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import AppIcon from "@/components/shared/AppIcon";
-import AppButton from "@/components/shared/AppButton";
+import AppIcon from "@components/shared/AppIcon";
+import AppButton from "@components/shared/AppButton";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { AuthNavOptions } from "@/components/layout/AuthNavOptions";
+import { AuthNavOptions } from "@components/layout/AuthNavOptions";
 
 export default function AuthNav() {
   const pathname = usePathname();
 
-  const isHome = pathname.includes("/home");
+  const getPathColor = (path: string) => pathname.includes(path) ? "text-primary-1" : "";
 
   return (
     <nav className="flex-grow flex flex-col pl-4 pb-5">
@@ -17,9 +17,7 @@ export default function AuthNav() {
         <li>
           <Link
             href="/home/news"
-            className={`flex items-center gap-4 ${
-              isHome ? "text-primary-1" : ""
-            }`}
+            className={`flex items-center gap-4 ${getPathColor("/home")}`}
           >
             <AppIcon icon="home" width="25" />
             <span className="text-gray-1"> Home </span>
@@ -50,7 +48,10 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/profile" className="flex items-center gap-4">
+          <Link
+            href="/profile"
+            className={`flex items-center gap-4 ${getPathColor("/profile")}`}
+            >
             <AppIcon icon="profile" width="25" className="translate-y-1" />
             <span className="text-gray-1"> Profile </span>
           </Link>

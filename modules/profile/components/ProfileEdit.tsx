@@ -1,6 +1,6 @@
 import React from "react";
-import AppButton from "../shared/AppButton";
-import AppSwitch from "../shared/form/AppSwitch";
+import AppButton from "@components/shared/AppButton";
+import AppSwitch from "@components/shared/form/AppSwitch";
 
 export default function ProfileEdit() {
   return (
