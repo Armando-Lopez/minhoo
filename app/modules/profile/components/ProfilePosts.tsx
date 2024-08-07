@@ -8,6 +8,15 @@ export default function ProfilePosts() {
         <ProfilePostsItem />
         <ProfilePostsItem />
         <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
+        <ProfilePostsItem />
       </div>
     </div>
   );
