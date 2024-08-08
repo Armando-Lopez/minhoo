@@ -1,6 +1,6 @@
 import React from "react";
 import AppButton from "@/components/shared/AppButton";
-import AppSwitch from "@/components/shared/form/AppSwitch";
+import { AppSwitch } from "@/components/shared/ui/AppSwitch";
 
 export default function ProfileEdit() {
   return (
@@ -14,7 +14,7 @@ export default function ProfileEdit() {
       </AppButton>
       <div className="flex items-center gap-2">
         Available Talent
-        <AppSwitch id="available" checked={true} />
+        <AppSwitch />
       </div>
     </div>
   );

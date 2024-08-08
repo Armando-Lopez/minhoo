@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import AppButton from "@/components/shared/AppButton";
 import AppPopover from "@/components/shared/AppPopover";
-import AppSwitch from "@/components/shared/form/AppSwitch";
-import { useNotifications } from "@/hooks/useNotifications";
+import { AppSwitch } from "@/components/shared/ui/AppSwitch";
+// import { useNotifications } from "@/hooks/useNotifications";
 
 export const AuthNavOptions = () => {
-  const notifications = useNotifications();
+  // const notifications = useNotifications();
 
-  const [allowNotifications, setAllowNotifications] = useState(
-    notifications.hasPermission
-  );
+  // const [allowNotifications, setAllowNotifications] = useState(
+  //   notifications.hasPermission
+  // );
 
-  function activateNotifications(value: boolean) {
-    setAllowNotifications(value);
-    if (value) {
-      notifications.activateNotifications(true);
-    }
-  }
+  // function activateNotifications(value: boolean) {
+  //   setAllowNotifications(value);
+  //   if (value) {
+  //     notifications.activateNotifications(true);
+  //   }
+  // }
 
   return (
     <AppPopover
@@ -34,16 +34,12 @@ export const AuthNavOptions = () => {
               <div>
                 <p>Minhoo notifications</p>
                 <p className="text-xs text-gray-1">
-                  Turn {allowNotifications ? "off" : "on"} incoming order
+                  Turn on incoming order
                   notifications
                 </p>
               </div>
               <div className="ml-auto">
-                <AppSwitch
-                  id="allow-notifications-check"
-                  checked={allowNotifications}
-                  onChange={(val) => activateNotifications(val)}
-                />
+                <AppSwitch />
               </div>
             </li>
             <li className="flex gap-3">
