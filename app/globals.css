@@ -68,3 +68,12 @@ button:disabled {
     border-radius: 20px;
   }
 }
+
+.PhoneInput {
+  @apply border-b-2 border-gray-300
+}
+.PhoneInputInput, .PhoneInputInput:focus {
+  border: none;
+  outline: none;
+  @apply ring-0
+}

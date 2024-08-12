@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import AppTextField from "@/components/shared/form/AppTextField";
+import AppTextField from "@/components/shared/ui/AppTextField";
 import AppButton from "@/components/shared/AppButton";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TSignInSchema, signInSchema } from "@/modules/login/domain/login";

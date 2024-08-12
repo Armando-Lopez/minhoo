@@ -15,14 +15,14 @@ export default forwardRef<Ref, Props>(function AppTextField(
   const hasError = !!errorsMessage;
   return (
     <div>
+      <label htmlFor={id} className="text-gray-1">{ label }</label>
       <div
-        className={`flex px-1 items-center w-full bg-transparent rounded-lg border-2 ${
+        className={`flex px-1 items-center w-full bg-transparent border-b-2 ${
           hasError ? "border-red-1" : "border-gray-300"
         }`}
       >
-        <label htmlFor={id}>{ label }</label>
         <input
-          className="block p-3 w-full bg-transparent border-none appearance-none focus:outline-none focus:ring-0"
+          className="block py-3 w-full bg-transparent border-none appearance-none focus:outline-none focus:ring-0"
           ref={ref}
           name={name}
           id={id}
