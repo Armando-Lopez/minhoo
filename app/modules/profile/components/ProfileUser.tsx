@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ProfileInfirmation } from "./profile-information/ProfileInfirmation";
+import { ProfileInformation } from "./profile-information/ProfileInformation";
 import { ProfileEdit } from "./edit-profile/ProfileEdit";
 
 export const ProfileUser = () => {
@@ -11,7 +11,7 @@ export const ProfileUser = () => {
       {isEditingProfile ? (
         <ProfileEdit toggleEdit={(val) => setIsEditingProfile(val)} />
       ) : (
-        <ProfileInfirmation toggleEdit={(val) => setIsEditingProfile(val)} />
+        <ProfileInformation toggleEdit={(val) => setIsEditingProfile(val)} />
       )}
     </div>
   );

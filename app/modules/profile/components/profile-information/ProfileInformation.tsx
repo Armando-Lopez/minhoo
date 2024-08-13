@@ -4,7 +4,7 @@ import ProfilePosts from "./ProfilePosts";
 import AppButton from "@/components/shared/AppButton";
 import { AppSwitch } from "@/components/shared/ui/AppSwitch";
 
-export const ProfileInfirmation = ({ toggleEdit }: Props) => {
+export const ProfileInformation = ({ toggleEdit }: Props) => {
   return (
     <div className="px-14 mt-5">
       <ProfileBasicInformation />
