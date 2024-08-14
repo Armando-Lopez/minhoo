@@ -35,6 +35,7 @@ export default function AppIcon({
     "book-mark": "mynaui:bookmark",
     "book-mark-fill": "radix-icons:bookmark-filled",
     chat: "tabler:message-circle",
+    "check-circle": "gg:check-o",
     "comments-dots": "iconamoon:comment-dots-light",
     cross: "maki:cross",
     dots: "arcticons:dots",

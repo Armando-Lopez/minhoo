@@ -1,4 +1,4 @@
-import { signInSchema } from "@modules/login/domain/types"
+import { signInSchema } from "@modules/login/domain/login"
 import { NextResponse } from "next/server"
 
 export async function POST(request: Request) {
