@@ -16,7 +16,7 @@ export default function AuthNav() {
       <ul className="flex-grow flex flex-col gap-7 text-gray-1">
         <li>
           <Link
-            href="/home/news"
+            href="/news"
             className={`flex items-center gap-4 ${getPathColor("/news") || getPathColor("/directory")}`}
           >
             <AppIcon icon="home" width="25" />

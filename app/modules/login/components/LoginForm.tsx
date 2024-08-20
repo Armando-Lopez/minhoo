@@ -35,7 +35,7 @@ export default function LoginForm() {
       }
       return;
     }
-    router.push("/home/news");
+    router.push("/news");
   }
 
   return (
