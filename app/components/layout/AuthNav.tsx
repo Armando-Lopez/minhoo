@@ -17,7 +17,7 @@ export default function AuthNav() {
         <li>
           <Link
             href="/home/news"
-            className={`flex items-center gap-4 ${getPathColor("/home")}`}
+            className={`flex items-center gap-4 ${getPathColor("/news") || getPathColor("/directory")}`}
           >
             <AppIcon icon="home" width="25" />
             <span className="text-gray-1"> Home </span>
