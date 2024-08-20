@@ -2,27 +2,43 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-/** 
-* A Custom component to display icons.
-* Icons are from iconify and have a custom name locally.
-*@see https://iconify.design/
-*@param {AppIconProps} props
-*@param {string|number} [props.icon] - Icon name
-*@param {string|number} [props.width]
-*@param {string|number} [props.height]
-*@param {string|number} [props.flip]
-*@param {string|number} [props.rotate]
-*@param {string|number} [props.className]
-*@example
-* ```tsx
-* <AppIcon
-    icon="notification"
-    className="text-primary-1 mb-5"
-    height="30"
-    width="25"
-  />
-* ```
-*/
+const icons = {
+  "arrow-right": "oui:arrow-right",
+  "arrow-down": "oui:arrow-down",
+  "book-mark-fill": "radix-icons:bookmark-filled",
+  "book-mark": "mynaui:bookmark",
+  "check-circle": "gg:check-o",
+  "comments-dots": "iconamoon:comment-dots-light",
+  "greater-than": "oui:arrow-up",
+  "share-box": "fluent:share-16-regular",
+  "star-fill": "solar:star-bold",
+  "star-outline": "solar:star-outline",
+  "vertical-dots": "tabler:dots-vertical",
+  back: "ic:round-arrow-back-ios",
+  chat: "tabler:message-circle",
+  close: "iconamoon:close-duotone",
+  cross: "maki:cross",
+  dots: "arcticons:dots",
+  facebook: "bxl:facebook",
+  handshake: "fa6-regular:handshake",
+  home: "teenyicons:home-solid",
+  instagram: "bi:instagram",
+  lock: "mingcute:lock-fill",
+  menu: "ic:round-menu",
+  notification: "pajamas:notifications",
+  play: "solar:play-bold",
+  plus: "clarity:plus-line",
+  profile: "gg:profile",
+  search: "octicon:search-16",
+  settings: "eva:settings-2-outline",
+  share: "ph:share-fat-bold",
+  shield: "material-symbols:policy",
+  tiktok: "ic:outline-tiktok",
+  twitter: "pajamas:twitter",
+  youtube: "mdi:youtube",
+  location: "ep:location",
+  gears: "carbon:gears",
+}
 export default function AppIcon({
   icon,
   width,
@@ -30,43 +46,10 @@ export default function AppIcon({
   flip,
   rotate,
   className,
-}: AppIconProps) {
-  const renderIcon = {
-    "book-mark": "mynaui:bookmark",
-    "book-mark-fill": "radix-icons:bookmark-filled",
-    chat: "tabler:message-circle",
-    "check-circle": "gg:check-o",
-    "comments-dots": "iconamoon:comment-dots-light",
-    cross: "maki:cross",
-    dots: "arcticons:dots",
-    handshake: "fa6-regular:handshake",
-    home: "teenyicons:home-solid",
-    menu: "ic:round-menu",
-    close: "iconamoon:close-duotone",
-    notification: "pajamas:notifications",
-    facebook: "bxl:facebook",
-    instagram: "bi:instagram",
-    twitter: "pajamas:twitter",
-    tiktok: "ic:outline-tiktok",
-    youtube: "mdi:youtube",
-    plus: "clarity:plus-line",
-    profile: "gg:profile",
-    search: "octicon:search-16",
-    settings: "eva:settings-2-outline",
-    share: "ph:share-fat-bold",
-    "share-box": "fluent:share-16-regular",
-    "star-outline": "solar:star-outline",
-    "vertical-dots": "tabler:dots-vertical",
-    play: "solar:play-bold",
-    "greater-than": "oui:arrow-up",
-    shield: "material-symbols:policy",
-    lock: "mingcute:lock-fill",
-    back: "ic:round-arrow-back-ios",
-  }[icon] as string;
-
+}: Readonly<AppIconProps>) {
   return (
     <Icon
-      icon={renderIcon}
+      icon={icons[icon]}
       width={width}
       height={height}
       flip={flip}
@@ -76,8 +59,9 @@ export default function AppIcon({
   );
 }
 
+
 interface AppIconProps {
-  icon: string;
+  icon: keyof typeof icons;
   height?: string | number;
   width?: string | number;
   flip?: string;

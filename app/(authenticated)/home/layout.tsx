@@ -54,7 +54,7 @@ export default function HomeLayout({
             </span>
           </Link>
         </div>
-        <main className="px-12">{children}</main>
+        <main>{children}</main>
       </div>
       <div className="col-span-5 px-4">
         <Footer className="flex flex-wrap gap-2 pb-3 text-gray-1 text-xs" />
