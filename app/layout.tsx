@@ -9,7 +9,8 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 export const metadata: Metadata = {
-  title: "Minhoo"
+  title: "Minhoo",
+  description: "We are a passionate team dedicated to connecting users and real-time service providers, delivering convenience and efficiency. Our mission is to enhance people’s lives by empowering service providers and providing quality solutions.",
 };
 
 export default function RootLayout({

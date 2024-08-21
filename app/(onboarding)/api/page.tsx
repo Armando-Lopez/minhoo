@@ -21,7 +21,7 @@ export default function Api() {
         <section className="order-2 lg:order-1 col-span-12 lg:col-span-7">
           <h2 className="mb-8 text-primary-1">
             <span className="block md:inline text-black-1">The Minhoo </span>
-            platform
+            Platform
           </h2>
           <div className="mb-5">
             <h4 className="mb-8">Minhoo Graph API</h4>
@@ -29,30 +29,29 @@ export default function Api() {
               The Minhoo Graph API allows users of your application to access
               data in their Minhoo Creator accounts. The API can be used to
               source and publish their media, manage and respond to comments on
-              their media, identify media where other Minhoo users, view
-              comments, find Minhoo Creators, be able to apply to face-to-face
-              or virtual job posting requests
+              their media, identify media where other Minhoo users view
+              comments, and find Minhoo Creators. It enables them to apply to
+              face-to-face or virtual job posting requests.
             </p>
           </div>
           <div className="mb-5">
             <h4 className="mb-5">Minhoo Basic Display API</h4>
             <p>
               The Minhoo Basic Viewing API allows users of your application to
-              get basic profile information, photos in their Minhoo accounts.
+              get basic profile information and photos in their Minhoo accounts.
               The API is intended for Minhoo users who are not businesses or
               creators. If you are building an application that will allow users
-              to post media, moderate comments, identify @mentioned media and
+              to post media, moderate comments, identify @mentioned media, and
               get data about other Minhoo users, use the Minhoo Graph API.
             </p>
           </div>
           <div className="mb-5">
-            <h4 className="mb-5">Minhoo Messaging</h4>
+            <h4 className="mb-5">Minhoo Messaging API</h4>
             <p>
               Support for the Messenger API for Minhoo (also known as the Minhoo
               Messaging API in our Developer Policies) allows Minhoo accounts to
               use your application to manage their Minhoo messages. The API can
               be used to send and receive messages from other Minhoo users.
-              Messaging API Support
             </p>
           </div>
           <div className="mb-6">
@@ -61,6 +60,13 @@ export default function Api() {
               With Minhoo Sharing, you can allow your app users to share your
               content on different digital media
             </p>
+          </div>
+          <div className="mb-5">
+            <h4 className="mb-5">What is Minhoo</h4>
+            <ul>
+              <li>Request services</li>
+              <li>Offering services</li>
+            </ul>
           </div>
         </section>
       </div>

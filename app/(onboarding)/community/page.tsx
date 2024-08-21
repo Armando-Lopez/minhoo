@@ -20,7 +20,7 @@ export default function Community() {
                 className="w-64 mx-auto"
               />
               <p className="font-bold text-xl mt-6">Need help?</p>
-              <p>Find solutions in real time 24/7, 365 days a year.</p>
+              <p>Find solutions in real-time 24/7, 365 days a year.</p>
             </div>
           </div>
           <div className="bg-white border-radius-20 px-4 xl:px-12 h-96 place-items-center grid">
@@ -32,8 +32,8 @@ export default function Community() {
               />
               <p className="font-bold text-xl mt-6">Work with Minhoo</p>
               <p>
-                We connect you with clients looking for your services and work
-                how, when, and where you want.
+                We connect you with clients looking for your services, allowing
+                you to work how, when, and where you want.
               </p>
             </div>
           </div>
@@ -46,7 +46,8 @@ export default function Community() {
               />
               <p className="font-bold text-xl mt-6">Set your own rates</p>
               <p>
-                You keep 100% of what you earn and are paid directly to you.
+                You keep 100% of what you earn, and payments are made directly
+                to you.
               </p>
             </div>
           </div>

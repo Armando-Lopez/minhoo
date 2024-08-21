@@ -21,6 +21,15 @@ export default function Team() {
           </div>
           <div className="lg:text-left w-full md:w-[40%] lg:w-[30%]">
             <img
+              src="/team/esteban.jpg"
+              alt="Esteban Marin"
+              className="border-radius"
+            />
+            <p className="font-bold text-xl mt-5">Esteban Marin</p>
+            <p>Accounting Services Manager</p>
+          </div>
+          <div className="lg:text-left w-full md:w-[40%] lg:w-[30%]">
+            <img
               src="/team/mila.jpg"
               alt="Eder Oquendo"
               className="border-radius"

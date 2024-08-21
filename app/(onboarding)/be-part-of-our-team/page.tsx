@@ -25,22 +25,19 @@ export default function BePartOfOurTeam() {
         </div>
         <div>
           <h2 className="mb-8 text-center md:text-left text-primary-1 font-bold">
-            <span className="lg:block text-black-1">Be part of</span> our team
+            <span className="lg:block text-black-1">Be Part Of</span> Our Team
           </h2>
           <p className="mb-5 text-black-1">
-            You may be the missing piece in the puzzle.
+            You may be the missing piece in the puzzle. We have a seat reserved
+            for you on our board of directors. With your help, we will conquer
+            the world and generate opportunities and solutions for all. It will
+            make life easier for many users. Be part of our team!
           </p>
-          <p className="mb-5 text-black-1">
-            We have a seat reserved for you on our board of directors. With your
-            help we will conquer the world and generate opportunities and
-            solutions for all. It will make life easier for many users.
-          </p>
-          <p>Be part of our team!</p>
         </div>
       </section>
       <div className="mb-24">
         <h2 className="mb-6 lg:text-center text-primary-1 font-bold">
-          <span className="text-black-1">We&apos;re only</span> looking for you!
+          <span className="text-black-1">We&apos;re Only</span> Looking For You!
         </h2>
         <img
           src="be-part-of-our-team/we-are-only-looking-for-you.png"
@@ -50,10 +47,10 @@ export default function BePartOfOurTeam() {
       </div>
       <section className="max-w-xl mx-auto mb-16">
         <h2 className="mb-8 lg:text-center text-primary-1 font-bold">
-          <span className="text-black-1">Let&apos;s talk</span> business
+          <span className="text-black-1">Let&apos;s Talk</span> Business
         </h2>
         <p className="mb-8 text-black-1 lg:text-center">
-          If you are interested leave us your contact information and we will
+          If you are interested, leave us your contact information, and we will
           contact you to arrange a meeting to discuss the details.
         </p>
         <strong className="lg:text-center block">

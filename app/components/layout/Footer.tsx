@@ -7,7 +7,7 @@ export default function Footer({ className }: { className: string }) {
       <Link href="/" className="text-center">
         Home
       </Link>
-      <Link href="/we">We</Link>
+      <Link href="/about-us">About Us</Link>
       <Link href="/team">Team</Link>
       <Link href="/community">Community</Link>
       {/* <Link href="/subscription">Pre-Sell</Link> */}

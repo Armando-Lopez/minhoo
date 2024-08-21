@@ -15,7 +15,7 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
       <label
         htmlFor="app-drawer"
         className={`fixed top-3 md:relative z-50 lg:z-10 right-4 block h-fit text-black p-2 cursor-pointer rounded-full md:rounded-none lg:pb-6 ${
-          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80` : "bg-gray-150"
+          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80 lg:pb-0` : "bg-gray-150"
         }`}
         title="open menu"
         tabIndex={0}
@@ -66,12 +66,12 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
             </li>
             <li>
               <Link
-                href="/we"
-                title="We"
+                href="/about-us"
+                title="About Us"
                 onClick={closeDrawer}
                 className="py-2.5 px-11 hover:bg-white w-full block"
               >
-                We
+                About Us
               </Link>
             </li>
             <li>

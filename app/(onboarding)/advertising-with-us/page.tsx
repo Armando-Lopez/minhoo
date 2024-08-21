@@ -1,5 +1,5 @@
-// import AppButton from "@components/shared/AppButton";
-// import AppIcon from "@components/shared/AppIcon";
+// import AppButton from "@/components/shared/AppButton";
+// import AppIcon from "@/components/shared/AppIcon";
 import AppVideoViewer from "@/components/shared/AppVideoViewer";
 import Image from "next/image";
 import React from "react";
@@ -8,7 +8,7 @@ export default function AdvertisingWithUs() {
   return (
     <div className="mb-24 md:mb-36">
       <section className="container lg:flex gap-5">
-      <div className="relative mb-10 lg:mb-16">
+        <div className="relative mb-10 lg:mb-16">
           <div className="mx-auto mb-4 overflow-hidden w-[328px] md:w-[558px] xl:w-[870px] 2xl:w-[970px]">
             <AppVideoViewer
               className="mx-auto border-radius-20"
@@ -26,31 +26,26 @@ export default function AdvertisingWithUs() {
         </div>
         <div className="text-black-1">
           <h2 className="mb-3 lg:mb-8 text-center md:text-left text-primary-1 font-bold">
-            <span className="lg:block text-black-1">Advertise</span> your brand
+            <span className="lg:block text-black-1">Advertise</span> Your Brand
           </h2>
           <p className="mb-5">
-            We have a direct visualization of your brand in our app by users of
-            all kinds in real time.
-          </p>
-          <p>
-            We take care of creating and promoting your 10 second video or
-            advertising post which is shared with you so you can show it in your
-            networks. Positioning your brand in our community.
+            We have a direct visualisation of your brand in our app by users of
+            all kinds in real-time. We take care of creating and promoting your
+            10-second video or advertising post, which is shared with you so you
+            can show it on your networks, positioning your brand in our
+            community.
           </p>
         </div>
       </section>
       <section className="container mx-auto my-24 lg:my-36 lg:text-center">
         <h2 className="mb-8 font-bold text-primary-1 text-center">
-          <span className="block md:inline text-black-1">Tell us about</span>{" "}
-          your business
+          <span className="block md:inline text-black-1">Tell Us About</span>{" "}
+          Your Business
         </h2>
-        <p className="mb-5 text-black-1">
-          If you want to show your brand contact us, write us about your
-          business and a sales consultant will contact you.
-        </p>
-        <p className="mb-16 lg:mb-8 text-black-1">
-          All material must be provided in order to develop a video that meets
-          your expectations.
+        <p className="mb-5 text-black-1 lg:w-[55%] lg:mx-auto">
+          If you want to show your brand, contact us. Write to us about your
+          business, and a sales consultant will contact you. All material must
+          be provided in order to develop a video that meets your expectations.
         </p>
         <strong className="text-center block">
           Contact us at info@minhoo.com
