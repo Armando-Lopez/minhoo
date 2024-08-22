@@ -38,6 +38,9 @@ const icons = {
   youtube: "mdi:youtube",
   location: "ep:location",
   gears: "carbon:gears",
+  laptop: "icon-park-twotone:laptop-computer",
+  building: "ph:building-duotone",
+  "user-hand-up": "solar:user-hand-up-bold"
 }
 export default function AppIcon({
   icon,
