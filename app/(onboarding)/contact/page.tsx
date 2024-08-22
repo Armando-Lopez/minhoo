@@ -1,5 +1,5 @@
-import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
+import AppIcon from "@/components/shared/AppIcon";
 
 export default function Contact() {
   return (

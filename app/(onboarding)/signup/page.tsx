@@ -1,5 +1,5 @@
 "use client";
-import { SignUpForm } from "@/modules/signup/components/SignUpForm";
+import { SignUpForm } from "@/modules/signup/components/SignupForm";
 import { SignUpSuccess } from "@/modules/signup/components/SignUpSuccess";
 import React, { useState } from "react";
 
