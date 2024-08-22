@@ -1,6 +1,6 @@
 import { signUpInterface } from "../domain/sign-schema";
 
-export const sigUpService = async (data: signUpInterface) => {
+export const signUpService = async (data: signUpInterface) => {
   const response = await fetch("api/signup", {
     method: "POST",
     body: JSON.stringify(data),

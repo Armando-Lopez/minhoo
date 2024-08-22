@@ -18,7 +18,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/shared/ui/form";
-import { sigUpService } from "../services/sign-up";
+import { signUpService } from "../services/sign-up";
 
 export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
   const form = useForm<z.infer<typeof signUpFormSchema>>({
@@ -33,7 +33,7 @@ export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
   });
 
   async function onSubmit(values: z.infer<typeof signUpFormSchema>) {
-    const { data } = await sigUpService(values);
+    const { data } = await signUpService(values);
     console.log(data);
     if (data?.header?.success) {
       onSuccess();
