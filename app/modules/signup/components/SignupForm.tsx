@@ -34,14 +34,12 @@ export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
 
   async function onSubmit(values: z.infer<typeof signUpFormSchema>) {
     const { data } = await signUpService(values);
-    console.log(data);
     if (data?.header?.success) {
       onSuccess();
       return
     }
     if (data?.header?.success === false) {
       form.setError("confirm_password", { message: data?.header?.messages[0] });
-      return
     }
     
   }

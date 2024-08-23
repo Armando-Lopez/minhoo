@@ -1,4 +1,5 @@
 import AppVideoViewer from "@/components/shared/AppVideoViewer";
+import { NewsLetterSubscribeFrom } from "@/modules/newsletter/components/NewsLetterSubscribeFrom";
 import React from "react";
 
 export default function Newsletter() {
@@ -30,13 +31,10 @@ export default function Newsletter() {
           />
         </div>
       </div>
-      <div className="order-3 mt-5 lg:mt-8">
-        formulario
-        <input type="text" className="w-full" />
-        <input type="text" className="w-full" />
-        <input type="text" className="w-full" />
-        <input type="text" className="w-full" />
-        <input type="text" className="w-full" />
+      <div className="flex order-3 mt-5 lg:mt-8">
+        <div className="w-full">
+          <NewsLetterSubscribeFrom />
+        </div>
       </div>
     </section>
   );

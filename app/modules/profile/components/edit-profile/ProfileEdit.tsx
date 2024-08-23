@@ -5,7 +5,6 @@ import PhoneInput from "react-phone-number-input";
 
 export const ProfileEdit = () => {
 const [value, setValue] = useState<any>();
-  console.log(value);
   
   return (
     <div className="pb-10">

@@ -4,6 +4,7 @@ export type signUpInterface = {
   name: string;
   last_name: string;
   email: string;
+  phone: string;
   password: string;
   confirm_password: string;
 };
@@ -17,6 +18,9 @@ export const signUpFormSchema = z
       message: "Last name must be at least 3 characters.",
     }),
     email: z.string().email({ message: "Invalid email address." }),
+    phone: z.string().min(8, {
+      message: "Phone must be at least 8 characters.",
+    }),
     password: z.string().min(8, {
       message: "Password must be at least 8 characters.",
     }),
