@@ -3,9 +3,11 @@ import { Card, CardContent } from "@/components/shared/ui/AppCard";
 import { Input } from "@/components/shared/ui/AppInput";
 import { Avatar, AvatarImage } from "@/components/shared/ui/avatar";
 import { DirectoryFilters } from "@/modules/directory/components/DirectoryFilters";
+import { redirect } from "next/navigation";
 import React from "react";
 
 export default function DirectoryPage() {
+  redirect("/newsletter");
   return (
     <section>
       <div className="sticky top-0 flex justify-between items-center px-5 mb-10">

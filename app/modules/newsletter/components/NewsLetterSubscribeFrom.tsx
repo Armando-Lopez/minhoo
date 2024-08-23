@@ -36,6 +36,7 @@ export const NewsLetterSubscribeFrom = () => {
     if (isLoading) return;
     setIsLoading(true);
     const { data } = await signUpService(values);
+    console.log(data);
     if (data?.header?.success) {
       setHasSubmit(true);
       setIsLoading(false);
