@@ -54,7 +54,7 @@ export const NewsLetterSubscribeFrom = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className=" grid grid-cols-2 gap-3"
+        className="grid grid-cols-2 gap-3"
         autoComplete="off"
       >
         <FormField
@@ -141,7 +141,7 @@ export const NewsLetterSubscribeFrom = () => {
         />
         <div className="col-span-2">
           <AppButton type="submit" className="w-full py-6">
-            Register
+            Submit
           </AppButton>
         </div>
       </form>
