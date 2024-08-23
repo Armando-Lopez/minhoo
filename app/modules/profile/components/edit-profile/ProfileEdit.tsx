@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
-export const ProfileEdit = ({ toggleEdit }: Props) => {
+export const ProfileEdit = () => {
 
   const [value, setValue] = useState()
   console.log(value);
@@ -85,7 +85,7 @@ export const ProfileEdit = ({ toggleEdit }: Props) => {
   );
 };
 
-type Props = {
-  // eslint-disable-next-line no-unused-vars
-  toggleEdit: (value: boolean) => void;
-};
+// type Props = {
+//   // eslint-disable-next-line no-unused-vars
+//   toggleEdit: (value: boolean) => void;
+// };
