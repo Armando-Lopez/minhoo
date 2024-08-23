@@ -4,8 +4,7 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
 export const ProfileEdit = () => {
-
-  const [value, setValue] = useState()
+const [value, setValue] = useState<any>();
   console.log(value);
   
   return (

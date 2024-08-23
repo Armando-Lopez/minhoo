@@ -9,7 +9,7 @@ export const ProfileUser = () => {
   return (
     <div>
       {isEditingProfile ? (
-        <ProfileEdit toggleEdit={(val) => setIsEditingProfile(val)} />
+        <ProfileEdit />
       ) : (
         <ProfileInformation toggleEdit={(val) => setIsEditingProfile(val)} />
       )}
