@@ -24,7 +24,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/request-services" className="flex items-center gap-4">
+          <Link href="/request-services" className={`flex items-center gap-4 ${getPathColor("/request-services")}`}>
             <AppIcon icon="handshake" width="27" height="23" className="mt-1" />
             <span className="text-gray-1"> Request services </span>
           </Link>
