@@ -11,11 +11,15 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
     drawerActivator.current?.click();
   }
   return (
-    <div className={`relative after:content-[''] after:absolute after:top-0 after:w-full after:h-full bg-gray-150`}>
+    <div
+      className={`relative after:content-[''] after:absolute after:top-0 after:w-full after:h-full bg-gray-150`}
+    >
       <label
         htmlFor="app-drawer"
         className={`fixed top-3 md:relative z-50 lg:z-10 right-4 block h-fit text-black p-2 cursor-pointer rounded-full md:rounded-none lg:pb-6 ${
-          isScrolled ? `backdrop-blur-[20px] bg-gray-150/80 lg:pb-0` : "bg-gray-150"
+          isScrolled
+            ? `backdrop-blur-[20px] bg-gray-150/80 lg:pb-0`
+            : "bg-gray-150"
         }`}
         title="open menu"
         tabIndex={0}
@@ -122,6 +126,16 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
                 className="py-2.5 px-11 hover:bg-white w-full block"
               >
                 Be part of our team
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/newsletter"
+                title="Contact us"
+                onClick={closeDrawer}
+                className="py-2.5 px-11 hover:bg-white w-full block"
+              >
+                Subscription
               </Link>
             </li>
             <li>

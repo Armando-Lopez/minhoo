@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Newsletter() {
   return (
-    <section className="container grid gap-10 lg:gap-5 lg:grid-cols-2  pb-24 lg:pb-36">
+    <section className="container grid gap-10 lg:gap-5 lg:grid-cols-2  pb-24 lg:pb-36 lg:items-center">
       <div className="order-2 lg:order-1 text-center grid gap-5 lg:col-span-2">
         <h2>
           Subscribe and be{" "}
@@ -20,18 +20,18 @@ export default function Newsletter() {
           <AppVideoViewer
             className="mx-auto border-radius-20"
             poster="/newsletter/thumb.jpg"
-            posterBreakpoints={{
-              md: "/newsletter/thumb-md.jpg",
-            }}
+            // posterBreakpoints={{
+            //   md: "/newsletter/thumb-md.jpg",
+            // }}
             url="https://player.vimeo.com/progressive_redirect/playback/1001773797/rendition/1080p/file.mp4?loc=external&signature=2320548f47741118afed1c2c73bec839aadfa826b816edb430a49dd28d0225c1"
-            urlBreakpoints={{
-              md: "https://player.vimeo.com/progressive_redirect/playback/1001773548/rendition/1080p/file.mp4?loc=external&signature=4bec5628514383632edcb7878270f1719135800ce2f72f7b5cce0fd7deeecc37",
-            }}
+            // urlBreakpoints={{
+            //   md: "https://player.vimeo.com/progressive_redirect/playback/1001773548/rendition/1080p/file.mp4?loc=external&signature=4bec5628514383632edcb7878270f1719135800ce2f72f7b5cce0fd7deeecc37",
+            // }}
             title="Be part of our team"
           />
         </div>
       </div>
-      <div className="flex order-3 mt-5 lg:mt-8">
+      <div className="flex order-3 mt-5 lg:mt-8 lg:bg-white lg:border-radius-20 lg:grid lg:items-center lg:p-16">
         <div className="w-full">
           <NewsLetterSubscribeFrom />
         </div>

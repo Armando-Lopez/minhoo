@@ -36,7 +36,6 @@ export const NewsLetterSubscribeFrom = () => {
     if (isLoading) return;
     setIsLoading(true);
     const { data } = await signUpService(values);
-    console.log(data);
     if (data?.header?.success) {
       setHasSubmit(true);
       setIsLoading(false);
@@ -63,7 +62,7 @@ export const NewsLetterSubscribeFrom = () => {
           render={({ field }) => (
             <FormItem className="col-span-1">
               <FormControl>
-                <Input placeholder="Name" className="py-6" {...field} />
+                <Input placeholder="Name" className="py-4" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -75,7 +74,7 @@ export const NewsLetterSubscribeFrom = () => {
           render={({ field }) => (
             <FormItem className="col-span-1">
               <FormControl>
-                <Input placeholder="Last name" className="py-6" {...field} />
+                <Input placeholder="Last name" className="py-4" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -87,7 +86,7 @@ export const NewsLetterSubscribeFrom = () => {
           render={({ field }) => (
             <FormItem className="col-span-2">
               <FormControl>
-                <Input placeholder="Email" className="py-6" {...field} />
+                <Input placeholder="Email" className="py-4" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -99,7 +98,7 @@ export const NewsLetterSubscribeFrom = () => {
           render={({ field }) => (
             <FormItem className="col-span-2">
               <FormControl>
-                <Input placeholder="Phone" className="py-6" {...field} />
+                <Input placeholder="Phone" className="py-4" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -113,7 +112,7 @@ export const NewsLetterSubscribeFrom = () => {
               <FormControl>
                 <Input
                   placeholder="Password"
-                  className="py-6"
+                  className="py-4"
                   type="password"
                   {...field}
                 />
@@ -130,7 +129,7 @@ export const NewsLetterSubscribeFrom = () => {
               <FormControl>
                 <Input
                   placeholder="Confirm password"
-                  className="py-6"
+                  className="py-4"
                   type="password"
                   {...field}
                 />
@@ -140,7 +139,7 @@ export const NewsLetterSubscribeFrom = () => {
           )}
         />
         <div className="col-span-2">
-          <AppButton type="submit" className="w-full py-6">
+          <AppButton type="submit" className="w-full py-4">
             Submit
           </AppButton>
         </div>
