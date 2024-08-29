@@ -12,19 +12,15 @@ export default function PostItem() {
       <PostItemHeader />
       <div>
         <AppShowMoreToggle>
-          post.description Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Eum veniam maiores perferendis itaque ut blanditiis accusamus,
-          totam quas explicabo nostrum! Qui tempore nesciunt placeat aspernatur
-          nam tempora deserunt illum quasi. post.description Lorem ipsum dolor,
-          sit amet consectetur adipisicing elit. Eum veniam maiores perferendis
-          itaque ut blanditiis accusamus, totam quas explicabo nostrum! Qui
-          tempore nesciunt placeat aspernatur nam tempora deserunt illum quasi.
-          post.description Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Eum veniam maiores perferendis itaque ut blanditiis accusamus,
-          totam quas explicabo nostrum! Qui tempore nesciunt placeat aspernatur
-          nam tempora deserunt illum quasi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus
+          odio atque dolores, facilis quibusdam eius est cum aut optio dicta.
+          Quisquam praesentium consectetur architecto excepturi natus ex.
+          Ducimus, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Tempore natus odio atque dolores, facilis quibusdam eius est cum
+          aut optio dicta. Quisquam praesentium consectetur architecto excepturi
+          natus ex. Ducimus, quisquam.
         </AppShowMoreToggle>
-        <div className="relative">
+        <div className="relative mt-2">
           <AppModal
             activator={
               <Image

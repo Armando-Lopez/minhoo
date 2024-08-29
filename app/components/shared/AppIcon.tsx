@@ -25,7 +25,7 @@ const icons = {
   dots: "arcticons:dots",
   facebook: "bxl:facebook",
   gears: "carbon:gears",
-  handshake: "fa6-regular:handshake",
+  handshake: "fa-regular:handshake",
   home: "teenyicons:home-solid",
   instagram: "bi:instagram",
   laptop: "icon-park-twotone:laptop-computer",

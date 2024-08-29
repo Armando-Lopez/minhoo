@@ -1,29 +1,15 @@
 import React from "react";
 import PostItemHeader from "./PostItemHeader";
 import PostItemFooter from "./PostItemFooter";
-import AppModal from "@/components/shared/AppModal";
-import PostItemOptions from "./PostItemOptions";
-import AppButton from "@/components/shared/AppButton";
-import AppIcon from "@/components/shared/AppIcon";
 import PostItemComments from "./PostItemComments";
 
 export default function PostItemDetails() {
   return (
     <article className="flex">
-      <img src="https://placehold.co/466x580" alt="" />
-      <div className="flex flex-col max-w-96 ml-7 mr-16 py-9">
+      <img src="/team/wildelmy-colina.jpg" alt="" className="max-w-[466px]" />
+      <div className="flex flex-col max-w-96 ml-7 mr-16 pt-9">
         <div className="flex">
           <PostItemHeader />
-          <AppModal
-            activator={
-              <AppButton title="post options" className="mb-auto ml-7">
-                <AppIcon icon="vertical-dots" width="30" />
-              </AppButton>
-            }
-            className="rounded-2xl"
-          >
-            <PostItemOptions />
-          </AppModal>
         </div>
         <p>
           We are a branding, design and creative agency. As a branding

@@ -6,7 +6,7 @@ import { AppSwitch } from "@/components/shared/ui/AppSwitch";
 
 export const ProfileInformation = ({ toggleEdit }: Props) => {
   return (
-    <div className="px-14 mt-5">
+    <div className="px-16 mt-7">
       <ProfileBasicInformation />
       <div className="flex justify-between items-center my-7">
         <p>Profile 100% complete</p>

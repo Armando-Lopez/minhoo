@@ -2,18 +2,20 @@ import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
 import Link from "next/link";
+import AppModal from "@/components/shared/AppModal";
+import PostItemOptions from "./PostItemOptions";
 
 export default function PostItemHeader() {
   return (
-    <div className="flex items-cene gap-4 mb-6">
+    <div className="flex items-center w-full gap-4 mb-5">
       <Link href="/profile">
         <img
-          src="https://placehold.co/51x51"
+          src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
           className="w-12 h-12 rounded-full"
           alt="user-name"
         />
       </Link>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col">
         <Link href="/profile">
           <h4>Percept brand design </h4>
         </Link>
@@ -25,9 +27,18 @@ export default function PostItemHeader() {
           Follow
         </AppButton>
       </div>
-      <AppButton title="contract service" className="h-fit ml-auto">
-        <AppIcon icon="handshake" width="35" className="mt-1 text-primary-1" />
-      </AppButton>
+      <div className="ml-auto">
+        <AppModal
+          activator={
+            <AppButton title="post options">
+              <AppIcon icon="vertical-dots" width="30" />
+            </AppButton>
+          }
+          className="rounded-2xl h-fit ml-auto"
+        >
+          <PostItemOptions />
+        </AppModal>
+      </div>
     </div>
   );
 }

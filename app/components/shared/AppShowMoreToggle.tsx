@@ -8,7 +8,7 @@ export default function AppShowMoreToggle({
   return (
     <>
       <input id="hide-description" type="checkbox" className="hidden peer" />
-      <p className="overflow-hidden relative max-h-12 text-ellipsis before:absolute before:bottom-0 before:w-full before:h-1/2 before:bg-gradient-to-t before:from-white before:pointer-events-none peer-checked:max-h-[500vh] peer-checked:before:opacity-0">
+      <p className="overflow-hidden relative max-h-12 text-ellipsis before:absolute before:bottom-0 before:w-full before:h-1/4 before:bg-gradient-to-t before:from-white before:pointer-events-none peer-checked:max-h-[500vh] peer-checked:before:opacity-0">
         {children}
       </p>
       <label

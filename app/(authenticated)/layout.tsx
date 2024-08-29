@@ -11,7 +11,7 @@ export default function AuthenticatedLayout({
     <div className="flex h-dvh overflow-hidden bg-gray-170">
       <div className="container flex-grow grid grid-cols-12">
         <div className="col-span-3 h-full flex flex-col border-r border-r-gray-1/50">
-          <header className="mb-8 pt-4">
+          <header className="mb-8 pt-5">
             <Image
               width={101}
               height={24}
@@ -21,7 +21,7 @@ export default function AuthenticatedLayout({
           </header>
           <AuthNav />
         </div>
-        <div className="col-span-9 pt-4">
+        <div className="col-span-9">
           {children}
         </div>
       </div>

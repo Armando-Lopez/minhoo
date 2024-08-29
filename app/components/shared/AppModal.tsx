@@ -63,7 +63,7 @@ export default function AppModal({
       >
         <AppButton
           title="close modal"
-          className="absolute top-2 right-2"
+          className="absolute top-4 right-4"
           onClick={toggleModal}
         >
           <AppIcon icon="cross" width="20" />

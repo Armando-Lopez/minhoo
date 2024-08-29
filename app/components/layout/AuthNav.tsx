@@ -5,6 +5,7 @@ import AppButton from "@/components/shared/AppButton";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AuthNavOptions } from "@/components/layout/AuthNavOptions";
+import Image from "next/image";
 
 export default function AuthNav() {
   const pathname = usePathname();
@@ -12,26 +13,26 @@ export default function AuthNav() {
   const getPathColor = (path: string) => pathname.includes(path) ? "text-primary-1" : "";
 
   return (
-    <nav className="flex-grow flex flex-col pl-4 pb-5">
+    <nav className="flex-grow flex flex-col pb-5">
       <ul className="flex-grow flex flex-col gap-7 text-gray-1">
         <li>
           <Link
             href="/news"
             className={`flex items-center gap-4 ${getPathColor("/news") || getPathColor("/directory")}`}
           >
-            <AppIcon icon="home" width="25" />
+            <AppIcon icon="home" width="23" />
             <span className="text-gray-1"> Home </span>
           </Link>
         </li>
         <li>
           <Link href="/request-services" className={`flex items-center gap-4 ${getPathColor("/request-services")}`}>
-            <AppIcon icon="handshake" width="27" height="23" className="mt-1" />
+            <AppIcon icon="handshake" width="29" />
             <span className="text-gray-1"> Request services </span>
           </Link>
         </li>
         <li>
           <Link href="/" className="flex items-center gap-4">
-            {/* <app-minhoo-icon /> */}
+            <Image src="/icon/minhoo.svg" alt="icon minhoo" width="27" height="27"/>
             <span className="text-gray-1"> Offer services </span>
           </Link>
         </li>
@@ -52,7 +53,7 @@ export default function AuthNav() {
             href="/profile"
             className={`flex items-center gap-4 ${getPathColor("/profile")}`}
             >
-            <AppIcon icon="profile" width="25" className="translate-y-1" />
+            <AppIcon icon="profile" width="25"/>
             <span className="text-gray-1"> Profile </span>
           </Link>
         </li>
