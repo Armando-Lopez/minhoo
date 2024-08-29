@@ -8,7 +8,7 @@ export default function PostItemShare() {
       <p className="mb-8 text-center text-lg font-semibold">
         Share publication
       </p>
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         <Image
           src="/team/wildelmy-colina.jpg"
           width="64"
