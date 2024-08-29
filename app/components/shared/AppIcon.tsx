@@ -44,6 +44,8 @@ const icons = {
   tiktok: "ic:outline-tiktok",
   twitter: "pajamas:twitter",
   youtube: "mdi:youtube",
+  clock: "iconoir:clock",
+  history: "solar:history-outline",
 }
 export default function AppIcon({
   icon,
