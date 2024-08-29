@@ -16,7 +16,7 @@ export default function PostItemDetails() {
           specialist, we transform creative lorem ipsum imdor amet setor.
         </p>
         <div className="my-5">
-          <PostItemFooter />
+          <PostItemFooter saveOption />
         </div>
         <PostItemComments />
         {/* <app-post-item-comments className="flex w-full flex-grow" /> */}

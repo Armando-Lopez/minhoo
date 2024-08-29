@@ -37,6 +37,7 @@ const icons = {
   play: "solar:play-bold",
   plus: "clarity:plus-line",
   profile: "gg:profile",
+  save: "material-symbols-light:sync-saved-locally-outline-rounded",
   search: "octicon:search-16",
   settings: "eva:settings-2-outline",
   share: "ph:share-fat-bold",
