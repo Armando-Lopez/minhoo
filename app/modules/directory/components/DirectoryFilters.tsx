@@ -19,7 +19,7 @@ export const DirectoryFilters = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center gap-2">
-        Locations / Skills <AppIcon icon="arrow-down" />
+        All Australia / All skills <AppIcon icon="arrow-down" width="14" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-[344px] rounded-xl p-5" align="end">
         <DropdownMenuLabel className="text-gray-3 text-sm">
@@ -57,7 +57,11 @@ export const DirectoryFilters = () => {
               <RadioGroup defaultValue="option-one">
                 <div className="flex items-center justify-between space-x-2">
                   <Label htmlFor="option-one">All</Label>
-                  <RadioGroupItem value="option-one" id="option-one" className="w-5 h-5" />
+                  <RadioGroupItem
+                    value="option-one"
+                    id="option-one"
+                    className="w-5 h-5"
+                  />
                 </div>
               </RadioGroup>
             </AccordionContent>
