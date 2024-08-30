@@ -26,7 +26,7 @@ export const RequestServiceFilters = () => {
             </Link>
           </li>
           <li>
-            <Link href="/ongoing-service" className="flex gap-2 items-center">
+            <Link href="/ongoing-services" className="flex gap-2 items-center">
               <AppIcon icon="clock" width="24" className="text-primary-1" />
               Ongoing service
               <span className="text-gray-1">(3)</span>
