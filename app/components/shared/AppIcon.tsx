@@ -68,9 +68,10 @@ export default function AppIcon({
   );
 }
 
+export type AppIconType = keyof typeof icons;
 
 interface AppIconProps {
-  icon: keyof typeof icons;
+  icon: AppIconType;
   height?: string | number;
   width?: string | number;
   flip?: string;
