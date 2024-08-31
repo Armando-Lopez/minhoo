@@ -7,8 +7,8 @@ export default function chatLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-dvh border-r border-r-gray-1/50 w-fit">
-      <div className="flex justify-between">
+    <div className="min-h-dvh grid grid-cols-12 grid-rows-12 gap-1">
+      <div className="col-span-6 row-span-1 right-1 flex justify-between">
         <Link href="/chat">Chat</Link>
         <Link href="/my-shifts">My shifts</Link>
       </div>
