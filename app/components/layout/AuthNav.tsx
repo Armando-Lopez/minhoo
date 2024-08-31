@@ -37,7 +37,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/chat" className="flex items-center gap-4">
             <AppIcon icon="chat" width="25" height="30" />
             <span className="text-gray-1"> Chat </span>
           </Link>

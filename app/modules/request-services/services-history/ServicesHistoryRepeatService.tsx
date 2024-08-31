@@ -46,7 +46,7 @@ export const ServicesHistoryRepeatService = () => {
             <p className="flex gap-1">
               <AppIcon icon="dollar" className="text-gray-1" width={24} />
               <span className="text-gray-1">Price</span>:
-              <span className="text-primary-1 font-medium"> $35.00</span>
+              <span className="text-primary-1 font-medium">$35.00</span>
               <span className="text-gray-1">/per hour</span>
             </p>
           </div>
