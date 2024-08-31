@@ -80,6 +80,3 @@ button:disabled {
   outline: none;
   @apply ring-0
 }
-.lucide.lucide-x {
-  @apply w-5 h-5
-}

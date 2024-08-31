@@ -6,7 +6,6 @@ import {
   DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogOverlay,
   DialogTitle,
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
@@ -44,7 +43,6 @@ export const RequestServiceFormRequestCategories = () => {
           <p className="text-gray-1">Choose one category </p>
           <AppIcon icon="arrow-right" className="text-gray-1" />
         </DialogTrigger>
-        <DialogOverlay className="bg-black-1/20" />
         <DialogContent className="rounded-3xl max-w-96">
           <DialogHeader>
             <DialogTitle className="my-3 text-lg font-medium">

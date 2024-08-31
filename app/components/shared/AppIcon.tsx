@@ -47,6 +47,7 @@ const icons = {
   youtube: "mdi:youtube",
   clock: "iconoir:clock",
   history: "solar:history-outline",
+  reload: "tabler:reload"
 }
 export default function AppIcon({
   icon,
