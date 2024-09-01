@@ -1,40 +1,26 @@
-
 import { Input } from "@/components/shared/ui/AppInput";
 import { ChatsChatsList } from "@/modules/chats/components/ChatsChatsList";
-import Image from "next/image";
+import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
 
 export default function chatPage({ params }: { params: { slug: string } }) {
-
-    console.log(params);
-    
+  console.log(params);
   return (
     <>
-      <div className="col-span-6 row-span-12 border-l border-l-gray-1/50">
-        dsd
+      <div className="col-span-6 row-span-12 border-l border-l-gray-2">
+        <div className="border-b border-b-gray-2 pl-5 pt-5">
+          <PostItemHeader />
+        </div>
       </div>
       <div className="col-span-6 row-span-11">
-        <ChatsChatsList chatId="test"  />
-        <div className="">
+        <div className="mx-5 bg-gray-150 rounded-full pl-4 my-3">
           <Input
             type="search"
             variant="search"
-            className="bg-gray-150"
             placeholder="Search"
+            className=""
           />
-          <div className="flex px-5 py-3 bg-gray-150">
-            <Image
-              src="/team/wildelmy-colina.jpg"
-              width="44"
-              height="44"
-              alt="Image Post"
-              className="rounded-full h-11"
-            />
-            <div className="pl-3">
-              <p>Colina Wildelmy</p>
-              <p>New offer · 1m</p>
-            </div>
-          </div>
         </div>
+        <ChatsChatsList chatId="test" />
       </div>
     </>
   );
