@@ -1,10 +1,12 @@
 import AppIcon from "@/components/shared/AppIcon";
+import AppModal from "@/components/shared/AppModal";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/shared/ui/dropdown-menu";
+import { ShiftsDescription } from "@/modules/chats/shifts/ShiftsDescription";
 import { Notifications } from "@/modules/notifications/components/Notifications";
 import { OngoingServicesServiceCard } from "@/modules/request-services/ongoing-services/components/OngoingServicesServiceCard";
 
@@ -58,7 +60,9 @@ export default function myShiftsPage() {
           </DropdownMenu>
         </div>
         <div className="">
-          <div className="w-[358px] mx-auto mt-5">
+        <AppModal
+          activator={
+            <div className="w-[358px] mx-auto mt-5">
             <OngoingServicesServiceCard
               icon="building"
               category="On-site"
@@ -69,6 +73,12 @@ export default function myShiftsPage() {
               location="Brisbane, Australia"
             />
           </div>
+          }
+          className="rounded-2xl h-fit ml-auto hide-scroll-bar"
+        >
+          <ShiftsDescription />
+        </AppModal>
+          
           <div className="w-[358px] mx-auto mt-5">
             <OngoingServicesServiceCard
               icon="building"
