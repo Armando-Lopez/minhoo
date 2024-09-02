@@ -22,7 +22,7 @@ export const ShiftsDescription = () => {
             <p className="text-primary-1">Score 5.0</p>
           </div>
         </div>
-        <p className="text-gray-3">Posted 1 hour ago</p>
+        <p className="text-gray-3 text-xs">Posted 1 hour ago</p>
         <div className="flex items-center gap-2">
           <AppIcon icon="building" className="text-primary-1 text-lg" />
           <p className="text-primary-1 my-5">On-site services</p>
@@ -41,8 +41,8 @@ export const ShiftsDescription = () => {
         <div className="flex items-center gap-2 mb-16">
           <AppIcon icon="dollar" className="text-2xl text-gray-3" />
           <p className="text-gray-3">
-            Price <span className="text-primary-1 font-bold">$35.00</span> /per
-            hour
+            Price <span className="text-primary-1 font-bold">$35.00</span> <span className="text-xs">/per
+            hour</span>
           </p>
         </div>
       </div>
