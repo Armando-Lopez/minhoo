@@ -9,7 +9,8 @@ const icons = {
   "book-mark": "mynaui:bookmark",
   "check-circle": "gg:check-o",
   "comments-dots": "iconamoon:comment-dots-light",
-  "dollar": "cil:dollar",
+  dollar: "cil:dollar",
+  filter: "mage:filter",
   "greater-than": "oui:arrow-up",
   "share-box": "fluent:share-16-regular",
   "star-fill": "solar:star-bold",
@@ -47,8 +48,8 @@ const icons = {
   youtube: "mdi:youtube",
   clock: "iconoir:clock",
   history: "solar:history-outline",
-  reload: "tabler:reload"
-}
+  reload: "tabler:reload",
+};
 export default function AppIcon({
   icon,
   width,

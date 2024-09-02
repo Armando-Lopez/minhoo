@@ -3,10 +3,10 @@ import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
 import Link from "next/link";
 import AppModal from "@/components/shared/AppModal";
-import PostItemOptions from "./PostItemOptions";
 import Image from "next/image";
+import PostItemOptions from "@/modules/news/components/post/PostItemOptions";
 
-export default function PostItemHeader() {
+export default function ChatHeader() {
   return (
     <div className="flex items-center w-full gap-4 mb-5">
       <Link href="/profile">
@@ -22,10 +22,9 @@ export default function PostItemHeader() {
         <Link href="/profile">
           <h4>Percept brand design </h4>
         </Link>
-        <span className="text-gray-1">2 hours ago</span>
         <AppButton
           title="follow"
-          className="w-fit px-3 rounded-md bg-primary-1 text-sm text-white"
+          className="w-fit mt-1 px-3 rounded-md bg-primary-1 text-sm text-white"
         >
           Follow
         </AppButton>

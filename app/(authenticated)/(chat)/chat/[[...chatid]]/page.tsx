@@ -1,6 +1,6 @@
 import { Input } from "@/components/shared/ui/AppInput";
+import ChatHeader from "@/modules/chats/components/ChatHeader";
 import { ChatsChatsList } from "@/modules/chats/components/ChatsChatsList";
-import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
 
 export default function chatPage({ params }: { params: { slug: string } }) {
   console.log(params);
@@ -8,7 +8,7 @@ export default function chatPage({ params }: { params: { slug: string } }) {
     <>
       <div className="col-span-6 row-span-12 border-l border-l-gray-2">
         <div className="border-b border-b-gray-2 pl-5 pt-5">
-          <PostItemHeader />
+          <ChatHeader />
         </div>
       </div>
       <div className="col-span-6 row-span-11">
@@ -17,7 +17,6 @@ export default function chatPage({ params }: { params: { slug: string } }) {
             type="search"
             variant="search"
             placeholder="Search"
-            className=""
           />
         </div>
         <ChatsChatsList chatId="test" />
