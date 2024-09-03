@@ -24,7 +24,7 @@ export default function chatPage({ params }: { params: { chatId: string[] } }) {
     },
   ];
 
-  const currentChat = chats.find((chat) => chat.id === params.chatId[0]);
+  const currentChat = chats.find((chat) => chat.id === params.chatId?.[0]);
   return (
     <>
       <div className="col-span-6 row-span-12 flex flex-col border-l border-l-gray-2">
