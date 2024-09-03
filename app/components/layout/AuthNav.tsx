@@ -55,6 +55,7 @@ export default function AuthNav() {
     const deleteButton = document.getElementById("delete-button");
     if (deleteButton) {
       deleteButton.style.display = "none";
+      setImageLoaded(false);
     }
   };
 
@@ -87,7 +88,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/offer-services" className="flex items-center gap-4">
             <Image
               src="/icon/minhoo.svg"
               alt="icon minhoo"
