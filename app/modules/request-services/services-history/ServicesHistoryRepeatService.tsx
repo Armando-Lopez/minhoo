@@ -13,17 +13,17 @@ import { ServicesHistoryPostulationCard } from "@modules/request-services/servic
 
 export const ServicesHistoryRepeatService = () => {
   return (
-    <Dialog >
+    <Dialog>
       <DialogTrigger asChild>
         <Button className="space-x-2 rounded-full text-white">
           <AppIcon icon="reload" width={20} className="text-white" />
           <span>Repeat service</span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="py-10 max-h-[60dvh] overflow-auto">
-        <div className="grid max-w-[359px] mx-auto space-y-5">
+      <DialogContent className="py-10 px-14 max-h-[84dvh] hide-scroll-bar overflow-auto">
+        <div className="grid mx-auto space-y-5">
           <DialogHeader>
-            <p className="flex text-primary-1 items-center gap-3 mb-5">
+            <p className="flex text-primary-1 items-center gap-3 mb-4">
               <AppIcon icon="building" className="text-primary-1" />
               On-site services
             </p>
@@ -54,20 +54,23 @@ export const ServicesHistoryRepeatService = () => {
             <AppIcon icon="reload" width={20} className="text-white" />
             <span>Repeat service</span>
           </Button>
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
-          <ServicesHistoryPostulationCard />
+          <p>Postulates (50)</p>
+          <div className="grid gap-3">
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+            <ServicesHistoryPostulationCard />
+          </div>
         </div>
       </DialogContent>
     </Dialog>

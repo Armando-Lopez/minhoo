@@ -5,16 +5,14 @@ import React from "react";
 
 export const ServicesHistoryPostulationCard = () => {
   return (
-    <Card className="pt-5">
-      <CardContent className="flex gap-3 items-center">
-        <div>
-          <Avatar>
-            <AvatarImage src="https://placehold.co/50"></AvatarImage>
-          </Avatar>
-        </div>
-        <div className="grid">
+    <Card>
+      <CardContent className="flex gap-3 pt-5 items-center">
+        <Avatar>
+          <AvatarImage src="/team/wildelmy-colina.jpg"></AvatarImage>
+        </Avatar>
+        <div className="grid gap-1">
           <strong>Andrew Mattie</strong>
-          <div>
+          <div className="flex items-center gap-3">
             <div className="flex gap-1">
               <AppIcon icon="star-fill" className="text-primary-1" />
               <AppIcon icon="star-fill" className="text-primary-1" />

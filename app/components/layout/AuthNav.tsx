@@ -1,4 +1,6 @@
 "use client";
+
+import { Input } from "@/components/shared/ui/AppInput";
 import React from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";
@@ -13,6 +15,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
+import { Textarea } from "../shared/ui/textarea";
+import { Avatar, AvatarImage } from "../shared/ui/avatar";
+import { Label } from "../shared/ui/label";
 
 export default function AuthNav() {
   const pathname = usePathname();
@@ -95,12 +100,19 @@ export default function AuthNav() {
                   className="px-6 pt-3 pb-5 text-gray-150"
                 >
                   <div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Obcaecati ad suscipit itaque. Rem quam aperiam possimus
-                      expedita, commodi soluta deleniti voluptates vel autem
-                      quia? Vel facilis quas sapiente ipsam voluptates?
-                    </p>
+                    <div className="flex gap-4">
+                      <Avatar>
+                        <AvatarImage src="/team/wildelmy-colina.jpg"></AvatarImage>
+                      </Avatar>
+                      <Textarea
+                        placeholder="What do you want to show us?"
+                        className="bg-black-1 border-none ring-transparent focus:ring-transparent focus:border-none"
+                      />
+                    </div>
+                    <div className="grid w-full max-w-sm items-center gap-1.5">
+                      <Label htmlFor="picture"></Label>
+                      <Input id="picture" type="file" />
+                    </div>
                   </div>
                 </DialogDescription>
               </DialogHeader>
