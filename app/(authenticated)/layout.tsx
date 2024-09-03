@@ -21,7 +21,7 @@ export default function AuthenticatedLayout({
           </header>
           <AuthNav />
         </div>
-        <div className="col-span-9">
+        <div className="col-span-9 overflow-auto hide-scroll-bar">
           {children}
         </div>
       </div>

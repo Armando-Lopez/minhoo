@@ -30,22 +30,24 @@ export const RequestServiceFormRequestCategories = () => {
   ];
   return (
     <>
-      <p className="mb-4">What do you want to request?</p>
+      <p className="mb-3">What do you want to request?</p>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogTrigger className="flex justify-between items-center w-full">
+        <DialogTrigger className="flex gap-4 items-center w-full">
           <span className="w-10 h-10 grid place-items-center rounded-full bg-gray-2">
             <AppIcon
               icon="user-hand-up"
               flip="horizontal"
+              rotate={180}
+              width="26"
               className="text-2xl text-gray-1"
             />
           </span>
           <p className="text-gray-1">Choose one category </p>
-          <AppIcon icon="arrow-right" className="text-gray-1" />
+          <AppIcon icon="arrow-right" className="text-gray-1 ml-auto" />
         </DialogTrigger>
-        <DialogContent className="rounded-3xl max-w-96">
+        <DialogContent className="rounded-3xl max-w-96 px-4">
           <DialogHeader>
-            <DialogTitle className="my-3 text-lg font-medium">
+            <DialogTitle className="my-5 text-lg font-medium">
               Select one category that best describes your request
             </DialogTitle>
             <DialogDescription asChild>
@@ -53,10 +55,10 @@ export const RequestServiceFormRequestCategories = () => {
                 <RadioGroup asChild>
                   <ul className="space-y-2">
                     {categories.map((category) => (
-                      <li key={category}>
+                      <li key={category} className="mt-0">
                         <Label
                           htmlFor={category}
-                          className="flex justify-between cursor-pointer text-black-1 font-normal"
+                          className="flex justify-between cursor-pointer text-black-1 font-normal items-center"
                         >
                           {category}
                           <RadioGroupItem

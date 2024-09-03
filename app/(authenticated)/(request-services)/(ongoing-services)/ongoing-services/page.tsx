@@ -1,10 +1,11 @@
 import { OngoingServicesServiceCard } from "@/modules/request-services/ongoing-services/components/OngoingServicesServiceCard";
+import Link from "next/link";
 
 export default function OngoingServicesPage() {
   return (
     <section className="py-7">
       <div className="flex flex-col items-center gap-5">
-        <div className="w-[358px]">
+        <Link href="/find-services" className="w-[358px]">
           <OngoingServicesServiceCard
             icon="laptop"
             category="Freelance"
@@ -13,7 +14,7 @@ export default function OngoingServicesPage() {
             price="320.00"
             time="1 hour ago"
           />
-        </div>
+        </Link>
         <div className="w-[358px]">
           <OngoingServicesServiceCard
             icon="building"

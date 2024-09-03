@@ -3,8 +3,8 @@ import React from "react";
 
 export default function RequestServicesPage() {
   return (
-    <section>
+    <>
       <RequestServiceForm />
-    </section>
+    </>
   );
 }

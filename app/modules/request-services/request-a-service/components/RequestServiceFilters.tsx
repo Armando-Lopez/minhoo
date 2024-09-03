@@ -14,11 +14,11 @@ export const RequestServiceFilters = () => {
       <DropdownMenuTrigger className="flex items-center gap-2">
         <AppIcon icon="menu" width="30" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-64 rounded-xl p-5" align="end">
+      <DropdownMenuContent className="w-64 rounded-xl px-5 py-10" align="end">
         <DropdownMenuLabel className="mb-2 text-gray-1 text-sm font-normal">
           Filter by
         </DropdownMenuLabel>
-        <ul className="text-sm space-y-2">
+        <ul className="text-sm space-y-4">
           <li>
             <Link href="/request-a-service" className="flex gap-2 items-center">
               <AppIcon icon="gears" width="24" className="text-primary-1" />

@@ -15,7 +15,7 @@ const icons = {
   "share-box": "fluent:share-16-regular",
   "star-fill": "solar:star-bold",
   "star-outline": "solar:star-outline",
-  "user-hand-up": "solar:user-hand-up-bold",
+  "user-hand-up": "pepicons-pencil:raise-hand",
   "user-plus": "uil:user-plus",
   "vertical-dots": "tabler:dots-vertical",
   back: "ic:round-arrow-back-ios",

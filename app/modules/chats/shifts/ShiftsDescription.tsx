@@ -36,7 +36,7 @@ export const ShiftsDescription = () => {
         </p>
         <div className="flex items-center gap-2 mb-5">
           <AppIcon icon="location" className="text-2xl text-gray-3" />
-          <p className="">Carindale QLD</p>
+          <p>Carindale QLD</p>
         </div>
         <div className="flex items-center gap-2 mb-16">
           <AppIcon icon="dollar" className="text-2xl text-gray-3" />

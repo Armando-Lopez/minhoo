@@ -59,7 +59,7 @@ export default function myShiftsPage() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div className="">
+        <div>
         <AppModal
           activator={
             <div className="w-[358px] mx-auto mt-5">

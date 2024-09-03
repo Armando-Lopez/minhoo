@@ -24,7 +24,7 @@ export const Notifications= () => {
     {
       img: "/team/eder-oquendo.jpg",
       name: "Eder Oquendo",
-      sms: "commented: I want your services, I sent you a message",
+      sms: "commented: I want your services",
     },
     {
       img: "/team/mila.jpg",
@@ -33,7 +33,7 @@ export const Notifications= () => {
     },
   ];
   return (
-    <div className="col-span-5 px-4 pt-5">
+    <div className="col-span-5 px-4 pt-5 sticky top-0">
       <div className="mb-5">
         {profile.map((e, i) => (
           <div key={i} className="flex gap-3">
