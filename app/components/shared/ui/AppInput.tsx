@@ -12,6 +12,7 @@ const inputVariants = cva(
         underline: "rounded-none border-0 border-b",
         search:
           "border-0 pl-2 focus-visible:ring-offset-transparent focus-visible:ring-transparent",
+        "no-border": "border-0",
       },
     },
   }
@@ -23,7 +24,7 @@ export interface InputProps
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, variant, ...props }, ref) => {
     return (
-      <div className="flex items-center">
+      <div className="flex items-center flex-grow">
         {type === "search" && (
           <AppIcon icon="search" className="text-gray-500" />
         )}

@@ -49,6 +49,8 @@ const icons = {
   clock: "iconoir:clock",
   history: "solar:history-outline",
   reload: "tabler:reload",
+  attachment: "grommet-icons:form-attachment",
+  "user": "mingcute:user-2-line"
 };
 export default function AppIcon({
   icon,
