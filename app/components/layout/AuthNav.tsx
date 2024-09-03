@@ -1,7 +1,7 @@
 "use client";
 
 import { Input } from "@/components/shared/ui/AppInput";
-import React from "react";
+import React, { useState } from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -17,10 +17,46 @@ import {
 } from "@/components/shared/ui/dialog";
 import { Textarea } from "../shared/ui/textarea";
 import { Avatar, AvatarImage } from "../shared/ui/avatar";
-import { Label } from "../shared/ui/label";
+import { Button } from "@/components/shared/ui/button";
 
 export default function AuthNav() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageUrl, setImageUrl] = useState("");
+
   const pathname = usePathname();
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target && event.target.files) {
+      const file = event.target.files[0];
+      const url = URL.createObjectURL(file);
+      setImageUrl(url);
+      setImageLoaded(true);
+      const preview = document.getElementById("preview") as HTMLImageElement;
+      if (preview) {
+        preview.src = url;
+      }
+      const deleteButton = document.getElementById("delete-button");
+      if (deleteButton) {
+        deleteButton.style.display = "grid";
+      }
+      console.log(url);
+    }
+  };
+
+  const handleDelete = () => {
+    const preview = document.getElementById("preview") as HTMLImageElement;
+    if (preview) {
+      preview.src = "";
+    }
+    const input = document.getElementById("picture") as HTMLInputElement;
+    if (input) {
+      input.value = "";
+    }
+    const deleteButton = document.getElementById("delete-button");
+    if (deleteButton) {
+      deleteButton.style.display = "none";
+    }
+  };
 
   const getPathColor = (path: string) =>
     pathname.includes(path) ? "text-primary-1" : "";
@@ -109,9 +145,42 @@ export default function AuthNav() {
                         className="bg-black-1 border-none ring-transparent focus:ring-transparent focus:border-none"
                       />
                     </div>
-                    <div className="grid w-full max-w-sm items-center gap-1.5">
-                      <Label htmlFor="picture"></Label>
-                      <Input id="picture" type="file" />
+                    <div className="grid w-full items-center overflow-hidden gap-5 mt-5 relative">
+                      {imageLoaded && (
+                        <img id="preview" src={imageUrl} alt="Preview" />
+                      )}
+                      <Input
+                        type="file"
+                        id="picture"
+                        onChange={handleFileChange}
+                        className="hidden"
+                      />
+                      <div className="flex justify-between">
+                        <Button
+                          onClick={() =>
+                            document.getElementById("picture")?.click()
+                          }
+                          className="bg-transparent text-white w-fit hover:bg-transparent"
+                        >
+                          <AppIcon
+                            icon="picture"
+                            width="20"
+                            height="20"
+                            className="text-primary-1"
+                          />
+                          <p className="pl-2">Image</p>
+                        </Button>
+                        <Button className="bg-transparent rounded-full text-white opacity-40">
+                          Publish
+                        </Button>
+                      </div>
+                      <div
+                        id="delete-button"
+                        onClick={handleDelete}
+                        className="hidden absolute -top-6 -right-6 w-16 h-16 bg-black-1 rounded-full items-end p-2.5 cursor-pointer"
+                      >
+                        <AppIcon icon="close" width="28" className="" />
+                      </div>
                     </div>
                   </div>
                 </DialogDescription>
