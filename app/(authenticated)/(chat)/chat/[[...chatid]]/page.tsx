@@ -24,10 +24,10 @@ export default function chatPage({ params }: { params: { chatId: string[] } }) {
     },
   ];
 
-  const currentChat = chats.find((chat) => chat.id === params.chatId?.[0]);
+  const currentChat = chats.find((chat) => chat.id === params.chatId?.[0]) || chats[0];
   return (
     <>
-      <div className="col-span-6 row-span-12 flex flex-col border-l border-l-gray-2">
+      <div className="col-span-6 row-span-12 flex flex-col border-l pb-2 border-l-gray-2">
        <ChatConversation currentChat={currentChat} />
       </div>
       <div className="col-span-6 row-span-11">
