@@ -6,7 +6,6 @@ import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AuthNavOptions } from "@/components/layout/AuthNavOptions";
-import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -25,6 +24,7 @@ export default function AuthNav() {
 
   const pathname = usePathname();
 
+  // FIXME: ESTO NO VA A AQUI. MOVER A COMPONENTE
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target && event.target.files) {
       const file = event.target.files[0];
@@ -39,10 +39,10 @@ export default function AuthNav() {
       if (deleteButton) {
         deleteButton.style.display = "grid";
       }
-      console.log(url);
     }
   };
 
+  // FIXME: ESTO NO VA A AQUI. MOVER A COMPONENTE
   const handleDelete = () => {
     const preview = document.getElementById("preview") as HTMLImageElement;
     if (preview) {
@@ -60,7 +60,7 @@ export default function AuthNav() {
   };
 
   const getPathColor = (path: string) =>
-    pathname.includes(path) ? "text-primary-1" : "";
+    pathname.includes(path) ? "text-primary-1 fill-primary-1" : "text-gray-1 fill-gray-1"; 
 
   return (
     <nav className="flex-grow flex flex-col pb-5">
@@ -89,12 +89,7 @@ export default function AuthNav() {
         </li>
         <li>
           <Link href="/offer-services" className="flex items-center gap-4">
-            <Image
-              src="/icon/minhoo.svg"
-              alt="icon minhoo"
-              width="27"
-              height="27"
-            />
+            <AppIcon icon="minhoo" width="29" className={getPathColor("/offer-services")} />
             <span className="text-gray-1"> Offer services </span>
           </Link>
         </li>
@@ -113,9 +108,9 @@ export default function AuthNav() {
         <li>
           <Link
             href="/profile"
-            className={`flex items-center gap-4 ${getPathColor("/profile")}`}
+            className="flex items-center gap-4"
           >
-            <AppIcon icon="profile" width="25" />
+            <AppIcon icon="minhoo-profile" className={getPathColor("/profile")} width="30" />
             <span className="text-gray-1"> Profile </span>
           </Link>
         </li>

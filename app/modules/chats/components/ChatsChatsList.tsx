@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const ChatsChatsList = ({ chats, currentChat }: { chats: any[], currentChat: any }) => {
-  console.log(currentChat, chats);
+export const ChatsChatsList = ({ chats }: { chats: any[], currentChat: any }) => {
 
   return (
     <div className="border-1 border-t border-gray-2">
