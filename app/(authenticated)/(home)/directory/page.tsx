@@ -18,7 +18,14 @@ export default function DirectoryPage() {
           />
         </div>
         <div className="w-1/2 flex justify-end">
-          <DirectoryFilters />
+          <DirectoryFilters
+            activator={
+              <div className="flex items-center gap-2 cursor-pointer">
+                All Australia / All skills
+                <AppIcon icon="arrow-down" width="14" />
+              </div>
+            }
+          />
         </div>
       </div>
 
