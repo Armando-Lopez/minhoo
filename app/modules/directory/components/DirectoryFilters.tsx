@@ -103,7 +103,10 @@ export const DirectoryFilters = ({ activator }: Props) => {
                         className="flex justify-between items-center font-normal cursor-pointer"
                       >
                         <p>
-                          {category.name} <span>{category.request && `(${category.request})`}</span>
+                          {category.name}{" "}
+                          <span>
+                            {category.request && `(${category.request})`}
+                          </span>
                         </p>
 
                         <RadioGroupItem

@@ -1,12 +1,20 @@
-import Footer from "@/components/layout/Footer";
-import AppIcon from "@/components/shared/AppIcon";
 import Image from "next/image";
 
-export const Notifications = () => {
+export default function Notifications() {
   const profile = [
     {
       img: "/team/miller-garcía.jpg",
       name: "Miller García",
+      profession: "Handyman, Virtual & Online",
+    },
+    {
+      img: "/team/wildelmy-colina.jpg",
+      name: "Miller García",
+      profession: "Handyman, Virtual & Online",
+    },
+    {
+      img: "/team/wildelmy-colina.jpg",
+      name: "wildelmy colina",
       profession: "Handyman, Virtual & Online",
     },
   ];
@@ -31,12 +39,52 @@ export const Notifications = () => {
       name: "Camila Casarri",
       sms: "He has accepted your job offer",
     },
+    {
+      img: "/team/wildelmy-colina.jpg",
+      name: "Wildelmy Colina",
+      sms: "He has accepted your job offer",
+    },
+    {
+      img: "/team/miller-garcía.jpg",
+      name: "Miller García",
+      sms: "has saved your post.",
+    },
+    {
+      img: "/team/eder-oquendo.jpg",
+      name: "Eder Oquendo",
+      sms: "commented: I want your services",
+    },
+    {
+      img: "/team/mila.jpg",
+      name: "Camila Casarri",
+      sms: "He has accepted your job offer",
+    },
+    {
+      img: "/team/wildelmy-colina.jpg",
+      name: "Wildelmy Colina",
+      sms: "He has accepted your job offer",
+    },
+    {
+      img: "/team/miller-garcía.jpg",
+      name: "Miller García",
+      sms: "has saved your post.",
+    },
+    {
+      img: "/team/eder-oquendo.jpg",
+      name: "Eder Oquendo",
+      sms: "commented: I want your services",
+    },
+    {
+      img: "/team/mila.jpg",
+      name: "Camila Casarri",
+      sms: "He has accepted your job offer",
+    },
   ];
   return (
-    <div className="col-span-5 px-4 pt-5 sticky top-0">
-      <div className="mb-5">
+    <div className="col-span-5 px-14 pt-2 pb-12">
+      <div className="mb-2">
         {profile.map((e, i) => (
-          <div key={i} className="flex gap-3">
+          <div key={i} className="flex gap-3 py-3">
             <Image
               width="40"
               height="40"
@@ -51,7 +99,7 @@ export const Notifications = () => {
           </div>
         ))}
       </div>
-      <p className="font-bold text-gray-1">Latest notifications</p>
+      <p className="font-bold text-black-1 mb-2">Yesterday</p>
       {notifications.map((e, i) => (
         <div key={i} className="py-3">
           <div className="flex gap-3">
@@ -69,11 +117,6 @@ export const Notifications = () => {
           </div>
         </div>
       ))}
-      <div className="flex gap-3 text-gray-3 items-center">
-        <p>See all</p>
-        <AppIcon icon="arrow-right" width="17" className="font-bold" />
-      </div>
-      <Footer className="flex flex-wrap gap-2 pb-3 mt-10 text-gray-1 text-xs" />
     </div>
   );
-};
+}

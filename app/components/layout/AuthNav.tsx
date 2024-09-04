@@ -105,7 +105,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex items-center gap-4">
+          <Link href="/notifications" className="flex items-center gap-4">
             <AppIcon icon="notification" width="25" />
             <span className="text-gray-1"> Notifications </span>
           </Link>
