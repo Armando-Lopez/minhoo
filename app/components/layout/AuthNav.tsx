@@ -109,9 +109,9 @@ export default function AuthNav() {
         <li>
           <Link
             href="/profile"
-            className={`flex items-center gap-4 ${getPathColor("/profile")}`}
+            className="flex items-center gap-4"
           >
-            <AppIcon icon="profile" width="25" />
+            <AppIcon icon="minhoo-profile" className={getPathColor("/profile")} width="30" />
             <span className="text-gray-1"> Profile </span>
           </Link>
         </li>
