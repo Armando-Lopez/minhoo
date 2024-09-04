@@ -1,5 +1,5 @@
 "use client";
-import { AppButton } from "@components/shared/ui/AppButton";
+import { Button } from "@components/shared/ui/Button";
 import { Input } from "@components/shared/ui/AppInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -139,9 +139,9 @@ export const NewsLetterSubscribeFrom = () => {
           )}
         />
         <div className="col-span-2">
-          <AppButton type="submit" className="w-full py-4">
+          <Button type="submit" className="w-full py-4">
             Submit
-          </AppButton>
+          </Button>
         </div>
       </form>
     </Form>

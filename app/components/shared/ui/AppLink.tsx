@@ -10,9 +10,9 @@ export interface LinkProps
   activeClass?: string;
 }
 
-export const AppLink = ({ children, className, ...props}: LinkProps) => {
+export const AppLink = ({ children, className, activeClass, ...props}: LinkProps) => {
   const pathname = usePathname();
   const isActive = pathname === props.href;
   
-  return <Link className={cn(className, isActive ? props.activeClass : "")} {...props}>{children}</Link>;
+  return <Link className={cn(className, isActive ? activeClass : "")} {...props}>{children}</Link>;
 };

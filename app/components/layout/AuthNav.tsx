@@ -39,7 +39,6 @@ export default function AuthNav() {
       if (deleteButton) {
         deleteButton.style.display = "grid";
       }
-      console.log(url);
     }
   };
 

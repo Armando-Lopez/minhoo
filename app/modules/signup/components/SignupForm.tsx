@@ -1,5 +1,5 @@
 "use client";
-import { AppButton } from "@components/shared/ui/AppButton";
+import { Button } from "@components/shared/ui/Button";
 import {
   Card,
   CardContent,
@@ -145,9 +145,9 @@ export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
               By registering you agree to our terms and conditions, privacy
               policy and cookie policy.
             </p>
-            <AppButton type="submit" className="w-full py-6">
+            <Button type="submit" className="w-full py-6">
               Register
-            </AppButton>
+            </Button>
           </form>
         </Form>
       </CardContent>

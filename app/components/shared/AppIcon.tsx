@@ -51,6 +51,8 @@ const icons = {
   reload: "tabler:reload",
   attachment: "grommet-icons:form-attachment",
   user: "mingcute:user-2-line",
+  phone: "ph:phone",
+  mail: "lucide:mail"
 };
 export default function AppIcon({
   icon,
