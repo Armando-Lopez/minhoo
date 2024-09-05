@@ -57,8 +57,7 @@ export const AuthNavOptions = () => {
               </Link>
             </li>
             <li className="flex gap-3">
-              <Link href="/settings" className="flex gap-3">
-                {" "}
+              <Link href="/settings-profile" className="flex gap-3">
                 <AppIcon
                   icon="settings"
                   className="text-primary-1"

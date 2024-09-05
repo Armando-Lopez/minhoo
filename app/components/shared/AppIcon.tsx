@@ -3,10 +3,12 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 const icons = {
+  about: "mdi:about-circle-outline",
   "arrow-down": "oui:arrow-down",
   "arrow-right": "oui:arrow-right",
   "book-mark-fill": "radix-icons:bookmark-filled",
   "book-mark": "mynaui:bookmark",
+  block: "ic:round-block",
   "check-circle": "gg:check-o",
   "comments-dots": "iconamoon:comment-dots-light",
   dollar: "cil:dollar",
@@ -26,12 +28,15 @@ const icons = {
   dots: "arcticons:dots",
   facebook: "bxl:facebook",
   gears: "carbon:gears",
+  help: "material-symbols:help-outline",
   handshake: "fa-regular:handshake",
   home: "teenyicons:home-solid",
   instagram: "bi:instagram",
   laptop: "icon-park-twotone:laptop-computer",
   location: "ep:location",
+  logout: "carbon:logout",
   lock: "mingcute:lock-fill",
+  languaje: "mdi:language",
   menu: "ic:round-menu",
   notification: "mdi:bell",
   picture: "mingcute:pic-line",
@@ -44,6 +49,7 @@ const icons = {
   share: "ph:share-fat-bold",
   shield: "material-symbols:policy",
   tiktok: "ic:outline-tiktok",
+  trash: "f7:trash",
   twitter: "pajamas:twitter",
   youtube: "mdi:youtube",
   clock: "iconoir:clock",
@@ -52,7 +58,8 @@ const icons = {
   attachment: "grommet-icons:form-attachment",
   user: "mingcute:user-2-line",
   phone: "ph:phone",
-  mail: "lucide:mail"
+  password: "mdi:password-outline",
+  mail: "lucide:mail",
 };
 export default function AppIcon({
   icon,
