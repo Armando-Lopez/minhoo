@@ -1,6 +1,7 @@
 "use client";
 import AppIcon from "@/components/shared/AppIcon";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function SettingsLayout({
@@ -18,7 +19,10 @@ export default function SettingsLayout({
         <div className="col-span-6 row-span-11 border-l border-gray-2 mt-5">
           <ul className="space-y-6">
             <li>
-              <div className="flex justify-between px-6">
+              <Link
+                href="/change-passaword"
+                className="flex justify-between px-6"
+              >
                 <div className="flex gap-3 items-center">
                   <AppIcon
                     icon="password"
@@ -31,10 +35,10 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link href="/help" className="flex justify-between px-6">
                 <div className="flex gap-3 items-center">
                   <AppIcon icon="help" className="text-2xl text-primary-1" />
                   <p>Help</p>
@@ -44,10 +48,10 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link href="/about-profile" className="flex justify-between px-6">
                 <div className="flex gap-3 items-center">
                   <AppIcon icon="about" className="text-2xl text-primary-1" />
                   <p>About</p>
@@ -57,10 +61,10 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link href="/language" className="flex justify-between px-6">
                 <div className="flex gap-3 items-center">
                   <AppIcon
                     icon="languaje"
@@ -73,10 +77,10 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link href="/blocked" className="flex justify-between px-6">
                 <div className="flex gap-3 items-center">
                   <AppIcon icon="block" className="text-2xl text-primary-1" />
                   <p>Blocked</p>
@@ -86,10 +90,13 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link
+                href="/delete-account"
+                className="flex justify-between px-6"
+              >
                 <div className="flex gap-3 items-center">
                   <AppIcon icon="trash" className="text-2xl text-primary-1" />
                   <p>Delete account</p>
@@ -99,10 +106,10 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
             <li>
-              <div className="flex justify-between px-6">
+              <Link href="/logout" className="flex justify-between px-6">
                 <div className="flex gap-3 items-center">
                   <AppIcon icon="logout" className="text-2xl text-primary-1" />
                   <p>Log out</p>
@@ -112,7 +119,7 @@ export default function SettingsLayout({
                   width="20"
                   className="text-gray-1"
                 />
-              </div>
+              </Link>
             </li>
           </ul>
           <div className="flex justify-center">
