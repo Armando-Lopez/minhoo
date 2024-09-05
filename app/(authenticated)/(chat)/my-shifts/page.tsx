@@ -60,25 +60,24 @@ export default function myShiftsPage() {
           </DropdownMenu>
         </div>
         <div>
-        <AppModal
-          activator={
-            <div className="w-[358px] mx-auto mt-5">
-            <OngoingServicesServiceCard
-              icon="building"
-              category="On-site"
-              description="I urgently need to fix a rupture in one of the pipes in my apartment."
-              jobType="Handyman"
-              price="150.00"
-              time="12 hours ago"
-              location="Brisbane, Australia"
-            />
-          </div>
-          }
-          className="rounded-2xl h-fit ml-auto hide-scroll-bar"
-        >
-          <ShiftsDescription />
-        </AppModal>
-          
+          <AppModal
+            activator={
+              <div className="w-[358px] mx-auto mt-5">
+                <OngoingServicesServiceCard
+                  icon="building"
+                  category="On-site"
+                  description="I urgently need to fix a rupture in one of the pipes in my apartment."
+                  jobType="Handyman"
+                  price="150.00"
+                  time="12 hours ago"
+                  location="Brisbane, Australia"
+                />
+              </div>
+            }
+            className="rounded-2xl h-fit ml-auto hide-scroll-bar"
+          >
+            <ShiftsDescription />
+          </AppModal>
           <div className="w-[358px] mx-auto mt-5">
             <OngoingServicesServiceCard
               icon="building"

@@ -29,7 +29,7 @@ export default forwardRef<Ref, Props>(function AppTextField(
           {...rest}
         />
       </div>
-      <span className="ml-2 text-red-1">{errorsMessage}</span>
+      {errorsMessage && <span className="ml-2 text-red-1">{errorsMessage}</span>}
     </div>
   );
 });

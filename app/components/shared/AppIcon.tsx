@@ -33,7 +33,7 @@ const icons = {
   location: "ep:location",
   lock: "mingcute:lock-fill",
   menu: "ic:round-menu",
-  notification: "pajamas:notifications",
+  notification: "mdi:bell",
   picture: "mingcute:pic-line",
   play: "solar:play-bold",
   plus: "clarity:plus-line",

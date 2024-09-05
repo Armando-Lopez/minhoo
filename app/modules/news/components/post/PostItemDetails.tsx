@@ -6,7 +6,7 @@ import PostItemComments from "./PostItemComments";
 export default function PostItemDetails() {
   return (
     <article className="flex">
-      <img src="/team/wildelmy-colina.jpg" alt="" className="max-w-[466px]" />
+      <img src="/team/wildelmy-colina.jpg" alt="" className="w-auto max-w-[466px] object-cover" />
       <div className="flex flex-col max-w-96 ml-7 mr-16 pt-9">
         <div className="flex">
           <PostItemHeader />

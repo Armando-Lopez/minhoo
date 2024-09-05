@@ -3,6 +3,7 @@ import AppIcon from "@/components/shared/AppIcon";
 import AppButton from "@/components/shared/AppButton";
 import AppPopover from "@/components/shared/AppPopover";
 import { AppSwitch } from "@/components/shared/ui/AppSwitch";
+import Link from "next/link";
 // import { useNotifications } from "@/hooks/useNotifications";
 
 export const AuthNavOptions = () => {
@@ -34,8 +35,7 @@ export const AuthNavOptions = () => {
               <div>
                 <p>Minhoo notifications</p>
                 <p className="text-xs text-gray-1">
-                  Turn on incoming order
-                  notifications
+                  Turn on incoming order notifications
                 </p>
               </div>
               <div className="ml-auto">
@@ -46,18 +46,31 @@ export const AuthNavOptions = () => {
               <AppIcon icon="share" className="text-primary-1" width="25" />
               <p>Share profile</p>
             </li>
-            <li className="flex gap-3">
-              <AppIcon icon="book-mark" className="text-primary-1" width="25" />
-              <p>Saved</p>
+            <li>
+              <Link href="/saved" className="flex gap-3">
+                <AppIcon
+                  icon="book-mark"
+                  className="text-primary-1"
+                  width="25"
+                />
+                <p>Saved</p>
+              </Link>
             </li>
             <li className="flex gap-3">
-              <AppIcon icon="settings" className="text-primary-1" width="25" />
-              <div>
-                <p>Settings</p>
-                <p className="text-xs text-gray-1">
-                  Account, wallet, help, about, language and more
-                </p>
-              </div>
+              <Link href="/settings" className="flex gap-3">
+                {" "}
+                <AppIcon
+                  icon="settings"
+                  className="text-primary-1"
+                  width="25"
+                />
+                <div>
+                  <p>Settings</p>
+                  <p className="text-xs text-gray-1">
+                    Account, wallet, help, about, language and more
+                  </p>
+                </div>
+              </Link>
             </li>
           </ul>
         </div>

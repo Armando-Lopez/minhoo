@@ -14,13 +14,13 @@ const [value, setValue] = useState<any>();
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <img
-            src="https://placehold.co/111"
+            src="/team/eder-oquendo.jpg"
             className="w-[111px] h-[111px] mb-3 rounded-full"
             alt="user-photo"
           />
           <p className="text-primary-1">Edit photo</p>
         </div>
-        <form className="grid gap-5 w-96 mt-10">
+        <form className="grid gap-5 w-96 my-10">
           <div>
             <AppTextField
               name="first-name"
@@ -37,7 +37,7 @@ const [value, setValue] = useState<any>();
               defaultValue="García"
             />
           </div>
-          <div className="mb-3">
+          <div>
             <p className="text-gray-1">Phone number</p>
             <PhoneInput
               label="Phone number"

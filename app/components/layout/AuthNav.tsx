@@ -95,13 +95,13 @@ export default function AuthNav() {
         </li>
         <li>
           <Link href="/chat" className="flex items-center gap-4">
-            <AppIcon icon="chat" width="25" height="30" />
+            <AppIcon icon="chat" width="25" height="30" className={getPathColor("/chat")}/>
             <span className="text-gray-1"> Chat </span>
           </Link>
         </li>
         <li>
           <Link href="/notifications" className="flex items-center gap-4">
-            <AppIcon icon="notification" width="25" />
+            <AppIcon icon="notification" width="25" className={getPathColor("/notifications")} />
             <span className="text-gray-1"> Notifications </span>
           </Link>
         </li>

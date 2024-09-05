@@ -3,6 +3,7 @@ import { Card } from "@/components/shared/ui/AppCard";
 import React from "react";
 
 interface JobCardProps {
+  className?: string;
   icon: AppIconType;
   category: string;
   jobType: string;
@@ -12,6 +13,7 @@ interface JobCardProps {
   time: string;
 }
 export const OngoingServicesServiceCard = ({
+  className,
   icon,
   category,
   jobType,
@@ -21,7 +23,7 @@ export const OngoingServicesServiceCard = ({
   time,
 }: JobCardProps) => {
   return (
-    <Card className="mb-4 p-4 hover:shadow-md transition-shadow">
+    <Card className={`mb-4 p-4 hover:shadow-md transition-shadow ${className}`}>
       <div className="flex items-start justify-between mb-2">
         <div className="flex items-center space-x-3">
           <AppIcon icon={icon} width={20} className="text-primary-1" />
