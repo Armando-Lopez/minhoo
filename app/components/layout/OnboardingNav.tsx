@@ -12,13 +12,13 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
   }
   return (
     <div
-      className={`relative after:content-[''] after:absolute after:top-0 after:w-full after:h-full bg-gray-150`}
+      className={`relative`}
     >
       <label
         htmlFor="app-drawer"
         className={`fixed top-3 md:relative z-50 lg:z-10 right-4 block h-fit lg:p-0 text-black p-2 cursor-pointer rounded-full md:rounded-none ${
           isScrolled
-            ? `backdrop-blur-[20px] bg-gray-150/80 lg:pb-0`
+            ? `bg-gray-150/90 lg:pb-0`
             : "bg-gray-150"
         }`}
         title="open menu"

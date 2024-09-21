@@ -44,14 +44,12 @@ export default function OnboardingLayout({
     <div className="bg-gray-150 min-h-svh">
       <div className="min-h-svh mx-auto flex flex-col justify-between">
         <header className={`md:sticky z-10 top-0 mb-10`}>
-          <div className="container flex justify-between">
-            <div
-              className={`w-full ${
-                isScrolled
-                  ? `backdrop-blur-[20px] bg-gray-150/80 pb-5`
-                  : "bg-gray-150"
-              }`}
-            >
+          <div
+            className={`container flex justify-between  ${
+              isScrolled ? ` bg-gray-150/95 pb-5` : "bg-gray-150"
+            }`}
+          >
+            <div className="w-full">
               {!lg && isShowingTermItem ? (
                 <AppButton
                   id="back"
@@ -74,7 +72,9 @@ export default function OnboardingLayout({
             <OnboardingNav isScrolled={isScrolled} />
           </div>
         </header>
-        <main className="flex-grow flex flex-col justify-center">{children}</main>
+        <main className="flex-grow flex flex-col justify-center">
+          {children}
+        </main>
         <Footer className="container flex flex-wrap gap-3 pb-3 text-gray-1 text-center justify-center text-xs leading-[7px]" />
       </div>
     </div>
