@@ -16,7 +16,7 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
     >
       <label
         htmlFor="app-drawer"
-        className={`fixed top-3 md:relative z-50 lg:z-10 right-4 block h-fit text-black p-2 cursor-pointer rounded-full md:rounded-none lg:pb-6 ${
+        className={`fixed top-3 md:relative z-50 lg:z-10 right-4 block h-fit lg:p-0 text-black p-2 cursor-pointer rounded-full md:rounded-none ${
           isScrolled
             ? `backdrop-blur-[20px] bg-gray-150/80 lg:pb-0`
             : "bg-gray-150"

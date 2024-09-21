@@ -48,7 +48,7 @@ export default function OnboardingLayout({
             <div
               className={`w-full ${
                 isScrolled
-                  ? `backdrop-blur-[20px] bg-gray-150/80`
+                  ? `backdrop-blur-[20px] bg-gray-150/80 pb-5`
                   : "bg-gray-150"
               }`}
             >
