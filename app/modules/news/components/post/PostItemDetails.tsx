@@ -2,11 +2,19 @@ import React from "react";
 import PostItemHeader from "./PostItemHeader";
 import PostItemFooter from "./PostItemFooter";
 import PostItemComments from "./PostItemComments";
+import Image from "next/image";
 
 export default function PostItemDetails() {
   return (
     <article className="flex">
-      <img src="/team/wildelmy-colina.jpg" alt="" className="w-auto max-w-[466px] object-cover" />
+      <Image
+        src="/team/wildelmy-colina.jpg"
+        alt=""
+        className="object-cover"
+        width={466}
+        height={500}
+        loading="lazy"
+      />
       <div className="flex flex-col max-w-96 ml-7 mr-16 pt-9">
         <div className="flex">
           <PostItemHeader />

@@ -1,13 +1,17 @@
 import React from "react";
 import AppShowMoreToggle from "@/components/shared/AppShowMoreToggle";
+import Image from "next/image";
 
 export default function ProfileBasicInformation() {
   return (
     <section className="flex items-center gap-10">
-      <img
+      <Image
         src="/team/miller-garcía.jpg"
-        className="w-[233px] h-[233px] rounded-full"
+        className="rounded-full"
         alt="user-photo"
+        width={233}
+        height={233}
+        loading="lazy"
       />
       <div className="flex flex-col">
         <strong className="mb-4 text-2xl">Miller García</strong>

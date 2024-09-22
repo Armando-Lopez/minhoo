@@ -14,53 +14,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/shared/ui/accordion";
+import { getCategoriesService } from "../services/category";
 
-export const DirectoryFilters = ({ activator }: Props) => {
-  const categories = [
-    {
-      name: "All",
-    },
-    {
-      name: "Beauty and personal care",
-      request: 86,
-    },
-    {
-      name: "Cleaning",
-      request: 89,
-    },
-    {
-      name: "Furniture Assembly",
-      request: 560,
-    },
-    {
-      name: "Handyman",
-      request: 56,
-    },
-    {
-      name: "Moving Services",
-      request: 184,
-    },
-    {
-      name: "Office Services",
-      request: 8,
-    },
-    {
-      name: "Personal Assistant",
-      request: 9,
-    },
-    {
-      name: "Smart Home Installation",
-      request: 5,
-    },
-    {
-      name: "Virtual & Online",
-      request: 64,
-    },
-    {
-      name: "Yardwork Services",
-      request: 789,
-    },
-  ];
+export const DirectoryFilters = async ({ activator }: Props) => {
+  const categories = await getCategoriesService()
+ 
   return (
     <div className="flex items-center justify-between pb-3 overflow-auto">
       <Popover>
@@ -96,8 +54,8 @@ export const DirectoryFilters = ({ activator }: Props) => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="p-0 space-y-5 pb-10">
-                  {categories.map((category, i) => (
-                    <RadioGroup key={i}>
+                  {categories.map((category) => (
+                    <RadioGroup key={category.name}>
                       <Label
                         htmlFor="per-hour"
                         className="flex justify-between items-center font-normal cursor-pointer"
@@ -105,7 +63,7 @@ export const DirectoryFilters = ({ activator }: Props) => {
                         <p>
                           {category.name}{" "}
                           <span>
-                            {category.request && `(${category.request})`}
+                            {category.available && `(${category.available})`}
                           </span>
                         </p>
 
