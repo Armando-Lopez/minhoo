@@ -1,4 +1,5 @@
 import AppIcon from "@/components/shared/AppIcon";
+import Image from "next/image";
 import React from "react";
 
 export default function PostItemComments() {
@@ -6,10 +7,12 @@ export default function PostItemComments() {
     <div className="flex flex-col w-full">
       <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-52 mb-10">
         <div className="flex gap-4 text-sm">
-          <img
-            src="https://placehold.co/51x51"
+          <Image
+            src="/team/wildelmy-colina.jpg"
             alt=""
-            className="w-14 h-14 rounded-full"
+            className="rounded-full"
+            width={56}
+            height={56}
           />
           <div>
             <div>
@@ -24,10 +27,12 @@ export default function PostItemComments() {
           </button>
         </div>
         <div className="flex gap-4 text-sm">
-          <img
-            src="https://placehold.co/51x51"
+          <Image
+            src="/team/wildelmy-colina.jpg"
             alt=""
-            className="w-14 h-14 rounded-full"
+            className="rounded-full"
+            width={56}
+            height={56}
           />
           <div>
             <div>
@@ -43,10 +48,12 @@ export default function PostItemComments() {
         </div>
       </div>
       <div className="overflow-hidden flex items-center py-1 px-2 mt-auto border-2 border-grey-1 rounded-lg mb-4">
-        <img
+        <Image
           src="/team/wildelmy-colina.jpg"
           alt=""
-          className="w-8 h-8 rounded-full"
+          className="rounded-full"
+          width={32}
+          height={32}
         />
         <textarea
           name="add-comment"

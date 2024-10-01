@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
   const drawerActivator = useRef<HTMLInputElement>(null);
@@ -49,10 +50,12 @@ export default function OnboardingNav({ isScrolled }: { isScrolled: boolean }) {
           <AppIcon icon="close" width="35" className="translate-y-1" />
         </label>
         <span className="[&_path]:stroke-primary-1">
-          <img
+          <Image
             src="/onboarding-nav/icon.png"
             alt="minhoo-logo"
             className="pl-11 w-20 -mt-0.5"
+            width={80}
+            height={23}
           />
         </span>
         <nav className="pt-10 pb-14 overflow-y-auto">

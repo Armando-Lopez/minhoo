@@ -1,4 +1,4 @@
 const api = process.env.NEXT_PUBLIC_API_URL
-const api_v1 = `${api}/api/v1`
+export const API_V1 = `${api}/api/v1`
 
-export const LOGIN_API_URL = `${api_v1}/auth/login`
+export const LOGIN_API_URL = `${API_V1}/auth/login`

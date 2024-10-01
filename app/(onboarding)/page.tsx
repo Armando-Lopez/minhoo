@@ -1,5 +1,6 @@
 import LoginForm from "@/modules/login/components/LoginForm";
 import AppButton from "@components/shared/AppButton";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -40,10 +41,12 @@ export default function Home() {
                   name="down load app"
                   className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
                 >
-                  <img
+                  <Image
                     src="/home/logo-apple.png"
                     alt="Logo Apple"
-                    className="pr-3 w-7"
+                    className="pr-3"
+                    width={28}
+                    height={20}
                   />
                   <p className="text-[8px]">
                     Download on the{" "}
@@ -58,10 +61,12 @@ export default function Home() {
                   name="get it on Google Play"
                   className="flex items-center justify-center bg-black-1 text-white rounded-xl w-36 py-2 mx-auto"
                 >
-                  <img
+                  <Image
                     src="/home/logo-google-play.png"
                     alt="Logo Google Play"
-                    className="pl-1.5 pr-3 w-8"
+                    className="pl-1.5 pr-3"
+                    width={23}
+                    height={15}
                   />
                   <p className="text-[8px] text-left">
                     GET IT ON <span className="block text-sm">Google Play</span>

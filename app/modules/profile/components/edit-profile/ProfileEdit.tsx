@@ -2,6 +2,7 @@ import AppTextField from "@/components/shared/ui/AppTextField";
 import React, { useState } from "react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
+import Image from "next/image";
 
 export const ProfileEdit = () => {
 const [value, setValue] = useState<any>();
@@ -13,10 +14,13 @@ const [value, setValue] = useState<any>();
       </div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
-          <img
+          <Image
             src="/team/eder-oquendo.jpg"
-            className="w-[111px] h-[111px] mb-3 rounded-full"
+            className="mb-3 rounded-full"
             alt="user-photo"
+            width={111}
+            height={111}
+            loading="lazy"
           />
           <p className="text-primary-1">Edit photo</p>
         </div>

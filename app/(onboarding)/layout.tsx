@@ -6,6 +6,7 @@ import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import eventBus from "@/eventbus";
 import { useBreakpoints } from "@/hooks/useBreakpoints";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function OnboardingLayout({
@@ -61,10 +62,12 @@ export default function OnboardingLayout({
                 </AppButton>
               ) : (
                 <a href="/" className="">
-                  <img
+                  <Image
                     src="/minhoo-horizontal-logo.png"
                     alt="minhoo horizontal logo"
-                    className="w-32 mt-5"
+                    className="mt-5"
+                    width="128"
+                    height="30"
                   />
                 </a>
               )}
