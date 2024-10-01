@@ -52,7 +52,7 @@ export default function PrivacyTermsAndConditions() {
                 <AppTabLabel name="legal-terms">
                   <span className="flex gap-3 items-center">
                     <AppIcon icon="shield" width={24} />
-                    Legal terms
+                    Terms and Conditions
                   </span>
                   <AppIcon
                     icon="greater-than"
@@ -63,7 +63,7 @@ export default function PrivacyTermsAndConditions() {
                 <AppTabLabel name="privacy-and-data">
                   <span className="flex gap-3 items-center">
                     <AppIcon icon="lock" width={24} />
-                    Privacy and Data
+                    Privacy Policy
                   </span>
                   <AppIcon
                     icon="greater-than"
@@ -76,351 +76,549 @@ export default function PrivacyTermsAndConditions() {
           )}
           <div className="col-span-12 lg:col-span-9">
             <AppTabContent name="legal-terms">
-              <h3 className="text-3xl md:text-4xl">Legal terms</h3>
-              <strong className="block my-1">Minhoo.app</strong>
-              <section>
-                <p className="mb-6">APP LEGAL TERMS</p>
-                <p className="mb-4">
-                  Eder Antonio Oquendo Calderon. Company identified with ABN
-                  87951520527 communicates to the users of Minhoo.app the
-                  privacy rights, conditions, and contract that protect them
-                  during the access of our electronic services. This regulates
-                  the relationship between Minhoo.app and its users, who must be
-                  natural persons of legal age or legal entities duly
-                  constituted in Australia or in any country in which they
-                  benefit from the application so they fully accept our policies
-                  and conditions of use as an essential requirement to offer or
-                  receive our services.
+              <h3 className="text-3xl md:text-4xl">Minhoo Terms of Service</h3>
+              <section className="flex flex-col gap-4 mt-4 mb-24 lg:mb-36">
+                <p>
+                  These Terms of Service ({"Terms"}) are part of the User
+                  Agreement, a legally binding contract that governs the use of
+                  Minhoo. You should read these Terms of Service ({"Terms"}) in
+                  full, but here are some key points to keep in mind:
                 </p>
-                <p className="mb-4">
-                  The user declares and guarantees that they have sufficient
-                  powers to accept our policies by themselves or any of their
-                  agents, representatives, or factors acting on their behalf,
-                  and that by accepting them, they are bound by this policy.
-                  Where appropriate, the user guarantees that they are the owner
-                  and responsible for the physical or virtual documentation
-                  forwarded, sent, and registered in Minhoo.app about the
-                  personal and professional identity, the constitution of their
-                  company, and any other commercial documentation that they may
-                  provide to validate their registration within or outside of
-                  Minhoo.app. Likewise, the user accepts that this information
-                  will be available so that any user who is duly registered and
-                  wishes to offer or receive a service can verify the veracity
-                  of the same with the aim of offering greater security and
-                  confidence. This policy is oriented to the use and management
-                  that Minhoo.app gives to the information provided by users
-                  when subscribing to our electronic service. This policy does
-                  not apply for any reason to people, professionals, companies,
-                  product or service providers that are external to Minhoo.app
-                  or that are not duly registered in our technological platform.
+                <p>
+                  <span className="font-bold">
+                    You will see advertising on the platform:{" "}
+                  </span>
+                  In exchange for access to the Services, Minhoo and our
+                  third-party providers and partners may show you
+                  advertisements.
                 </p>
-                <p className="mb-4">
-                  The voluntary use of Minhoo.app automatically establishes the
-                  condition of the user within the website and implies full and
-                  unreserved acceptance of each and every one of the provisions
-                  included in this policy in each version published by
-                  Minhoo.app or at the same time in which the user accesses the
-                  registry. Consequently, the user must read the entire policy
-                  as it may be modified at any time to improve the service, so
-                  we ask all users to periodically review our policies. If you
-                  have any questions, please feel free to contact our team at
-                  info@minhoo.app (business hours subject to office hours Monday
-                  through Thursday from 1:30 p.m. to 5:30 p.m.). The company
-                  Minhoo.app recommends reading the entire policy. If you have
-                  questions, contact us as soon as possible, and if you disagree
-                  with any of the established points, we respectfully ask you
-                  not to register.
+                <p>
+                  <span className="font-bold">
+                    When posting Content and using the Services, you must comply
+                    with this User Agreement and applicable law:
+                  </span>{" "}
+                  You are responsible for your use of the Services and the
+                  Content. You must comply with this User Agreement, its
+                  incorporated policies, and all applicable laws.
                 </p>
+                <p>
+                  <span className="font-bold">
+                    You must adhere to the acceptable use terms of the Services:{" "}
+                  </span>
+                  You may not access the Services in any way other than through
+                  the currently available published interfaces that we provide.
+                  For example, this means you cannot scrape the Services,
+                  attempt to bypass technical limitations we impose, or attempt
+                  to disrupt the operation of the Services.
+                </p>
+                <p>
+                  <span className="font-bold">
+                    We have broad enforcement rights:
+                  </span>{" "}
+                  Minhoo reserves the right to take enforcement actions against
+                  you if you violate these terms, such as removing your Content,
+                  limiting visibility, cutting off access to Minhoo, or taking
+                  legal action. We may also suspend or cancel your account for
+                  other reasons, such as prolonged inactivity, risk of legal
+                  exposure, or commercial impracticality.
+                </p>
+                <p>
+                  <span className="font-bold">
+                    Intellectual Property Licenses:
+                  </span>{" "}
+                  You retain ownership and rights to any Content you post or
+                  share, and you grant us a broad, royalty-free license to make
+                  your Content available to the rest of the world and allow
+                  others to do the same. Similarly, we provide you with a
+                  license to use the software we provide as part of the
+                  Services, such as the Minhoo mobile app, solely for the
+                  purpose of enabling you to use and enjoy the benefits of the
+                  Services.
+                </p>
+                <p>
+                  <span className="font-bold">
+                    Your use of the Services is at your own risk:
+                  </span>{" "}
+                  We provide the Services {`"AS IS" and "AS AVAILABLE,"`} and
+                  disclaim all warranties, liabilities, and commitments to you
+                  or others to the extent permitted by law. You may be exposed
+                  to offensive or harmful content posted by other users. The
+                  Services may change from time to time, and we may limit or
+                  terminate the availability of the Services or specific
+                  features for you or other users at any time.
+                </p>
+                <p>
+                  <span className="font-bold">
+                    Remedies and Dispute Mechanisms:
+                  </span>{" "}
+                  You have the right to terminate this agreement at any time by
+                  deactivating your account and stopping the use of the
+                  Services. Note that we are not responsible for certain types
+                  of damages as described in the agreement, and in any case, our
+                  total liability will not exceed 100 USD, if applicable.
+                </p>
+                <p>
+                  Furthermore, if you believe that your Content has been copied
+                  in a manner that constitutes copyright infringement, the
+                  reporting process is detailed in these Terms.
+                </p>
+                <p>
+                  <span className="font-bold">Privacy:</span> Our Privacy Policy{" "}
+                  (
+                  <p
+                    onClick={() => handleSetTab("privacy-and-data")}
+                    className="inline text-blue-500 cursor-pointer underline"
+                  >
+                    https://minhoo.com/privacy
+                  </p>
+                  ) Describes how we handle the information you provide when
+                  using the Services. By using Minhoo, you consent to the
+                  collection and use of your information as described in this
+                  policy.
+                </p>
+                <p>
+                  <span className="font-bold">Who can use the Services:</span>{" "}
+                  You may use the Services if you agree to enter into a binding
+                  contract with us and have not been disqualified from receiving
+                  services according to applicable laws in your jurisdiction.
+                  You must be at least 18 years old to use the Services. If you
+                  use the Services on behalf of an entity, you affirm that you
+                  are authorized to bind that entity to comply with these Terms.
+                </p>
+                <p>
+                  <span className="font-bold">Service Content:</span> You are
+                  responsible for your use of the Services and the Content you
+                  provide. You agree not to post any content that infringes the
+                  rights of third parties, including copyright, trademarks, or
+                  intellectual property. Minhoo reserves the right to remove
+                  content that violates our policies or applicable laws.
+                </p>
+                <p>
+                  <span className="font-bold">Misuse of the Services:</span> You
+                  are not allowed to access the Services in unauthorized ways,
+                  such as bypassing security measures, extracting data without
+                  permission, or engaging in activities that may affect{" "}
+                  {"Minhoo's"} operation.
+                </p>
+                <p>
+                  <span className="font-bold">
+                    Suspension or Termination of the Services:
+                  </span>{" "}
+                  Minhoo may suspend or cancel your account if you violate these
+                  Terms or for any other justified reason. We will make
+                  reasonable efforts to notify you if this occurs, and you may
+                  appeal this decision through our support.
+                </p>
+                <p>
+                  <span className="font-bold">Limitation of Liability:</span>{" "}
+                  Access and use of the Services are at your own risk. Minhoo is
+                  not responsible for indirect, incidental, or consequential
+                  damages arising from the use or inability to use our Services.
+                </p>
+                <p className="font-bold text-2xl mt-5">
+                  TERMS AND CONDITIONS OF USE OF MINHOO
+                </p>
+                <ol className="list-decimal ml-5 flex flex-col gap-4">
+                  <li className="font-bold">
+                    Acceptance of Terms{" "}
+                    <p className="font-normal">
+                      By accessing and using the Minhoo platform, either through
+                      the mobile app (available on iOS and Android) or the
+                      website, you agree to be bound by these Terms and
+                      Conditions. These Terms constitute a legally binding
+                      contract between you and Minhoo, governing your use of our
+                      services. If you do not agree to these terms, you must
+                      refrain from using the platform.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Modifications to the Terms
+                    <p className="font-normal">
+                      We reserve the right to modify these Terms at any time.
+                      Changes will not be retroactive, and you will be notified
+                      through the app or website 30 days in advance to review
+                      them. Your continued use of the Services after
+                      notification will imply acceptance of the modified Terms.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Privacy
+                    <p className="font-normal">
+                      Using Minhoo is subject to our Privacy Policy, which
+                      explains how we collect, use, and share your personal
+                      information. By using Minhoo, you consent to the
+                      processing of your personal data as outlined in that
+                      policy.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Accounts and Registration
+                    <p className="font-normal">
+                      To access certain services on Minhoo, you must create an
+                      account by providing accurate, complete, and up-to-date
+                      information. You are responsible for your {"account's"}{" "}
+                      security and all activities under your username. You must
+                      keep your password secure and immediately notify us of any
+                      unauthorized use of your account. Minhoo is not
+                      responsible for any loss or damage caused by unauthorized
+                      use of your account.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Use of the Services
+                    <p className="font-normal">
+                      Minhoo Services allow you to connect with freelancers to
+                      request or provide services. You must use the Services
+                      responsibly and comply with all applicable laws. It is
+                      prohibited to:
+                    </p>
+                    <ol className="font-normal list-disc ml-7 mt-4">
+                      <li>Access or use the platform in unauthorized ways.</li>
+                      <li>Manipulate or breach any security measures.</li>
+                      <li>Falsify information provided to the platform.</li>
+                      <li>
+                        Use {"Minhoo's"} content or services for illegal
+                        purposes or to infringe third-party rights.
+                      </li>
+                    </ol>
+                  </li>
+                  <li className="font-bold">
+                    Content
+                    <p className="font-normal">
+                      You are responsible for the content you post or share on
+                      Minhoo. By posting content on the platform, you grant us a
+                      worldwide, non-exclusive, royalty-free license to use,
+                      reproduce, modify, and distribute such content in
+                      connection with the operation of Minhoo. Minhoo reserves
+                      the right to remove any content that violates these Terms
+                      or applicable laws.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Advertising
+                    <p className="font-normal">
+                      Minhoo may display advertisements as part of its business
+                      model. You agree that such ads may appear alongside the
+                      content you post without the need for additional
+                      compensation.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Intellectual Property Rights
+                    <p className="font-normal">
+                      All rights to user-provided content remain with the user.
+                      However, by using Minhoo, you grant us a license to use,
+                      modify, reproduce, and distribute such content to provide
+                      and improve our services.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Misuse of Services
+                    <p className="font-normal">It is not permitted to:</p>
+                    <ol className="list-disc font-normal mt-5 ml-7">
+                      <li>
+                        Use web crawlers, robots, or other automated means to
+                        access the Services without our prior consent.
+                      </li>
+                      <li>Interfere with or damage the Services.</li>
+                      <li>
+                        Reverse-engineer or decompile any part of the Services.
+                      </li>
+                      <li>Access non-public areas of the platform.</li>
+                    </ol>
+                  </li>
+                  <li className="font-bold">
+                    Limited Liability{" "}
+                    <p className="font-normal">
+                      Minhoo is provided {`"as is" and "as available."`} We do
+                      not guarantee that the services will be error-free or
+                      uninterrupted. Minhoo is not liable for indirect,
+                      incidental, special, or punitive damages, or loss of data,
+                      revenue, or profits resulting from the use of the
+                      platform.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Account Termination
+                    <p className="font-normal">
+                      Minhoo reserves the right to suspend or cancel your
+                      account at any time, without prior notice, if it believes
+                      you have violated these Terms or applicable laws. In the
+                      event of cancellation, you will lose access to the
+                      Services, but these Terms will continue to apply to the
+                      extent permitted by law.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Jurisdiction and Applicable Law{" "}
+                    <p className="font-normal">
+                      These Terms are governed by the laws of Australia, and any
+                      disputes arising in connection with these Terms or the use
+                      of the Services will be subject to the exclusive
+                      jurisdiction of the federal or state courts located in
+                      Australia.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Dispute Resolution
+                    <p className="font-normal">
+                      You agree that any claim or dispute with Minhoo will be
+                      resolved individually and not as part of a class action.
+                      In case of disputes, we commit to working together in good
+                      faith to resolve them before resorting to a court.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Contact
+                    <p className="font-normal">
+                      For any inquiries about these Terms, you can contact us at
+                      info@minhoo.app.
+                    </p>
+                  </li>
+                </ol>
               </section>
             </AppTabContent>
             <AppTabContent name="privacy-and-data">
               <h3 className="text-3xl md:text-4xl">
-                Privacy and Data Protection Policy
+                {" Minhoo's"} Privacy Policy
               </h3>
-              <section className="mt-5">
-                <p className="mb-4">
-                  In accordance with the provisions of the Personal Data
-                  Protection Law, Minhoo.app undertakes to adopt the necessary
-                  measures that are within its reach to ensure the privacy of
-                  the personal data collected in a way that guarantees its
-                  security, avoids its alteration, loss, or unauthorised
-                  treatment. In addition, in order to comply with the provisions
-                  of the Personal Data Protection Law, all personal data that is
-                  collected through the application will be treated in
-                  accordance with the principles of loyalty, purpose,
-                  proportionality, data security, transparency, confidentiality,
-                  legality, portability, truthfulness, and accuracy. All
-                  processing of personal data will be subject to the consent of
-                  the owner. In any case, the use of financial or patrimonial
-                  data will require the express authorisation of their owners;
-                  however, this may be given through the application using the
-                  mechanisms enabled for this purpose, and in any case, the
-                  greatest diligence and care will be given to this type of
-                  data. You voluntarily accept and give your consent to
-                  Minhoo.app to use and process all the personal information
-                  provided, such as your full name, gender, personal
-                  identification document, date of birth, email, telephone
-                  number, data from your debit and/or credit card, and other
-                  information that may be stored and used occasionally by
-                  Minhoo.app.
+              <section className="mt-5 flex flex-col gap-4">
+                <p className="font-bold">
+                  Last updated: September 1st, 2024 (01/09/2024)
                 </p>
-                <p className="mb-4">
-                  At all times, it will be ensured that the personal data
-                  contained in the databases or files that are used, if
-                  applicable, are relevant, correct, and updated for the
-                  purposes for which they were collected.
-                </p>
-                <p className="mb-4">
-                  The application may include hyperlinks or links that may
-                  access web pages of third parties other than Minhoo.app. The
-                  owners of these websites will have their own privacy and data
-                  protection policies for which Minhoo.app does not assume any
-                  type of responsibility for the data that is provided by the
-                  user through any website other than Minhoo.app.
-                </p>
-                <p className="mb-4">
-                  Minhoo.app reserves the right to modify its Privacy Policy
-                  according to its needs or derived from any change in the
-                  legislation. Access or use of the application after said
-                  changes will imply acceptance of these changes.
-                </p>
-                <p className="mb-4">
-                  On the other hand, access to the application may involve the
-                  use of cookies, which are small amounts of information that
-                  are stored in the browser used by the user. Cookies facilitate
-                  navigation, make it more friendly, and do not damage the
-                  navigation device. For this, they can collect information to
-                  enter the application, store user&apos;s preferences, as well
-                  as the interaction that the user has with the application, for
-                  instance: the date and time it is accessed, the time it has
-                  been used, the sites visited before and after, the IP address
-                  from which the user accesses, the frequency of visits, etc.
-                </p>
-                <p className="mb-4">
-                  This type of information will be used to improve the
-                  application, detect errors, and identify possible needs that
-                  the user may have in order to offer better quality services
-                  and content to users. In any case, the information collected
-                  will be anonymous and individual users will not be identified.
-                </p>
-                <p className="mb-4">
-                  In the event that the user does not want this type of
-                  information to be collected, they must disable, reject,
-                  restrict, and/or eliminate the use of cookies in their
-                  internet browser. The procedures to perform these actions may
-                  differ from one browser to another; consequently, it is
-                  suggested to review the instructions provided by the browser
-                  developer. In the event that the user rejects the use of
-                  cookies (totally or partially), they may continue to use the
-                  application, although some of its functions may be disabled.
-                </p>
-                <p className="mb-4">
-                  It is possible that in the future these policies regarding
-                  cookies will change or be updated; for this reason, it is
-                  advisable to review the updates that are made to these terms
-                  and conditions in order to be adequately informed about how
-                  and why we use the cookies that are generated when entering or
-                  using Minhoo.app.
-                </p>
-                <p className="mb-4 font-bold">---</p>
-                <p className="mb-4">
-                  <span className="block font-bold mb-4">
-                    Intellectual Property.
-                  </span>{" "}
-                  Eder Antonio Oquendo Calderon is the owner of all the
-                  intellectual and industrial property rights of the software
-                  and/or the Minhoo.app application, understanding by this the
-                  source code that makes its operation possible, as well as the
-                  images, audio or video files, logos, brands, texts, databases,
-                  processes, computer codes, colour combinations, structures,
-                  designs, and other elements that distinguish it. They will
-                  therefore be protected by Australian legislation on copyright,
-                  trademarks, patents, trade secrets, and everything related to
-                  intellectual and industrial property, as well as by applicable
-                  international treaties.
-                </p>
-                <p className="mb-4">
-                  Consequently, it is expressly prohibited to reproduce,
-                  distribute, or disseminate the contents of the software and/or
-                  the application for commercial purposes on any support and by
-                  any technological means without the authorisation of
-                  Minhoo.app or its licensors.
-                </p>
-                <p className="mb-4">
-                  The user agrees to respect the intellectual and industrial
-                  property rights of Minhoo.app. However, in addition to being
-                  able to view the elements of the software and/or the
-                  Minhoo.app application, the user may print, copy, or store
-                  them as long as it is exclusively for their strictly personal
-                  use.
-                </p>
-                <p className="mb-4">
-                  On the other hand, the user will refrain from deleting,
-                  altering, or manipulating any element, file, or content of the
-                  software and/or application and for no reason will carry out
-                  acts tending to violate the security files or databases that
-                  are protected either through restricted access by means of a
-                  username and password or because they do not have permissions
-                  to view, edit, or manipulate them.
-                </p>
-                <p className="mb-4">
-                  In the event that the user or any third party considers that
-                  any of the content of the software and/or the application
-                  constitutes a violation of the rights of protection of
-                  industrial or intellectual property, they must immediately
-                  notify the designated agent of Minhoo.app. Visit the
-                  Minhoo.app website in the support section and submit your
-                  claim. (www.minhoo.app)
-                </p>
-                <p className="mb-4 font-bold">---</p>
-                <p className="mb-4">
-                  <span className="block font-bold mb-4">
-                    Third-Party Content and Services
-                  </span>
-                  Services may be made available or accessible in connection
-                  with third-party content and services (including advertising)
-                  that Minhoo.app does not control. You acknowledge and agree
-                  that different privacy policies and conditions may apply to
-                  your use of such third-party content and services. Minhoo.app
-                  does not endorse such third-party services and content and in
-                  no case will it be responsible for any product or service of
-                  such third-party providers. Additionally, Apple Inc., Google
-                  Inc., Microsoft Corporation, and/or their corresponding
-                  international subsidiaries or affiliates will be third-party
-                  beneficiaries in this contract if you access the services
-                  using applications developed for mobile devices with iOS,
-                  Android, or Microsoft Windows systems, respectively. These
-                  third-party beneficiaries are not party to this contract and
-                  are not responsible for the provision or support of the
-                  services in any way.
-                </p>
-                <p className="mb-4">
-                  Your access to Services using these devices is subject to the
-                  conditions established in the applicable third-party
-                  beneficiary conditions of service.
-                </p>
-                <p className="mb-4 font-bold">---</p>
-                <p className="font-bold mb-4">
-                  The Services and All Rights Relating Thereto Are and Will
-                  Remain Property of Minhoo.app or Its Licensors
-                </p>
-                <p className="mb-4">
-                  Neither these conditions nor your use of the services transfer
-                  or grant you any rights:
-                </p>
-                <ol className="mb-4">
-                  <li>
-                    - About or concerning the services except for the limited
-                    licence granted above;
-                  </li>
-                  <li>
-                    - To use or mention in any way the company names, logos,
-                    product, and service names, trademarks, or service marks of
-                    Minhoo.app or its licensors.
-                  </li>
-                </ol>
-                <p className="mb-4 font-bold">---</p>
-                <p className="mb-4 font-bold">Your Use of the Services</p>
-                <p className="mb-4">
-                  Within the Minhoo.app application, there are two types of
-                  users: <br /> Members: Those who, for a single monthly amount
-                  paid to Minhoo.app (registration), will have the right to
-                  provide their services within the application. <br />
-                  Users: These will be the people who request the services of
-                  our partners and pay them the amount they agree to.
-                </p>
-                <p className="mb-4 font-bold">User Account</p>
-                <p className="mb-4">
-                  In order to use most aspects of the services, you must
-                  register and maintain an active personal user or partner
-                  account. To obtain an account, you must be at least 21 years
-                  old. The account registration requires you to communicate
-                  certain personal information to Minhoo.app, such as your name,
-                  address, mobile phone number, licence ID, among other personal
-                  information, to validate your information. You agree to keep
-                  the information in your account accurate, complete, and
-                  up-to-date. Failure to keep your account information accurate,
-                  complete, and up-to-date may result in your inability to
-                  access and use the services or in Minhoo.app&apost;s
-                  termination of the conditions hereby entered into. You are
-                  responsible for all activity that occurs on your account and
-                  you agree to keep your account username and password secure
-                  and secret at all times. Unless Minhoo.app allows otherwise in
-                  writing, you can only have one account.
-                </p>
-                <p className="mb-4 font-bold">
-                  User Requirements and Behaviour
-                </p>
-                <p className="mb-4">
-                  By using the application, you will not cause nuisance,
-                  inconvenience, discomfort, or damage to property either to the
-                  third-party provider or to any other party. You may be
-                  required to provide an identity document or other identity
-                  verification element to access or use the services and you
-                  hereby agree that you may be denied access or use of the
-                  services if you refuse to provide the identity document or the
-                  identity verification element.
-                </p>
-                <p className="mb-4 font-bold">Text Messages or Calls</p>
-                <p className="mb-4">
-                  By creating an account, you agree that users can send you text
-                  messages or calls as part of the normal business of their use
-                  of the application.
-                </p>
-                <p className="mb-4 font-bold">Promotional Codes</p>
-                <p className="mb-4">
-                  Minhoo.app may, at its sole discretion, create promotional
-                  codes that can be exchanged for account credit or other
-                  elements or benefits related to the services and/or services
-                  of a third-party provider subject to any additional conditions
-                  that Minhoo.app establishes on the basis of each promotional
-                  code. You agree that the promotional codes:
-                </p>
-                <ol className="mb-4">
-                  <li>
-                    - Must be used for their intended purpose and lawfully.
-                  </li>
-                  <li>
-                    - May not be duplicated, sold, or transferred in any way or
-                    made available to the general public (whether posted in a
-                    public forum or otherwise) unless authorised by Minhoo.app.
-                  </li>
-                  <li>
-                    - May be invalidated by Minhoo.app at any time and for any
-                    reason without liability to Minhoo.app or its licensors.
-                  </li>
-                  <li>
-                    - May be used only in accordance with the specific
-                    conditions that Minhoo.app establishes for said promotional
-                    code.
-                  </li>
-                  <li>- Are not valid as cash.</li>
-                  <li>- May expire before you use them.</li>
-                </ol>
-                <p className="mb-4">
-                  Minhoo.app reserves the right to withhold or deduct the credit
-                  or other elements or benefits obtained through the use of
-                  promotional codes by you or any other user in the event that
-                  Minhoo.app determines or believes that the use or exchange of
-                  the promotional codes was wrong, fraudulent, illegal, or in
-                  violation of the conditions of the promotional code or these
-                  conditions.
-                </p>
-                <p className="mb-4 font-bold">Content Provided by User</p>
                 <p>
-                  Minhoo.app has a space for you to post or otherwise make
-                  available to Minhoo.app through the application text content
-                  and information, audio and/or visual, including comments and
-                  opinions regarding services, initiation of support requests,
-                  as well as presentation of admissions for competitions and
-                  promotions. All user content provided by you will remain your
-                  property. However, by providing user content to Minhoo.app,
-                  you grant a worldwide, perpetual, irrevocable, transferable,
-                  royalty-free licence with the right to sublicense, use, copy,
-                  modify, create derivative works, distribute, publicly display,
-                  publicly present, or otherwise exploit in any way said user
-                  content in all formats and distribution channels now known
+                  At Minhoo, we value and respect your privacy. This Privacy
+                  Policy explains how we collect, use, share, and protect your
+                  personal information when you access our services via the
+                  mobile app or website. By using Minhoo, you agree to the terms
+                  of this policy.
                 </p>
+                <ol className="list-decimal flex flex-col gap-4 ml-4">
+                  <li className="font-bold">
+                     Information We Collect{" "}
+                    <p className="font-normal my-4">
+                      We collect information to provide and improve our
+                      services. This includes:
+                    </p>
+                    <p>Information you provide directly to us:</p>
+                    <ul className="list-disc my-5 ml-7">
+                      <li>
+                        Registration data:{" "}
+                        <p className="font-normal inline">
+                          Name, email address, phone number, postal address, and
+                          other contact information when you create an account.
+                        </p>
+                      </li>
+                      <li>
+                        Profile information:{" "}
+                        <p className="font-normal inline">
+                          Data you share when creating or updating your profile,
+                          such as profile picture, services offered, or
+                          requested.
+                        </p>
+                      </li>
+                      <li>
+                        Payment information:{" "}
+                        <p className="font-normal inline">
+                          Credit/debit card details or bank account information
+                          necessary for processing transactions.
+                        </p>
+                      </li>
+                    </ul>
+                    <p>Information we collect automatically:</p>
+                    <ul className="list-disc mt-5 ml-7">
+                      <li>
+                        Usage data:{" "}
+                        <p className="font-normal inline">
+                          Information about your activity on the platform, such
+                          as the pages you visit, the services you search for or
+                          request, and interactions with other users.
+                        </p>
+                      </li>
+                      <li>
+                        Location data:{" "}
+                        <p className="font-normal inline">
+                          We use geolocation technology to connect freelancers
+                          and clients based on their current location.
+                        </p>
+                      </li>
+                      <li>
+                        Device and connection data:{" "}
+                        <p className="font-normal inline">
+                          Information about the device you use to access our
+                          services, such as your IP address, browser type,
+                          operating system, and language settings.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="font-bold">
+                    How We Use Your Information
+                    <p className="font-normal">
+                      We use the information we collect to:
+                    </p>
+                    <ul className="list-disc font-normal mt-5">
+                      <li>Provide and improve our services.</li>
+                      <li>
+                        Facilitate interactions between freelancers and clients.
+                      </li>
+                      <li>Process payments and billing.</li>
+                      <li>Protect user security.</li>
+                      <li>Comply with applicable laws and regulations.</li>
+                      <li>
+                        Personalize your experience on the platform, including
+                        presenting customized content and ads.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="font-bold">
+                    Use of Geolocation Data
+                    <p className="font-normal mt-4">
+                      Minhoo uses geolocation technology to connect freelancers
+                      and clients based on their current location. This feature
+                      is essential for users to find and provide real-time
+                      services. You can disable this feature in your device
+                      settings, but doing so may limit certain functionalities
+                      of the platform.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Sharing Your Information
+                    <p className="font-normal">
+                      Minhoo does not sell your personal information to third
+                      parties. However, we may share it in the following cases:
+                    </p>
+                    <ul className="list-disc mt-5 ml-7">
+                      <li>
+                        With other users:{" "}
+                        <p className="font-normal inline">
+                          To facilitate connections between freelancers and
+                          clients, some details of your profile (such as name,
+                          approximate location, and services offered) will be
+                          visible to other users.
+                        </p>
+                      </li>
+                      <li>
+                        With third-party service providers:
+                        <p className="font-normal inline">
+                          We contract third parties to perform functions on our
+                          behalf, such as payment processing and data hosting
+                          services. These providers are subject to strict
+                          confidentiality agreements and can only use your
+                          information for the specific purpose for which they
+                          were hired.
+                        </p>
+                      </li>
+                      <li>
+                        For legal reasons:{" "}
+                        <p className="font-normal inline">
+                          We may disclose your information if we believe in good
+                          faith that it is necessary to comply with a law,
+                          regulation, or legal process.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="font-bold">
+                    Information Security
+                    <p className="font-normal mt-4">
+                      At Minhoo, we take reasonable measures to protect your
+                      personal information from unauthorized access, alteration,
+                      disclosure, or destruction. This includes using encryption
+                      technologies, firewalls, and access controls. However, no
+                      method of internet transmission or electronic storage is
+                      completely secure, so we cannot guarantee absolute
+                      security of your information.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Data Retention
+                    <p className="font-normal">
+                      We retain your personal information while your account is
+                      active or as necessary to provide you with services. If
+                      you decide to close your account, we will delete your
+                      information within a reasonable period, except where we
+                      are legally required to retain certain data.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    User Rights
+                    <p className="my-4 font-normal">
+                      You have certain rights regarding your personal
+                      information, including:
+                    </p>
+                    <ol className="list-disc font-normal ml-7">
+                      <li>
+                        Accessing and correcting your personal information at
+                        any time through your account settings.
+                      </li>
+                      <li>
+                        Requesting the deletion of your personal information.
+                      </li>
+                      <li>
+                        Objecting to the processing of your personal information
+                        or requesting restrictions on its use.
+                      </li>
+                    </ol>
+                    <p className="mt-4 font-normal">
+                      To exercise any of these rights, please contact us at
+                      info@minhoo.app.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Cookies and Similar Technologies
+                    <p className="mt-4 font-normal">
+                      You have certain rights regarding your personal
+                      information, including:Minhoo uses cookies and similar
+                      technologies to enhance the user experience. Cookies are
+                      small text files stored on your device to help us analyze
+                      website traffic and personalize content. You can set your
+                      browser to reject cookies, but this may affect your
+                      ability to use some features of the platform.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Third-Party Services
+                    <p className="mt-4 font-normal">
+                      Our platform may contain links to third-party services or
+                      websites. This Privacy Policy does not cover the privacy
+                      practices of those third parties. We recommend that you
+                      review the privacy policies of any third-party site or
+                      service before providing your personal information.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Children&apos;s Privacy
+                    <p className="mt-4 font-normal">
+                      Minhoo is not directed to individuals under 18, and we do
+                      not knowingly collect personal information from minors. If
+                      we discover that we have inadvertently collected personal
+                      information from a minor, we will take steps to delete
+                      that information as soon as possible.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Changes to This Policy
+                    <p className="mt-4 font-normal">
+                      We may update this Privacy Policy from time to time. When
+                      we do, we will post the new policy on our website and app,
+                      indicating the date of the last update. We recommend that
+                      you periodically review this page to stay informed about
+                      any changes.
+                    </p>
+                  </li>
+                  <li className="font-bold">
+                    Contact
+                    <p className="font-normal mb-4">
+                      If you have any questions or concerns about this Privacy
+                      Policy or how we handle your personal information, you can
+                      contact us at:
+                    </p>
+                    <p className="font-normal">
+                      Minhoo <span className="block">Email: info@minhoo.app</span>
+                    </p>
+                  </li>
+                </ol>
               </section>
             </AppTabContent>
           </div>
