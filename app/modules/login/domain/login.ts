@@ -1,8 +1,14 @@
-import { z } from "zod"
+import { z } from "zod";
 
-export const signInSchema = z.object({
-  email: z.string().trim(),
-  password: z.string().trim().min(1)
-})
+export const loginSchema = z.object({
+  email: z.string().min(1, "Phone, user or email is required."),
+  password: z.string().min(1, "Password is required."),
+});
 
-export type TSignInSchema = z.infer<typeof signInSchema>
+export type loginFormData = z.infer<typeof loginSchema>;
+
+// eslint-disable-next-line no-unused-vars
+export type loginUserPort = (data: loginFormData) => Promise<{
+  error: any;
+  data: any;
+}>;

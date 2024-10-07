@@ -18,7 +18,7 @@ export default function Home() {
           <LoginForm />
           <div className="text-center mt-5">
             <Link href="/" title="Reset password" className="text-black-2">
-              Forgot your password
+              Forgot your password?
             </Link>
           </div>
           <hr className="my-5 border" />

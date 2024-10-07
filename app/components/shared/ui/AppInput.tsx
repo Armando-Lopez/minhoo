@@ -17,6 +17,9 @@ const inputVariants = cva(
     },
   }
 );
+
+console.error("NO USAR ESTE COMPONENTE. USER /shared/ui/inpput.tsx");
+
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
     VariantProps<typeof inputVariants> {}

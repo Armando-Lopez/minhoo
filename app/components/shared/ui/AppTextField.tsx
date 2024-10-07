@@ -12,6 +12,7 @@ export default forwardRef<Ref, Props>(function AppTextField(
   { id, name, label, errorsMessage, ...rest },
   ref
 ) {
+  console.error("NO USAR ESTE COMPONENTE. USER /shared/ui/input.tsx");
   const hasError = !!errorsMessage;
   return (
     <div>

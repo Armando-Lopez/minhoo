@@ -13,6 +13,8 @@ export default function AppModal({
   keepAlive,
   onChange,
 }: Props) {
+console.error("NO USAR ESTE COMPONENTE. USER /shared/ui/dialog.tsx");
+
   const modal = useRef<HTMLDialogElement>(null);
   const id = useId();
 

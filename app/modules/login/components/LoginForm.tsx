@@ -1,70 +1,84 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import AppTextField from "@/components/shared/ui/AppTextField";
-import AppButton from "@/components/shared/AppButton";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { TSignInSchema, signInSchema } from "@/modules/login/domain/login";
 import { useRouter } from "next/navigation";
+import { Input } from "@/components/shared/ui/input";
+import { loginFormData, loginSchema } from "@modules/login/domain/login";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/shared/ui/form";
+import { Button } from "@/components/shared/ui/button";
+import { loginUserService } from "@modules/login/services";
 
 export default function LoginForm() {
   const router = useRouter();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-    setError,
-  } = useForm<TSignInSchema>({
-    resolver: zodResolver(signInSchema),
+
+  const form = useForm<loginFormData>({
+    resolver: zodResolver(loginSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
   });
 
-  async function onSubmit(data: TSignInSchema) {
-    const response = await fetch("api/signin", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-type": "application/json",
-      },
-    }).then((r) => r.json());
-    if (response.errors) {
-      const errors = response.errors;
-      for (const error in errors) {
-        setError(error as any, {
-          message: errors[error],
-        });
-      }
-      return;
+  async function onSubmit(data: loginFormData) {
+    const { data: response, error } = await loginUserService(data);
+    if(error) {
+      form.setError("email",{ message: error[0]})
+      form.setError("password",{ message: error[0]})
+      return
     }
+    console.log(response);
     router.push("/news");
   }
 
   return (
-    <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
-      <div className="mb-2">
-        <AppTextField
-          id="email"
-          placeholder="Phone, user or email"
-          {...register("email")}
-          errorsMessage={errors.email?.message}
-        />
-      </div>
-      <div className="mb-5">
-        <AppTextField
-          id="password"
-          placeholder="Password"
-          {...register("password")}
-          errorsMessage={errors.password?.message}
-        />
-      </div>
-      <AppButton
-        id="login"
-        title="login"
-        className="w-full py-3 rounded-xl bg-primary-1 text-white font-bold"
-        type="submit"
-        disabled={isSubmitting}
+    <Form {...form}>
+      <form
+        className="space-y-4"
+        autoComplete="off"
+        onSubmit={form.handleSubmit(onSubmit)}
       >
-        Login
-      </AppButton>
-    </form>
+        <FormField
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Phone, user or email</FormLabel>
+              <FormControl>
+                <Input {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          name="password"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Password</FormLabel>
+              <FormControl>
+                <Input type="password" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button
+          id="login"
+          title="login"
+          className="w-full py-3 rounded-xl bg-primary-1 text-white font-bold"
+          type="submit"
+          // disabled={isSubmitting}
+        >
+          Login
+        </Button>
+      </form>
+    </Form>
   );
 }
