@@ -2,7 +2,6 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "next/navigation";
 import { Input } from "@/components/shared/ui/input";
 import { loginFormData, loginSchema } from "@modules/login/domain/login";
 import {
@@ -15,9 +14,9 @@ import {
 } from "@/components/shared/ui/form";
 import { Button } from "@/components/shared/ui/button";
 import { loginUserService } from "@modules/login/services";
+import { setAuthToken } from "@/modules/login/server-actions";
 
 export default function LoginForm() {
-  const router = useRouter();
 
   const form = useForm<loginFormData>({
     resolver: zodResolver(loginSchema),
@@ -34,8 +33,7 @@ export default function LoginForm() {
       form.setError("password",{ message: error[0]})
       return
     }
-    console.log(response);
-    router.push("/news");
+    setAuthToken(response);
   }
 
   return (

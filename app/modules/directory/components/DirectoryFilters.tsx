@@ -14,7 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/shared/ui/accordion";
-import { getCategoriesService } from "../services/category";
+import { getCategoriesService } from "@/modules/directory/services/category";
 
 export const DirectoryFilters = async ({ activator }: Props) => {
   const categories = await getCategoriesService()

@@ -14,8 +14,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
-import { Textarea } from "../shared/ui/textarea";
-import { Avatar, AvatarImage } from "../shared/ui/avatar";
+import { Textarea } from "@/components/shared/ui/textarea";
+import { Avatar, AvatarImage } from "@/components/shared/ui/avatar";
 import { Button } from "@/components/shared/ui/button";
 
 export default function AuthNav() {

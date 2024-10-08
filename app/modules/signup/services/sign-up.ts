@@ -1,4 +1,4 @@
-import { signUpInterface } from "../domain/sign-schema";
+import { signUpInterface } from "@modules/signup/domain/sign-schema";
 
 export const signUpService = async (data: signUpInterface) => {
   const response = await fetch("api/signup", {

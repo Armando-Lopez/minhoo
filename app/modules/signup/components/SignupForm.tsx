@@ -10,7 +10,7 @@ import { Input } from "@components/shared/ui/AppInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { signUpFormSchema } from "../domain/sign-schema";
+import { signUpFormSchema } from "@modules/signup/domain/sign-schema";
 import {
   Form,
   FormControl,
@@ -18,7 +18,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/shared/ui/form";
-import { signUpService } from "../services/sign-up";
+import { signUpService } from "@modules/signup/services/sign-up";
 
 export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
   const form = useForm<z.infer<typeof signUpFormSchema>>({

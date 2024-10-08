@@ -1,7 +1,6 @@
 import { LOGIN_API_URL } from "@/constants/api";
 import { loginUserPort } from "@modules/login/domain/login";
 
-console.log(LOGIN_API_URL);
 export const loginUserService: loginUserPort = async (data) => {
   try {
     const response = await fetch(LOGIN_API_URL, {
@@ -11,7 +10,6 @@ export const loginUserService: loginUserPort = async (data) => {
         "Content-type": "application/json",
       },
     }).then((r) => r.json());
-    // console.log(response);
 
     if (!response.header.success) {
       return {

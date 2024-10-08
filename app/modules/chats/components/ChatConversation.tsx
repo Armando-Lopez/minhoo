@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import ChatHeader from "@modules/chats/components/ChatHeader";
 import { Input } from "@/components/shared/ui/AppInput";
 import { ChatAddAttachments } from "@modules/chats/components/ChatAddAttachments";
-import { ChatAddAttachmentsProfile } from "./ChatAddAttachmentsProfile";
+import { ChatAddAttachmentsProfile } from "@modules/chats/components/ChatAddAttachmentsProfile";
 
 export const ChatConversation = ({ currentChat }: { currentChat: any }) => {
   const [messages, setMessages] = useState(currentChat.messages);
 
   function addMessage(message: any) {
-    console.log(message);
+    // console.log(message);
     
     setMessages([...messages, message]);
   }
