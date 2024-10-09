@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@components/shared/ui/Button";
+import { Button } from "@components/shared/ui/button";
 import { Input } from "@components/shared/ui/AppInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";

@@ -1,48 +1,37 @@
 "use client";
-import { Button } from "@components/shared/ui/Button";
+import { SignUpFormValidateEmail } from "@modules/signup/components/SignUpFormValidateEmail";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@components/shared/ui/AppCard";
-import { Input } from "@components/shared/ui/AppInput";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { signUpFormSchema } from "@modules/signup/domain/sign-schema";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/shared/ui/form";
-import { signUpService } from "@modules/signup/services/sign-up";
+import React from "react";
 
-export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
-  const form = useForm<z.infer<typeof signUpFormSchema>>({
-    resolver: zodResolver(signUpFormSchema),
-    defaultValues: {
-      name: "",
-      last_name: "",
-      email: "",
-      password: "",
-      confirm_password: "",
-    },
-  });
+export const SignUpForm = () => {
 
-  async function onSubmit(values: z.infer<typeof signUpFormSchema>) {
-    const { data } = await signUpService(values);
-    if (data?.header?.success) {
-      onSuccess();
-      return
-    }
-    if (data?.header?.success === false) {
-      form.setError("confirm_password", { message: data?.header?.messages[0] });
-    }
-    
-  }
+  const [step, setStep] = React.useState(1);
+  // const form = useForm<z.infer<typeof signUpFormSchema>>({
+  //   resolver: zodResolver(signUpFormSchema),
+  //   defaultValues: {
+  //     name: "",
+  //     last_name: "",
+  //     email: "",
+  //     password: "",
+  //     confirm_password: "",
+  //   },
+  // });
+
+  // async function onSubmit(values: z.infer<typeof signUpFormSchema>) {
+  //   const { data } = await signUpService(values);
+  //   if (data?.header?.success) {
+  //     onSuccess();
+  //     return;
+  //   }
+  //   if (data?.header?.success === false) {
+  //     form.setError("confirm_password", { message: data?.header?.messages[0] });
+  //   }
+  // }
 
   return (
     <Card className="w-full">
@@ -53,103 +42,7 @@ export const SignUpForm = ({ onSuccess }: { onSuccess: () => void }) => {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-3"
-            autoComplete="off"
-          >
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Name"
-                      className="py-6"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="last_name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Last name"
-                      className="py-6"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Email"
-                      className="py-6"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="password"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Password"
-                      className="py-6"
-                      type="password"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="confirm_password"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input
-                      placeholder="Confirm password"
-                      className="py-6"
-                      type="password"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <p className="text-center">
-              By registering you agree to our terms and conditions, privacy
-              policy and cookie policy.
-            </p>
-            <Button type="submit" className="w-full py-6">
-              Register
-            </Button>
-          </form>
-        </Form>
+        { step === 1 && <SignUpFormValidateEmail onSuccess={() => setStep(2)} /> }
       </CardContent>
     </Card>
   );
