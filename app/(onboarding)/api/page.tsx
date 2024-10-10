@@ -103,9 +103,9 @@ export default function Api() {
                 posterBreakpoints={{
                   lg: "/api/request-services-desktop.jpg",
                 }}
-                url="https://player.vimeo.com/progressive_redirect/playback/901389292/rendition/1080p/file.mp4?loc=external&signature=061f9dbb9c6d6c8f1e18c03a7e154a10d83db1e829821076ee21271e8efeec3b"
+                url="https://player.vimeo.com/progressive_redirect/playback/1018169000/rendition/1080p/file.mp4?loc=external&signature=ecc45917fe8d9be1d43576a5e5d7604eb2b07a669a8138f35407a95e3b34f9df"
                 urlBreakpoints={{
-                  lg: "https://player.vimeo.com/progressive_redirect/playback/901390196/rendition/1080p/file.mp4?loc=external&signature=f25833456794eb24d750c251384b8b6db49a8e4dcc58c46e805219c2ab0fa760",
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/1018168712/rendition/1080p/file.mp4?loc=external&signature=5c7bfcba387f2a29b3a76abb0ad865413b2bfeab2ab701fcddfa9d8365d8fcab",
                 }}
                 title="Request Services"
               />
@@ -123,9 +123,9 @@ export default function Api() {
                 posterBreakpoints={{
                   lg: "/api/offerting-services-desktop.jpg",
                 }}
-                url="https://player.vimeo.com/progressive_redirect/playback/902464521/rendition/1080p/file.mp4?loc=external&signature=de6d9af11a9c33511701dab6f4d1e1483ff752e01de78bd6331375a05279fd7a"
+                url="https://player.vimeo.com/progressive_redirect/playback/1018167054/rendition/1080p/file.mp4?loc=external&signature=3fedff02604adebb913c645910c99f26ab91c85742f32f250b51da3c96f93d98"
                 urlBreakpoints={{
-                  lg: "https://player.vimeo.com/progressive_redirect/playback/902463974/rendition/1080p/file.mp4?loc=external&signature=35a9b72d0b08beffa287fc537434b36836d03332db9eb85fcf44f6a0493a26dc",
+                  lg: "https://player.vimeo.com/progressive_redirect/playback/1018167019/rendition/1080p/file.mp4?loc=external&signature=63cc75152b6e65c01e993a5694171de5e8e2e4c6906babd35251c97dc036509e",
                 }}
                 title="Offerting Services"
               />
