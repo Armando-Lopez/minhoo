@@ -1,6 +1,5 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { verifyEmailFormData, verifyEmailSchema } from "@/modules/signup/domain";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Form,
@@ -12,20 +11,37 @@ import {
 } from "@/components/shared/ui/form";
 import { Input } from "@/components/shared/ui/input";
 import { Button } from "@/components/shared/ui/button";
-import { validateEmailService } from "@/modules/signup/services";
+import {
+  verifyEmailService,
+  verifyEmailFormData,
+  verifyEmailSchema,
+} from "@/modules/signup/services/verify-email-service";
+import { useSignUpStore } from "@/modules/signup/store";
 
 export const SignUpFormVerifyEmail = () => {
+
+  const signUpForm = useSignUpStore((state) => state.form);
+
   const form = useForm<verifyEmailFormData>({
     resolver: zodResolver(verifyEmailSchema),
     defaultValues: {
       code: "",
-      email: "",
+      email: signUpForm.email,
     },
   });
 
-  const onSubmit = async (data: verifyEmailFormData) => {
-    const response = await validateEmailService(data);
-    console.log(response);
+  const onSubmit = async (formData: verifyEmailFormData) => {
+    const { data, error } = await verifyEmailService(formData);
+    if (error) {
+      console.log(error);
+      return;
+    }
+    if (data?.header.success) {
+      useSignUpStore.setState((state) => ({
+        ...state,
+        step: 3,
+      }));
+    }
   };
 
   return (
@@ -35,7 +51,7 @@ export const SignUpFormVerifyEmail = () => {
           name="code"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>code</FormLabel>
+              <FormLabel>Verification code</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -43,7 +59,7 @@ export const SignUpFormVerifyEmail = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Get start</Button>
+        <Button type="submit">Next</Button>
       </form>
     </Form>
   );

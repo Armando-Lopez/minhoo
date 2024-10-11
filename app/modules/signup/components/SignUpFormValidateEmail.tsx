@@ -1,10 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import {
-  validateEmailFormData,
-  validateEmailSchema,
-} from "@/modules/signup/domain/index";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Input } from "@/components/shared/ui/input";
+import { Button } from "@/components/shared/ui/button";
+import { useSignUpStore } from "@/modules/signup/store";
 import {
   Form,
   FormControl,
@@ -13,12 +12,17 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/shared/ui/form";
-import { Input } from "@/components/shared/ui/input";
-import { Button } from "@/components/shared/ui/button";
-import { validateEmailService } from "@/modules/signup/services";
+import {
+  validateEmailService,
+  validateEmailSchema,
+  validateEmailFormData,
+} from "@/modules/signup/services/validate-email-service";
 
-// eslint-disable-next-line no-unused-vars
-export const SignUpFormValidateEmail = ({ onSuccess }: { onSuccess: (data: any) => void }) => {
+export const SignUpFormValidateEmail = () => {
+  const setStep = useSignUpStore((state) => state.setStep);
+  const setForm = useSignUpStore((state) => state.setForm);
+  const signUpForm = useSignUpStore((state) => state.form);
+
   const form = useForm<validateEmailFormData>({
     resolver: zodResolver(validateEmailSchema),
     defaultValues: {
@@ -27,10 +31,18 @@ export const SignUpFormValidateEmail = ({ onSuccess }: { onSuccess: (data: any) 
   });
 
   const onSubmit = async (data: validateEmailFormData) => {
-    const response = await validateEmailService(data);
-    console.log(onSuccess);
-    
-    // onSuccess(response);
+    const { data: response, error } = await validateEmailService(data);
+    if (error) {
+      console.error(error);
+      return;
+    }
+    if (response?.header.success) {
+      setStep(2);
+      setForm({
+        ...signUpForm,
+        email: data.email,
+      });
+    }
   };
 
   return (
@@ -48,7 +60,7 @@ export const SignUpFormValidateEmail = ({ onSuccess }: { onSuccess: (data: any) 
             </FormItem>
           )}
         />
-        <Button type="submit">Get start</Button>
+        <Button type="submit">Next</Button>
       </form>
     </Form>
   );
