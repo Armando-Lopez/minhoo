@@ -17,8 +17,11 @@ import {
   validateEmailSchema,
   validateEmailFormData,
 } from "@/modules/signup/services/validate-email-service";
+import { useToast } from "@/components/shared/hooks/use-toast";
 
 export const SignUpFormValidateEmail = () => {
+  const { toast } = useToast();
+
   const setStep = useSignUpStore((state) => state.setStep);
   const setForm = useSignUpStore((state) => state.setForm);
   const signUpForm = useSignUpStore((state) => state.form);
@@ -31,18 +34,21 @@ export const SignUpFormValidateEmail = () => {
   });
 
   const onSubmit = async (data: validateEmailFormData) => {
-    const { data: response, error } = await validateEmailService(data);
+    const { error } = await validateEmailService(data);
     if (error) {
-      console.error(error);
+      form.setError("email", { message: error.messages.at(-1) });
+      toast({
+        title: "Ups!",
+        description: error.messages.at(-1),
+        variant: "destructive",
+      });
       return;
     }
-    if (response?.header.success) {
-      setStep(2);
-      setForm({
-        ...signUpForm,
-        email: data.email,
-      });
-    }
+    setStep(2);
+    setForm({
+      ...signUpForm,
+      email: data.email,
+    });
   };
 
   return (
@@ -60,7 +66,9 @@ export const SignUpFormValidateEmail = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Next</Button>
+        <Button type="submit" className="w-full">
+          Next
+        </Button>
       </form>
     </Form>
   );

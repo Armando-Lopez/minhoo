@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { Toaster } from "@components/shared/ui/toaster";
 
 const poppins = Poppins({
   display: "swap",
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

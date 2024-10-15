@@ -9,21 +9,15 @@ export type validateEmailFormData = z.infer<typeof validateEmailSchema>;
 
 // eslint-disable-next-line no-unused-vars
 export type validateEmailPort = (data: validateEmailFormData) => Promise<{
-  error: unknown;
+  error: {
+    messages: string[];
+  } | null;
   data: {
-    header: {
-      success: boolean;
-      authenticated: boolean;
-      messages: string[];
-    };
-    body: {
-      code: number;
-      email: string;
-      created: string;
-    };
+    code: number;
+    email: string;
+    created: string;
   } | null;
 }>;
-
 
 export const validateEmailService: validateEmailPort = async (data) => {
   try {
@@ -32,13 +26,23 @@ export const validateEmailService: validateEmailPort = async (data) => {
       body: JSON.stringify(data),
       headers: { "Content-type": "application/json" },
     }).then((r) => r.json());
+    if (!response.header.success) {
+      return {
+        data: null,
+        error: {
+          messages: response.header.messages,
+        },
+      };
+    }
     return {
       error: null,
-      data: response,
+      data: response.body,
     };
   } catch (error) {
     return {
-      error: error,
+      error: {
+        messages: [error],
+      },
       data: null,
     };
   }

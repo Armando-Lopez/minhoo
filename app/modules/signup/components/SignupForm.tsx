@@ -13,18 +13,18 @@ import {
 
 export const SignUpForm = () => {
   const step = useSignUpStore((state) => state.step);
-  const signUpForm = useSignUpStore((state) => state.form);
-  console.log(signUpForm);
-  
-
   return (
     <Card className="w-full">
-      <CardHeader>
-        <CardTitle className="text-sm text-center">
-          Register and be part of the{" "}
-          <span className="text-primary-1">community</span>
-        </CardTitle>
-      </CardHeader>
+      {[1, 2].includes(step) && (
+        <CardHeader>
+          <CardTitle className="text-sm text-center">
+            <div>
+              Register and be part of the{" "}
+              <span className="text-primary-1">community</span>
+            </div>
+          </CardTitle>
+        </CardHeader>
+      )}
       <CardContent>
         {step === 1 && <SignUpFormValidateEmail />}
         {step === 2 && <SignUpFormVerifyEmail />}

@@ -1,5 +1,5 @@
 "use client";
-import { SignUpForm } from "@/modules/signup/components/SignupForm";
+import { SignUpForm } from "@/modules/signup/components/SignUpForm";
 import React from "react";
 
 export default function SignUp() {

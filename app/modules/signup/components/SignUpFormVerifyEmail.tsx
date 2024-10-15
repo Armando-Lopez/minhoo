@@ -59,7 +59,7 @@ export const SignUpFormVerifyEmail = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Next</Button>
+        <Button type="submit" className="w-full">Next</Button>
       </form>
     </Form>
   );
