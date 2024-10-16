@@ -1,3 +1,4 @@
+"use client";
 import AppIcon from "@/components/shared/AppIcon";
 // import { Button } from "@/components/shared/ui/button";
 import {
@@ -14,10 +15,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/shared/ui/accordion";
-import { getCategoriesService } from "@/modules/directory/services/category";
+import { useCategories } from "@/modules/categories/hooks/useCategories";
 
-export const DirectoryFilters = async ({ activator }: Props) => {
-  const categories = await getCategoriesService()
+export const DirectoryFilters = ({ activator }: Props) => {
+  // eslint-disable-next-line no-unused-vars
+  const { data, error, isLoading } = useCategories()
+  // console.log(data, error, isLoading);
  
   return (
     <div className="flex items-center justify-between pb-3 overflow-auto">
@@ -54,7 +57,7 @@ export const DirectoryFilters = async ({ activator }: Props) => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="p-0 space-y-5 pb-10">
-                  {categories.map((category) => (
+                  {data?.categories.map((category) => (
                     <RadioGroup key={category.name}>
                       <Label
                         htmlFor="per-hour"

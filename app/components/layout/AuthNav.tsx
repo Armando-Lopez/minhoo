@@ -67,9 +67,9 @@ export default function AuthNav() {
       <ul className="flex-grow flex flex-col gap-7 text-gray-1">
         <li>
           <Link
-            href="/news"
+            href="/app/news"
             className={`flex items-center gap-4 ${
-              getPathColor("/news") || getPathColor("/directory")
+              getPathColor("/app/news") || getPathColor("/app/directory")
             }`}
           >
             <AppIcon icon="home" width="23" />
@@ -78,9 +78,9 @@ export default function AuthNav() {
         </li>
         <li>
           <Link
-            href="/request-a-service"
+            href="/app/request-a-service"
             className={`flex items-center gap-4 ${getPathColor(
-              "/request-a-service"
+              "/app/request-a-service"
             )}`}
           >
             <AppIcon icon="handshake" width="29" />
@@ -88,29 +88,29 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <Link href="/offer-services" className="flex items-center gap-4">
-            <AppIcon icon="minhoo" width="29" className={getPathColor("/offer-services")} />
+          <Link href="/app/offer-services" className="flex items-center gap-4">
+            <AppIcon icon="minhoo" width="29" className={getPathColor("/app/offer-services")} />
             <span className="text-gray-1"> Offer services </span>
           </Link>
         </li>
         <li>
-          <Link href="/chat" className="flex items-center gap-4">
-            <AppIcon icon="chat" width="25" height="30" className={getPathColor("/chat")}/>
+          <Link href="/app/chat" className="flex items-center gap-4">
+            <AppIcon icon="chat" width="25" height="30" className={getPathColor("/app/chat")}/>
             <span className="text-gray-1"> Chat </span>
           </Link>
         </li>
         <li>
-          <Link href="/notifications" className="flex items-center gap-4">
-            <AppIcon icon="notification" width="25" className={getPathColor("/notifications")} />
+          <Link href="/app/notifications" className="flex items-center gap-4">
+            <AppIcon icon="notification" width="25" className={getPathColor("/app/notifications")} />
             <span className="text-gray-1"> Notifications </span>
           </Link>
         </li>
         <li>
           <Link
-            href="/profile"
+            href="/app/profile"
             className="flex items-center gap-4"
           >
-            <AppIcon icon="minhoo-profile" className={getPathColor("/profile")} width="30" />
+            <AppIcon icon="minhoo-profile" className={getPathColor("/app/profile")} width="30" />
             <span className="text-gray-1"> Profile </span>
           </Link>
         </li>
@@ -134,7 +134,7 @@ export default function AuthNav() {
                   <div>
                     <div className="flex gap-4">
                       <Avatar>
-                        <AvatarImage src="/team/wildelmy-colina.jpg"></AvatarImage>
+                        <AvatarImage src="/app/team/wildelmy-colina.jpg"></AvatarImage>
                       </Avatar>
                       <Textarea
                         placeholder="What do you want to show us?"
