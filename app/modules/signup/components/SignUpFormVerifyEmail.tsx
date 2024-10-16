@@ -17,9 +17,10 @@ import {
   verifyEmailSchema,
 } from "@/modules/signup/services/verify-email-service";
 import { useSignUpStore } from "@/modules/signup/store";
+import { useToast } from "@/components/shared/hooks/use-toast";
 
 export const SignUpFormVerifyEmail = () => {
-
+  const { toast } = useToast();
   const signUpForm = useSignUpStore((state) => state.form);
 
   const form = useForm<verifyEmailFormData>({
@@ -33,7 +34,11 @@ export const SignUpFormVerifyEmail = () => {
   const onSubmit = async (formData: verifyEmailFormData) => {
     const { data, error } = await verifyEmailService(formData);
     if (error) {
-      console.log(error);
+      toast({
+        title: "Ups!",
+        description: error.messages.at(-1),
+        variant: "destructive",
+      });
       return;
     }
     if (data?.header.success) {
@@ -59,7 +64,9 @@ export const SignUpFormVerifyEmail = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full">Next</Button>
+        <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
+          Next
+        </Button>
       </form>
     </Form>
   );

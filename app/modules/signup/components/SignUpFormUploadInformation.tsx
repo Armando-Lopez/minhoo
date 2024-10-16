@@ -18,8 +18,11 @@ import {
   signUpFormData,
 } from "@modules/signup/services/sign-up-service";
 import { useSignUpStore } from "../store";
+import { useToast } from "@/components/shared/hooks/use-toast";
+import { setAuthCookies } from "@/modules/login/server-actions";
 
 export const SignUpFormUploadInformation = () => {
+  const { toast } = useToast();
   const signUpForm = useSignUpStore((state) => state.form);
 
   const [file, setFile] = useState<File | null>(null);
@@ -50,9 +53,20 @@ export const SignUpFormUploadInformation = () => {
     formData.append("image_profile", file as File);
 
     const { data: response, error } = await signUpService(formData);
-
-    console.log(response, error);
-    
+    if (error) {
+      toast({
+        title: "Ups!",
+        description: error.messages.at(-1),
+        variant: "destructive",
+      });
+      return;
+    }
+    setAuthCookies([
+      {
+        name: "auth_token",
+        value: response.user.auth_token,
+      },
+    ]);
   }
 
   return (
@@ -134,7 +148,13 @@ export const SignUpFormUploadInformation = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full block">Next</Button>
+          <Button
+            type="submit"
+            className="w-full block"
+            disabled={form.formState.isSubmitting}
+          >
+            Next
+          </Button>
         </form>
       </Form>
     </div>

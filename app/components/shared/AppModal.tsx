@@ -47,6 +47,7 @@ console.error("NO USAR ESTE COMPONENTE. USER /shared/ui/dialog.tsx");
         activatorElement.removeEventListener("click", toggleModal);
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -54,6 +55,7 @@ console.error("NO USAR ESTE COMPONENTE. USER /shared/ui/dialog.tsx");
     if (isOpen) {
       setWasFirstOpen(true);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   return (

@@ -9,8 +9,6 @@ export const ChatConversation = ({ currentChat }: { currentChat: any }) => {
   const [messages, setMessages] = useState(currentChat.messages);
 
   function addMessage(message: any) {
-    // console.log(message);
-    
     setMessages([...messages, message]);
   }
 

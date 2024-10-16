@@ -66,7 +66,7 @@ export const SignUpFormValidateEmail = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
           Next
         </Button>
       </form>

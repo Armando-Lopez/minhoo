@@ -39,6 +39,7 @@ export default function AppVideoViewer({
     }
     setVideoUrl(newUrl);
     setVideoPoster(newPoster);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [breakpoints.lg, breakpoints.xl]);
   return (
     <>

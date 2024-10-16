@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { VERIFY_EMAIL_API_URL } from "@modules/signup/constants";
-import { ServiceApiResponse } from "@/types/api-response";
 
 export const verifyEmailSchema = z.object({
   email: z.string().email({ message: "Invalid email address." }),
@@ -25,7 +24,6 @@ export const verifyEmailService: verifyEmailPort = async (data) => {
       body: JSON.stringify(data),
       headers: { "Content-type": "application/json" },
     }).then((r) => r.json());
-    console.log(response);
     
     if (!response.header.success) {
       return {

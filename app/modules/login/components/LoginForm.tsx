@@ -14,10 +14,9 @@ import {
 } from "@/components/shared/ui/form";
 import { Button } from "@/components/shared/ui/button";
 import { loginUserService } from "@modules/login/services";
-import { setAuthToken } from "@/modules/login/server-actions";
+import { setAuthCookies } from "@/modules/login/server-actions";
 
 export default function LoginForm() {
-
   const form = useForm<loginFormData>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -28,12 +27,17 @@ export default function LoginForm() {
 
   async function onSubmit(data: loginFormData) {
     const { data: response, error } = await loginUserService(data);
-    if(error) {
-      form.setError("email",{ message: error[0]})
-      form.setError("password",{ message: error[0]})
-      return
+    if (error) {
+      form.setError("email", { message: error[0] });
+      form.setError("password", { message: error[0] });
+      return;
     }
-    setAuthToken(response);
+    setAuthCookies([
+      {
+        name: "auth_token",
+        value: response.body.user.auth_token,
+      },
+    ]);
   }
 
   return (

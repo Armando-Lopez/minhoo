@@ -11,6 +11,10 @@ export function middleware(request: NextRequest) {
   if (isProtectedRoute && !auth_token) {
     return NextResponse.redirect(new URL("/", request.url));
   }
+  if (!isProtectedRoute && auth_token) {
+    return NextResponse.redirect(new URL("/app/news", request.url));
+  }
+  return NextResponse.next();
 }
 
 // Routes Middleware should not run on
