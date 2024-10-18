@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ChatHeader from "@modules/chats/components/ChatHeader";
-import { Input } from "@/components/shared/ui/AppInput";
+import { Input } from "@/components/shared/ui/input";
 import { ChatAddAttachments } from "@modules/chats/components/ChatAddAttachments";
 import { ChatAddAttachmentsProfile } from "@modules/chats/components/ChatAddAttachmentsProfile";
 
@@ -19,22 +19,17 @@ export const ChatConversation = ({ currentChat }: { currentChat: any }) => {
       </div>
       <div className="overflow-auto p-3">
         <div className="grid gap-3">
-
-        {messages.map((message: any, i: number) => {
-          if (message.type === "profileCard") {
-            return <ChatAddAttachmentsProfile key={i} />;
-          }
-        })}
+          {messages.map((message: any, i: number) => {
+            if (message.type === "profileCard") {
+              return <ChatAddAttachmentsProfile key={i} />;
+            }
+          })}
         </div>
       </div>
       <div className="p-3 mt-auto">
         <div className="flex items-center gap-2 p-2 border-1 border border-gray-2 rounded-lg">
           <ChatAddAttachments onAddMessage={addMessage} />
-          <Input
-            placeholder="Write a message"
-            variant="no-border"
-            className="flex-grow w-full"
-          />
+          <Input placeholder="Write a message" className="flex-grow w-full" />
         </div>
       </div>
     </>

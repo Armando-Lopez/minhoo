@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PostItemComments() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex-grow flex flex-col w-full">
       <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-52 mb-10">
         <div className="flex gap-4 text-sm">
           <Image

@@ -1,4 +1,4 @@
-import { Input } from "@/components/shared/ui/AppInput";
+import { Input } from "@/components/shared/ui/input";
 import { ChatConversation } from "@/modules/chats/components/ChatConversation";
 import { ChatsChatsList } from "@/modules/chats/components/ChatsChatsList";
 
@@ -36,7 +36,7 @@ export default function chatPage({ params }: { params: { chatId: string[] } }) {
       </div>
       <div className="col-span-6 row-span-11">
         <div className="mx-5 bg-gray-150 rounded-full pl-4 my-3">
-          <Input type="search" variant="search" placeholder="Search" />
+          <Input type="search" placeholder="Search" />
         </div>
         <ChatsChatsList chats={chats} currentChat={currentChat} />
       </div>

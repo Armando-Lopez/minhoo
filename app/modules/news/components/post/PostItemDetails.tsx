@@ -6,19 +6,17 @@ import Image from "next/image";
 
 export default function PostItemDetails() {
   return (
-    <article className="flex">
+    <div className="grid grid-cols-2 h-full">
       <Image
-        src="/team/wildelmy-colina.jpg"
+        src="/api/img.png"
         alt=""
         className="object-cover"
         width={466}
         height={500}
         loading="lazy"
       />
-      <div className="flex flex-col max-w-96 ml-7 mr-16 pt-9">
-        <div className="flex">
-          <PostItemHeader />
-        </div>
+      <div className="flex flex-col ml-7 pt-1">
+        <PostItemHeader />
         <p>
           We are a branding, design and creative agency. As a branding
           specialist, we transform creative lorem ipsum imdor amet setor.
@@ -27,8 +25,7 @@ export default function PostItemDetails() {
           <PostItemFooter saveOption />
         </div>
         <PostItemComments />
-        {/* <app-post-item-comments className="flex w-full flex-grow" /> */}
       </div>
-    </article>
+    </div>
   );
 }

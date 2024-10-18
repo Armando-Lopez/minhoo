@@ -1,6 +1,6 @@
 import AppIcon from "@/components/shared/AppIcon";
 import { Card, CardContent } from "@/components/shared/ui/AppCard";
-import { Input } from "@/components/shared/ui/AppInput";
+import { Input } from "@/components/shared/ui/input";
 import { Avatar, AvatarImage } from "@/components/shared/ui/avatar";
 import { DirectoryFilters } from "@/modules/directory/components/DirectoryFilters";
 import React from "react";
@@ -12,7 +12,6 @@ export default function DirectoryPage() {
         <div className="w-1/2 pl-4 bg-gray-150 rounded-full">
           <Input
             type="search"
-            variant="search"
             placeholder="Search"
             className="pr-3"
           />

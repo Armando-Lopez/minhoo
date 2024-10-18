@@ -5,7 +5,7 @@ import {
   ToggleGroup,
   ToggleGroupItem,
 } from "@/components/shared/ui/toggle-group";
-import { Input } from "@/components/shared/ui/AppInput";
+import { Input } from "@/components/shared/ui/input";
 import { Button } from "@/components/shared/ui/button";
 import { RequestServiceFormRequestCategories } from "./RequestServiceFormRequestCategories";
 import {
@@ -57,7 +57,7 @@ export const RequestServiceForm = () => {
           <span className="flex-shrink-0 w-10 h-10 grid place-items-center rounded-full bg-gray-2">
             <AppIcon icon="user-plus" className="text-2xl text-gray-3" />
           </span>
-          <Input type="number" min="1" defaultValue="1" variant="underline" className="px-0" />
+          <Input type="number" min="1" defaultValue="1" className="px-0" />
         </div>
       </div>
       <div>
@@ -67,7 +67,7 @@ export const RequestServiceForm = () => {
             <AppIcon icon="dollar" className="text-2xl text-gray-3" />
           </span>
           <div className="flex w-full gap-2">
-            <Input type="number" placeholder="$0.00" variant="underline" className="px-0" />
+            <Input type="number" placeholder="$0.00" className="px-0" />
             <Popover>
               <PopoverTrigger asChild>
                 <Button className="rounded-full" variant="black">

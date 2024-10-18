@@ -1,6 +1,6 @@
 "use client";
 
-import { Input } from "@/components/shared/ui/AppInput";
+import { Input } from "@/components/shared/ui/input";
 import React, { useState } from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";

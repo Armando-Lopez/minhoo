@@ -1,10 +1,17 @@
+import { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import AppButton from "@/components/shared/AppButton";
 import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
 import Link from "next/link";
-import AppModal from "@/components/shared/AppModal";
 import PostItemOptions from "./PostItemOptions";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/shared/ui/dialog";
 
 export default function PostItemHeader() {
   return (
@@ -31,16 +38,18 @@ export default function PostItemHeader() {
         </AppButton>
       </div>
       <div className="ml-auto">
-        <AppModal
-          activator={
-            <AppButton title="post options">
-              <AppIcon icon="vertical-dots" width="30" />
-            </AppButton>
-          }
-          className="rounded-2xl h-fit ml-auto"
-        >
-          <PostItemOptions />
-        </AppModal>
+        <Dialog>
+          <DialogTrigger>
+            <AppIcon icon="vertical-dots" width="30" />
+          </DialogTrigger>
+          <DialogContent className="w-fit p-0 rounded-xl">
+            <VisuallyHidden>
+              <DialogTitle>Post Options</DialogTitle>
+              <DialogDescription>Post Options</DialogDescription>
+            </VisuallyHidden>
+            <PostItemOptions />
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   );
