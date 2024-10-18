@@ -15,7 +15,7 @@ import {
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
 
-import { ChatAddAttachmentsProfile } from "@modules/chats/components/ChatAddAttachmentsProfile";
+import { ChatAddAttachmentsProfile } from "@/modules/chats/components/ChatAddAttachmentsProfile";
 export const ChatAddAttachments = ({
   onAddMessage,
 }: {

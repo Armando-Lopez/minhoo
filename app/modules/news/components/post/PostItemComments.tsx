@@ -1,54 +1,74 @@
 import AppIcon from "@/components/shared/AppIcon";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
+import { NewsPost } from "@/modules/news/types/news-posts-types";
+import { API_BASE_URL } from "@/constants/api";
+import { formatDistance } from "date-fns";
 
-export default function PostItemComments() {
+type PostItemCommentsProps = {
+  readonly post: NewsPost;
+};
+
+export default function PostItemComments({ post }: PostItemCommentsProps) {
+  const getCommentDateDistance = (date: string) =>
+    formatDistance(new Date(date), new Date(), {
+      addSuffix: true,
+    });
+
   return (
-    <div className="flex-grow flex flex-col w-full">
-      <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-52 mb-10">
-        <div className="flex gap-4 text-sm">
-          <Image
-            src="/team/wildelmy-colina.jpg"
-            alt=""
-            className="rounded-full"
-            width={56}
-            height={56}
-          />
-          <div>
+    <div className="flex-grow flex flex-col justify-between w-full">
+      <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-64 mb-4 px-1">
+        {post.comments.map((comment) => (
+          <div key={comment.id} className="flex gap-4 text-sm">
+            <img
+              src={API_BASE_URL + comment.commentator.image_profil}
+              alt=""
+              className="rounded-full"
+              width={56}
+              height={56}
+            />
             <div>
-              <strong>sandra delgado</strong>-
-              <span className="text-gray-1">1m</span>
+              <div>
+                <strong>{comment.commentator.name}</strong>-
+                <span className="text-gray-1">
+                  {getCommentDateDistance(comment.created_date)}
+                </span>
+              </div>
+              <p>{comment.comment}</p>
             </div>
-            <p>I’m interested! 🤯🤯🤯</p>
+            <button className="flex flex-col ml-auto items-center text-gray-1">
+              <AppIcon icon="star-outline" width="25" />
+              <span>8</span>
+            </button>
           </div>
-          <button className="flex flex-col ml-auto items-center text-gray-1">
-            <AppIcon icon="star-outline" width="25" />
-            <span>8</span>
-          </button>
-        </div>
-        <div className="flex gap-4 text-sm">
-          <Image
-            src="/team/wildelmy-colina.jpg"
-            alt=""
-            className="rounded-full"
-            width={56}
-            height={56}
-          />
-          <div>
+        ))}
+        {post.comments.map((comment) => (
+          <div key={comment.id} className="flex gap-4 text-sm">
+            <img
+              src={API_BASE_URL + comment.commentator.image_profil}
+              alt=""
+              className="rounded-full"
+              width={56}
+              height={56}
+            />
             <div>
-              <strong>stefysorca</strong>-
-              <span className="text-gray-1">1m</span>
+              <div>
+                <strong>{comment.commentator.name}</strong>-
+                <span className="text-gray-1">
+                  {getCommentDateDistance(comment.created_date)}
+                </span>
+              </div>
+              <p>{comment.comment}</p>
             </div>
-            <p>🚀🚀🚀🚀</p>
+            <button className="flex flex-col ml-auto items-center text-gray-1">
+              <AppIcon icon="star-outline" width="25" />
+              <span>8</span>
+            </button>
           </div>
-          <button className="flex flex-col ml-auto items-center text-gray-1">
-            <AppIcon icon="star-outline" width="25" />
-            <span>3</span>
-          </button>
-        </div>
+        ))}
       </div>
-      <div className="overflow-hidden flex items-center py-1 px-2 mt-auto border-2 border-grey-1 rounded-lg mb-4">
-        <Image
+      <div className="overflow-hidden flex items-center py-1 px-2 border-2 border-grey-1 rounded-lg mb-4">
+        <img
           src="/team/wildelmy-colina.jpg"
           alt=""
           className="rounded-full"

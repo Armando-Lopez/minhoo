@@ -3,7 +3,7 @@ import React from "react";
 
 export default function NewsPage() {
   return (
-    <div className="py-6 px-10">
+    <div className="py-6 px-7">
       <NewsPostsList />
     </div>
   );

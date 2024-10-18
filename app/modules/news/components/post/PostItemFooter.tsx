@@ -1,8 +1,10 @@
-import AppButton from "@/components/shared/AppButton";
-import AppIcon from "@/components/shared/AppIcon";
 import React from "react";
-import PostItemShare from "./PostItemShare";
-import PostItemSave from "./PostItemSave";
+import AppIcon from "@/components/shared/AppIcon";
+import AppButton from "@/components/shared/AppButton";
+import { NewsPost } from "@/modules/news/types/news-posts-types";
+import PostItemSave from "@/modules/news/components/post/PostItemSave";
+import { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import PostItemShare from "@/modules/news/components/post/PostItemShare";
 import {
   Dialog,
   DialogContent,
@@ -10,16 +12,24 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
-import { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
-export default function PostItemFooter({ saveOption = false }) {
+type PostItemFooterProps = {
+  readonly post: NewsPost;
+  readonly saveOption?: boolean;
+};
+export default function PostItemFooter({
+  post,
+  saveOption = false,
+}: PostItemFooterProps) {
+  const postLikes = post.likes.length;
   return (
     <div className="flex justify-between">
       <AppButton
         title="post stars"
         className="flex items-center gap-2 text-gray-1"
       >
-        <AppIcon icon="star-outline" className="text-gray-1" width="24" />5
+        <AppIcon icon="star-outline" className="text-gray-1" width="24" />
+        {postLikes}
       </AppButton>
       <AppButton
         title="post comments"

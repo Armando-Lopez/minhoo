@@ -1,10 +1,10 @@
 import React from "react";
+import { NewsPost } from "@/modules/news/types/news-posts-types";
+// import AppShowMoreToggle from "@/components/shared/AppShowMoreToggle";
 import { Root as VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import PostItemHeader from "./PostItemHeader";
-import PostItemFooter from "./PostItemFooter";
-import PostItemDetails from "./PostItemDetails";
-import Image from "next/image";
-import AppShowMoreToggle from "@/components/shared/AppShowMoreToggle";
+import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
+import PostItemFooter from "@/modules/news/components/post/PostItemFooter";
+import PostItemDetails from "@/modules/news/components/post/PostItemDetails";
 import {
   Dialog,
   DialogContent,
@@ -13,44 +13,47 @@ import {
   DialogHeader,
   DialogDescription,
 } from "@/components/shared/ui/dialog";
-export default function PostItem() {
+import { API_BASE_URL } from "@/constants/api";
+
+type PostItemProps = {
+  readonly post: NewsPost;
+};
+export default function PostItem({ post }: PostItemProps) {
   return (
     <div>
-      <PostItemHeader />
+      <PostItemHeader post={post} />
       <div>
-        <AppShowMoreToggle>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus
-          odio atque dolores, facilis quibusdam eius est cum aut optio dicta.
-          Quisquam praesentium consectetur architecto excepturi natus ex.
-          Ducimus, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Tempore natus odio atque dolores, facilis quibusdam eius est cum
-          aut optio dicta. Quisquam praesentium consectetur architecto excepturi
-          natus ex. Ducimus, quisquam.
-        </AppShowMoreToggle>
+        {/* <AppShowMoreToggle>
+          </AppShowMoreToggle> */}
+        {post.post}
         <div className="relative mt-2">
           <Dialog>
             <DialogTrigger asChild>
-              <Image
-                src="/api/img.png"
-                className="w-full rounded-2xl cursor-pointer"
-                width="300"
-                height="400"
-                alt="post-name"
-              />
+              {post.post_media?.[0] && (
+                <img
+                  src={API_BASE_URL + post.post_media[0].url}
+                  className="w-full rounded-2xl cursor-pointer"
+                  width="300"
+                  height="400"
+                  alt="post-name"
+                />
+              )}
             </DialogTrigger>
             <DialogContent className="max-w-4xl">
               <DialogHeader>
                 <VisuallyHidden>
-                  <DialogTitle>Post Name</DialogTitle>
-                  <DialogDescription>Post Name</DialogDescription>
+                  <DialogTitle>
+                    Post by {post.user.name} {post.user.last_name}
+                  </DialogTitle>
+                  <DialogDescription>{post.post}</DialogDescription>
                 </VisuallyHidden>
               </DialogHeader>
-              <PostItemDetails />
+              <PostItemDetails post={post} />
             </DialogContent>
           </Dialog>
         </div>
         <div className="mt-5">
-          <PostItemFooter />
+          <PostItemFooter saveOption post={post} />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
 import AppIcon from "@/components/shared/AppIcon";
-import { ServicesHistoryPostulationCard } from "@modules/request-services/services-history/ServicesHistoryPostulationCard";
+import { ServicesHistoryPostulationCard } from "@/modules/request-services/services-history/ServicesHistoryPostulationCard";
 
 export const ServicesHistoryRepeatService = () => {
   return (

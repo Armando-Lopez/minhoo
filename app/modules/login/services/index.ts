@@ -1,5 +1,5 @@
 import { LOGIN_API_URL } from "@/constants/api";
-import { loginUserPort } from "@modules/login/domain/login";
+import { loginUserPort } from "@/modules/login/domain/login";
 
 export const loginUserService: loginUserPort = async (data) => {
   try {

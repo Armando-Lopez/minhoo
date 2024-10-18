@@ -1,8 +1,8 @@
-import PostItemComments from "@/modules/news/components/post/PostItemComments";
-import PostItemFooter from "@/modules/news/components/post/PostItemFooter";
-import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
-import { OngoingServicesServiceCard } from "@/modules/request-services/ongoing-services/components/OngoingServicesServiceCard";
 import Image from "next/image";
+// import PostItemFooter from "@/modules/news/components/post/PostItemFooter";
+// import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
+// import PostItemComments from "@/modules/news/components/post/PostItemComments";
+import { OngoingServicesServiceCard } from "@/modules/request-services/ongoing-services/components/OngoingServicesServiceCard";
 
 export default function PostSelectPage() {
   const withImg = true;
@@ -26,7 +26,7 @@ export default function PostSelectPage() {
           )}
           <div className="flex flex-col pt-2">
             <div className="flex">
-              <PostItemHeader />
+              {/* <PostItemHeader /> */}
             </div>
             {isTypeText ? (
               <p>
@@ -48,9 +48,9 @@ export default function PostSelectPage() {
               </div>
             )}
             <div className="my-5">
-              <PostItemFooter saveOption />
+              {/* <PostItemFooter saveOption /> */}
             </div>
-            <PostItemComments />
+            {/* <PostItemComments /> */}
           </div>
         </article>
       </div>

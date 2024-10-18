@@ -1,6 +1,6 @@
 import { apiAuth } from "@/lib/api";
 import { ApiResponseHeader } from "@/types/api-response";
-import { CATEGORIES_API_URL } from "@modules/categories/constants";
+import { CATEGORIES_API_URL } from "@/modules/categories/constants";
 
 export type Category = {
   id: number;

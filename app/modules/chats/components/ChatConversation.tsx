@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import ChatHeader from "@modules/chats/components/ChatHeader";
+import ChatHeader from "@/modules/chats/components/ChatHeader";
 import { Input } from "@/components/shared/ui/input";
-import { ChatAddAttachments } from "@modules/chats/components/ChatAddAttachments";
-import { ChatAddAttachmentsProfile } from "@modules/chats/components/ChatAddAttachmentsProfile";
+import { ChatAddAttachments } from "@/modules/chats/components/ChatAddAttachments";
+import { ChatAddAttachmentsProfile } from "@/modules/chats/components/ChatAddAttachmentsProfile";
 
 export const ChatConversation = ({ currentChat }: { currentChat: any }) => {
   const [messages, setMessages] = useState(currentChat.messages);

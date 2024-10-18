@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/shared/ui/input";
-import { loginFormData, loginSchema } from "@modules/login/domain/login";
+import { loginFormData, loginSchema } from "@/modules/login/domain/login";
 import {
   Form,
   FormControl,
@@ -13,7 +13,7 @@ import {
   FormMessage,
 } from "@/components/shared/ui/form";
 import { Button } from "@/components/shared/ui/button";
-import { loginUserService } from "@modules/login/services";
+import { loginUserService } from "@/modules/login/services";
 import { setAuthCookies } from "@/modules/login/server-actions";
 
 export default function LoginForm() {

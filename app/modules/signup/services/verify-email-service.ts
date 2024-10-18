@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { VERIFY_EMAIL_API_URL } from "@modules/signup/constants";
+import { VERIFY_EMAIL_API_URL } from "@/modules/signup/constants";
 
 export const verifyEmailSchema = z.object({
   email: z.string().email({ message: "Invalid email address." }),

@@ -1,14 +1,18 @@
 import React from "react";
-import PostItemHeader from "./PostItemHeader";
-import PostItemFooter from "./PostItemFooter";
-import PostItemComments from "./PostItemComments";
-import Image from "next/image";
+import PostItemHeader from "@/modules/news/components/post/PostItemHeader";
+import PostItemFooter from "@/modules/news/components/post/PostItemFooter";
+import PostItemComments from "@/modules/news/components/post/PostItemComments";
+import { NewsPost } from "@/modules/news/types/news-posts-types";
+import { API_BASE_URL } from "@/constants/api";
 
-export default function PostItemDetails() {
+type PostItemDetailsProps = {
+  readonly post: NewsPost;
+};
+export default function PostItemDetails({ post }: PostItemDetailsProps) {
   return (
     <div className="grid grid-cols-2 h-full">
-      <Image
-        src="/api/img.png"
+      <img
+        src={API_BASE_URL + post.post_media[0].url}
         alt=""
         className="object-cover"
         width={466}
@@ -16,15 +20,12 @@ export default function PostItemDetails() {
         loading="lazy"
       />
       <div className="flex flex-col ml-7 pt-1">
-        <PostItemHeader />
-        <p>
-          We are a branding, design and creative agency. As a branding
-          specialist, we transform creative lorem ipsum imdor amet setor.
-        </p>
+        <PostItemHeader post={post} />
+        <p>{post.post}</p>
         <div className="my-5">
-          <PostItemFooter saveOption />
+          <PostItemFooter saveOption post={post} />
         </div>
-        <PostItemComments />
+        <PostItemComments post={post} />
       </div>
     </div>
   );
