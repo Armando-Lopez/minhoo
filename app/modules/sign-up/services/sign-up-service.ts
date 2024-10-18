@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { SIGNUP_API_URL } from "@/modules/signup/constants";
+import { SIGNUP_API_URL } from "@/modules/sign-up/constants";
 
 export const signUpSchema = z
   .object({

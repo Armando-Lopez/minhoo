@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/shared/ui/input";
 import { Button } from "@/components/shared/ui/button";
-import { useSignUpStore } from "@/modules/signup/store";
+import { useSignUpStore } from "@/modules/sign-up/store";
 import {
   Form,
   FormControl,
@@ -16,7 +16,7 @@ import {
   validateEmailService,
   validateEmailSchema,
   validateEmailFormData,
-} from "@/modules/signup/services/validate-email-service";
+} from "@/modules/sign-up/services/validate-email-service";
 import { useToast } from "@/components/shared/hooks/use-toast";
 
 export const SignUpFormValidateEmail = () => {

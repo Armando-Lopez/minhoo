@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { useSignUpStore } from "@/modules/signup/store";
-import { SignUpFormValidateEmail } from "@/modules/signup/components/SignUpFormValidateEmail";
-import { SignUpFormVerifyEmail } from "@/modules/signup/components/SignUpFormVerifyEmail";
-import { SignUpFormUploadInformation } from "@/modules/signup/components/SignUpFormUploadInformation";
+import { useSignUpStore } from "@/modules/sign-up/store";
+import { SignUpFormValidateEmail } from "@/modules/sign-up/components/SignUpFormValidateEmail";
+import { SignUpFormVerifyEmail } from "@/modules/sign-up/components/SignUpFormVerifyEmail";
+import { SignUpFormUploadInformation } from "@/modules/sign-up/components/SignUpFormUploadInformation";
 import {
   Card,
   CardContent,

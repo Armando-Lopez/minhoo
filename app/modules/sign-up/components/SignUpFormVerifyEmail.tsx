@@ -15,8 +15,8 @@ import {
   verifyEmailService,
   verifyEmailFormData,
   verifyEmailSchema,
-} from "@/modules/signup/services/verify-email-service";
-import { useSignUpStore } from "@/modules/signup/store";
+} from "@/modules/sign-up/services/verify-email-service";
+import { useSignUpStore } from "@/modules/sign-up/store";
 import { useToast } from "@/components/shared/hooks/use-toast";
 
 export const SignUpFormVerifyEmail = () => {

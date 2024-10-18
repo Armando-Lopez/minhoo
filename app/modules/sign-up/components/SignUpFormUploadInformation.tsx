@@ -16,7 +16,7 @@ import {
   signUpService,
   signUpSchema,
   signUpFormData,
-} from "@/modules/signup/services/sign-up-service";
+} from "@/modules/sign-up/services/sign-up-service";
 import { useSignUpStore } from "../store";
 import { useToast } from "@/components/shared/hooks/use-toast";
 import { setAuthCookies } from "@/modules/login/server-actions";
