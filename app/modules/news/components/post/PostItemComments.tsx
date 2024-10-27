@@ -3,7 +3,6 @@ import DateDistance from "@/modules/date/DateDistance";
 import React from "react";
 import { NewsPost } from "@/modules/news/types/news-posts-types";
 import { API_BASE_URL } from "@/constants/api";
-// import { formatDistance } from "date-fns";
 
 type PostItemCommentsProps = {
   readonly post: NewsPost;
