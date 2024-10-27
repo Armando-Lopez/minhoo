@@ -1,19 +1,15 @@
 import AppIcon from "@/components/shared/AppIcon";
-// import Image from "next/image";
+import DateDistance from "@/modules/date/DateDistance";
 import React from "react";
 import { NewsPost } from "@/modules/news/types/news-posts-types";
 import { API_BASE_URL } from "@/constants/api";
-import { formatDistance } from "date-fns";
+// import { formatDistance } from "date-fns";
 
 type PostItemCommentsProps = {
   readonly post: NewsPost;
 };
 
 export default function PostItemComments({ post }: PostItemCommentsProps) {
-  const getCommentDateDistance = (date: string) =>
-    formatDistance(new Date(date), new Date(), {
-      addSuffix: true,
-    });
 
   return (
     <div className="flex-grow flex flex-col justify-between w-full">
@@ -31,31 +27,7 @@ export default function PostItemComments({ post }: PostItemCommentsProps) {
               <div>
                 <strong>{comment.commentator.name}</strong>-
                 <span className="text-gray-1">
-                  {getCommentDateDistance(comment.created_date)}
-                </span>
-              </div>
-              <p>{comment.comment}</p>
-            </div>
-            <button className="flex flex-col ml-auto items-center text-gray-1">
-              <AppIcon icon="star-outline" width="25" />
-              <span>8</span>
-            </button>
-          </div>
-        ))}
-        {post.comments.map((comment) => (
-          <div key={comment.id} className="flex gap-4 text-sm">
-            <img
-              src={API_BASE_URL + comment.commentator.image_profil}
-              alt=""
-              className="rounded-full"
-              width={56}
-              height={56}
-            />
-            <div>
-              <div>
-                <strong>{comment.commentator.name}</strong>-
-                <span className="text-gray-1">
-                  {getCommentDateDistance(comment.created_date)}
+                <DateDistance date={comment.created_date} />
                 </span>
               </div>
               <p>{comment.comment}</p>
