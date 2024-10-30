@@ -62,6 +62,7 @@ export const SignUpFormUploadInformation = () => {
       return;
     }
     setAuthCookies([
+      { name: "id", value: response.user.id },
       {
         name: "auth_token",
         value: response.user.auth_token,

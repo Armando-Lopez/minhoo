@@ -3,12 +3,15 @@ import React from "react";
 import { NewsPost } from "@/modules/news/types/news-posts-types";
 import { API_BASE_URL } from "@/constants/api";
 import { dateDistance } from "@/lib/date";
+import { PostItemAddComment } from "./PostItemAddComment";
 
 type PostItemCommentsProps = {
   readonly post: NewsPost;
 };
 
 export default function PostItemComments({ post }: PostItemCommentsProps) {
+  console.log(post.id);
+  
   return (
     <div className="flex-grow flex flex-col justify-between w-full">
       <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-64 mb-4 px-1">
@@ -37,21 +40,7 @@ export default function PostItemComments({ post }: PostItemCommentsProps) {
           </div>
         ))}
       </div>
-      <div className="overflow-hidden flex items-center py-1 px-2 border-2 border-grey-1 rounded-lg mb-4">
-        <img
-          src="/team/wildelmy-colina.jpg"
-          alt=""
-          className="rounded-full"
-          width={32}
-          height={32}
-        />
-        <textarea
-          name="add-comment"
-          rows={1}
-          placeholder="Write a comment"
-          className="w-full h-full border-none focus:border-none appearance-none focus:outline-transparent focus:ring-transparent resize-none placeholder:text-gray-1"
-        ></textarea>
-      </div>
+      <PostItemAddComment postId={post.id} />
     </div>
   );
 }

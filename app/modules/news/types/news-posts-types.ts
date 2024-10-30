@@ -1,4 +1,5 @@
 import { User } from "@/modules/user/types/user-types";
+import { PostComment } from "./comments-post-types";
 
 export type PostMedia = {
   url: string;
@@ -8,15 +9,6 @@ export type PostMedia = {
 export type PostLike = {
   id: number;
   userId: number;
-};
-
-export type PostComment = {
-  id: number;
-  userId: number;
-  comment: string;
-  media_url: string | null;
-  created_date: string;
-  commentator: Pick<User, "id" | "name" | "last_name" | "image_profil">;
 };
 
 export type NewsPost = {

@@ -33,6 +33,7 @@ export default function LoginForm() {
       return;
     }
     setAuthCookies([
+      { name: "id", value: response.body.user.id },
       {
         name: "auth_token",
         value: response.body.user.auth_token,
