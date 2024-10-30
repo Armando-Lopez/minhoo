@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { formatDistance } from "date-fns";
 import { API_BASE_URL } from "@/constants/api";
 import AppIcon from "@/components/shared/AppIcon";
 import AppButton from "@/components/shared/AppButton";
@@ -14,14 +13,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/shared/ui/dialog";
+import { dateDistance } from "@/lib/date";
 type PostItemHeaderProps = {
   readonly post: NewsPost;
 };
 export default function PostItemHeader({ post }: PostItemHeaderProps) {
-  const publicationDistance = formatDistance(post.created_date, new Date(), {
-    addSuffix: true,
-  });
-
   return (
     <div className="flex items-center w-full gap-4 mb-4">
       <Link href="/profile">
@@ -39,7 +35,7 @@ export default function PostItemHeader({ post }: PostItemHeaderProps) {
             {post.user.name} {post.user.last_name}{" "}
           </h4>
         </Link>
-        <span className="text-gray-1">{publicationDistance}</span>
+        <span className="text-gray-1">{dateDistance(post.created_date)}</span>
         <AppButton
           title="follow"
           className="w-fit px-3 rounded-md bg-primary-1 text-sm text-white"

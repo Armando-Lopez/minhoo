@@ -1,10 +1,6 @@
 import { formatDistance } from "date-fns";
 
-interface DateDistanceProps {
-  date: string;
-}
-
-export default function DateDistance({ date }: DateDistanceProps) {
+export function dateDistance( date : string) {
   return formatDistance(new Date(date), new Date(), {
     addSuffix: true,
   });

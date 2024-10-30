@@ -1,15 +1,14 @@
 import AppIcon from "@/components/shared/AppIcon";
-import DateDistance from "@/modules/date/DateDistance";
 import React from "react";
 import { NewsPost } from "@/modules/news/types/news-posts-types";
 import { API_BASE_URL } from "@/constants/api";
+import { dateDistance } from "@/lib/date";
 
 type PostItemCommentsProps = {
   readonly post: NewsPost;
 };
 
 export default function PostItemComments({ post }: PostItemCommentsProps) {
-
   return (
     <div className="flex-grow flex flex-col justify-between w-full">
       <div className="overflow-auto flex flex-grow flex-col gap-6 max-h-64 mb-4 px-1">
@@ -26,7 +25,7 @@ export default function PostItemComments({ post }: PostItemCommentsProps) {
               <div>
                 <strong>{comment.commentator.name}</strong>-
                 <span className="text-gray-1">
-                <DateDistance date={comment.created_date} />
+                  {dateDistance(comment.created_date)}
                 </span>
               </div>
               <p>{comment.comment}</p>
