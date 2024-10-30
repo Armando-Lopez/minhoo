@@ -22,6 +22,8 @@ export default function PostItemFooter({
   saveOption = false,
 }: PostItemFooterProps) {
   const postLikes = post.likes.length;
+  const totalComments = post.comments.length;
+
   return (
     <div className="flex justify-between">
       <AppButton
@@ -35,7 +37,8 @@ export default function PostItemFooter({
         title="post comments"
         className="flex items-center gap-2 text-gray-1"
       >
-        <AppIcon icon="comments-dots" className="text-gray-1" width="24" />5
+        <AppIcon icon="comments-dots" className="text-gray-1" width="24" />
+        {totalComments}
       </AppButton>
       {saveOption && (
         <Dialog>
