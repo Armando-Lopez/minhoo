@@ -60,7 +60,9 @@ export default function AuthNav() {
   };
 
   const getPathColor = (path: string) =>
-    pathname.includes(path) ? "text-primary-1 fill-primary-1" : "text-gray-1 fill-gray-1"; 
+    pathname.includes(path)
+      ? "text-primary-1 fill-primary-1"
+      : "text-gray-1 fill-gray-1";
 
   return (
     <nav className="flex-grow flex flex-col pb-5">
@@ -89,28 +91,42 @@ export default function AuthNav() {
         </li>
         <li>
           <Link href="/app/offer-services" className="flex items-center gap-4">
-            <AppIcon icon="minhoo" width="29" className={getPathColor("/app/offer-services")} />
+            <AppIcon
+              icon="minhoo"
+              width="29"
+              className={getPathColor("/app/offer-services")}
+            />
             <span className="text-gray-1"> Offer services </span>
           </Link>
         </li>
         <li>
           <Link href="/app/chat" className="flex items-center gap-4">
-            <AppIcon icon="chat" width="25" height="30" className={getPathColor("/app/chat")}/>
+            <AppIcon
+              icon="chat"
+              width="25"
+              height="30"
+              className={getPathColor("/app/chat")}
+            />
             <span className="text-gray-1"> Chat </span>
           </Link>
         </li>
         <li>
           <Link href="/app/notifications" className="flex items-center gap-4">
-            <AppIcon icon="notification" width="25" className={getPathColor("/app/notifications")} />
+            <AppIcon
+              icon="notification"
+              width="25"
+              className={getPathColor("/app/notifications")}
+            />
             <span className="text-gray-1"> Notifications </span>
           </Link>
         </li>
         <li>
-          <Link
-            href="/app/profile"
-            className="flex items-center gap-4"
-          >
-            <AppIcon icon="minhoo-profile" className={getPathColor("/app/profile")} width="30" />
+          <Link href="/app/profile" className="flex items-center gap-4">
+            <AppIcon
+              icon="minhoo-profile"
+              className={getPathColor("/app/profile")}
+              width="30"
+            />
             <span className="text-gray-1"> Profile </span>
           </Link>
         </li>
@@ -122,19 +138,19 @@ export default function AuthNav() {
                 <p>Create</p>
               </div>
             </DialogTrigger>
-            <DialogContent className="bg-black-1 border-radius-20 text-gray-150 p-0">
+            <DialogContent className="bg-black-1 border-radius-20 text-gray-150 p-0 w-3/5">
               <DialogHeader>
                 <DialogTitle className="text-lg font-medium px-6 border-b border-b-gray-150 py-3">
                   New publication
                 </DialogTitle>
                 <DialogDescription
                   asChild
-                  className="px-6 pt-3 pb-5 text-gray-150"
+                  className="px-6 pt-3 pb-5 text-gray-150 bg-black-1"
                 >
                   <div>
                     <div className="flex gap-4">
                       <Avatar>
-                        <AvatarImage src="/app/team/wildelmy-colina.jpg"></AvatarImage>
+                        <AvatarImage src={imageUrl}></AvatarImage>
                       </Avatar>
                       <Textarea
                         placeholder="What do you want to show us?"
