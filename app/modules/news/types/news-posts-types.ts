@@ -25,6 +25,12 @@ export type NewsPost = {
   post_media: PostMedia[];
 };
 
+export type AddPost = {
+  post: string;
+  categoryId: number;
+  imagePost: File | null;
+};
+
 export type NewsPostsPagination = {
   page: number;
   size: number;

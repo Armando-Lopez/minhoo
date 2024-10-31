@@ -9,13 +9,13 @@ import {
 
 export const getNewsPostsService: GetNewsPostsPort = async () => {
   const response = await apiAuth.get(NEWS_POSTS_API_URL).json<
-    ApiResponseHeader & {
-      body: {
-        posts: NewsPost[];
-        page: NewsPostsPagination["page"];
-        size: NewsPostsPagination["size"];
-        count: NewsPostsPagination["count"];
-      };
+  ApiResponseHeader & {
+    body: {
+      posts: NewsPost[];
+      page: NewsPostsPagination["page"];
+      size: NewsPostsPagination["size"];
+      count: NewsPostsPagination["count"];
+    };
     }
   >();
   if (response.header.success) {
