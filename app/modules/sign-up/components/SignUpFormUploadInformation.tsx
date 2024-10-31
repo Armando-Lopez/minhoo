@@ -1,5 +1,17 @@
+import React, { useState } from "react";
 import AppIcon from "@/components/shared/AppIcon";
 import { Button } from "@/components/shared/ui/button";
+import { Input } from "@/components/shared/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { useSignUpStore } from "@/modules/sign-up/store";
+import { useToast } from "@/components/shared/hooks/use-toast";
+import { setAuthCookies } from "@/modules/login/server-actions";
+import {
+  signUpService,
+  signUpSchema,
+  signUpFormData,
+} from "@/modules/sign-up/services/sign-up-service";
 import {
   Form,
   FormControl,
@@ -8,18 +20,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/shared/ui/form";
-import { Input } from "@/components/shared/ui/input";
-import { zodResolver } from "@hookform/resolvers/zod";
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import {
-  signUpService,
-  signUpSchema,
-  signUpFormData,
-} from "@/modules/sign-up/services/sign-up-service";
-import { useSignUpStore } from "../store";
-import { useToast } from "@/components/shared/hooks/use-toast";
-import { setAuthCookies } from "@/modules/login/server-actions";
 
 export const SignUpFormUploadInformation = () => {
   const { toast } = useToast();

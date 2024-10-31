@@ -5,7 +5,7 @@ import AppIcon from "@/components/shared/AppIcon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AuthNavOptions } from "@/components/layout/AuthNavOptions";
-import { AddPost } from "@/modules/layout/AddPost";
+import { AddPostModal } from "@/modules/news/components/post/AddPost";
 
 export default function AuthNav() {
   const pathname = usePathname();
@@ -82,7 +82,7 @@ export default function AuthNav() {
           </Link>
         </li>
         <li>
-          <AddPost categoryId={1} />
+          <AddPostModal />
         </li>
       </ul>
       <div className="mt-auto">
